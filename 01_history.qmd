@@ -1,0 +1,119 @@
+---
+title: "Une Histoire du Notebook"
+author: "Christophe Regouby"
+format:
+  revealjs:
+    incremental: true   
+---
+
+
+```{r setup}
+library(ggplot2)
+library(dplyr)
+library(ggalt)
+library(cowplot)
+library(tibble)
+library(lubridate)
+
+# from https://stackoverflow.com/questions/7492274/draw-a-chronological-timeline-with-ggplot2
+#Function to shift x-axis to 0 adapted from link shown above
+shift_axis <- function(p, xmin, xmax, y=0){
+      g <- ggplotGrob(p)
+      dummy <- data.frame(y = y)
+      ax <- g[["grobs"]][g$layout$name == "axis-b"][[1]]
+      p + annotation_custom(grid::grobTree(ax, vp = grid::viewport(y = 1, height = sum(ax$height))), 
+                            ymax = y, ymin = y) +
+        annotate("segment", y = 0, yend = 0, x = xmin, xend = xmax, 
+                 arrow = arrow(length = unit(0.1, "inches"))) +
+        theme(axis.text.x = element_blank(), 
+              axis.ticks.x = element_blank())
+}
+#Conditionally set whether text will be above or below the point
+vjust <- function(data) {
+  ifelse(data$displ > 0, -1, 1.5)
+}
+ggtimeline <- function(data) {
+  data %>% 
+  ggplot(aes(x = start_date, y = displ, alpha = alpha)) +
+  geom_lollipop(point.size = 1) +
+  geom_text(aes(x = start_date, y = displ, label = event), data = data,
+            hjust = 0, vjust = vjust(data), size = 4, check_overlap = TRUE) +
+  theme(axis.title = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_text(size = 8),
+        panel.background = element_rect(fill = "white"),
+        legend.position = "none") +
+  expand_limits(x = c(ymd(19840101), ymd(20221101)), y = 1.2) +
+  scale_x_date(breaks = scales::pretty_breaks(n = 9))
+}
+
+```
+
+## Une definition
+
+Le Notebook concrétise la rencontre entre  
+
+. . .  
+
+- l'exécution du code  
+
+. . .  
+
+- la narration  
+
+. . .  
+
+    - l'intention  
+    - l'approche  
+    - les résultats  
+
+## Les publications
+
+
+```{r}
+#Create data to plot
+references <- tribble( ~start_date, ~event, ~displ, ~alpha,
+                ymd(19840101), NA_character_, 0, 0,
+                ymd(19840101), "Knuth DE, Literate Programming", 0.9, 1,
+                ymd(19940101), "Leslie Lamport, LaTeX: A Document Preparation System", 0.7, 0.6,
+                ymd(20140201), "Baumer B & Al. R Markdown", 0.5, 1,
+                ymd(20180101), "Xie Y & Al. Rmarkdown", 0.3, 1)
+
+#plot and run the function from above
+timeline <- references %>% ggtimeline %>% shift_axis(ymd(19830101), ymd(20241101))
+timeline
+```
+## Les packages
+
+```{r}
+
+packages <- tribble( ~start_date, ~event, ~displ,
+                ymd(19830101), "Latex", -0.1,
+                ymd(20020101), "Sweave", -0.1,
+                ymd(20150101), "Knitr", -0.3)
+
+#and run the function from above
+timeline <- bind_rows(references, packages) %>% ggtimeline %>% shift_axis(ymd(19830101), ymd(20221101))
+timeline
+```
+
+## Les sorties
+
+```{r}
+outputs <- tribble( ~start_date, ~event, ~displ,
+                ymd(20160201), "Initial meeting with Renfrewshire", -1,
+                ymd(20160430), "UBDC RAC submission", -0.7,
+                ymd(20160524), "College Ethics Approval", -0.5,
+                ymd(20160601), "UBDC RAC approval", -0.5,
+                ymd(20161101), "Agreeement in Principal", -0.3,
+                ymd(20170906), "DSA signed", -0.5,
+                ymd(20170921), "Data transferred", -0.5,
+                ymd(20180221), "Analysis complete", -0.5)
+
+#and run the function from above
+timeline <- bind_rows(references, packages, outputs) %>% ggtimeline %>% shift_axis(ymd(19830101), ymd(20221101))
+timeline
+```
+
