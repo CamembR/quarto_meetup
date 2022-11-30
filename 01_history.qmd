@@ -32,7 +32,7 @@ shift_axis <- function(p, xmin, xmax, y=0){
 vjust <- function(data) {
   ifelse(data$displ > 0, -1, 1.5)
 }
-ggtimeline <- function(data) {
+ggtimeline <- function(data, start, end) {
   data %>% 
   ggplot(aes(x = start_date, y = displ, alpha = alpha)) +
   geom_lollipop(point.size = 1) +
@@ -45,7 +45,7 @@ ggtimeline <- function(data) {
         axis.text.x = element_text(size = 8),
         panel.background = element_rect(fill = "white"),
         legend.position = "none") +
-  expand_limits(x = c(ymd(19840101), ymd(20221101)), y = 1.2) +
+  expand_limits(x = c(start, end), y = 1.2) +
   scale_x_date(breaks = scales::pretty_breaks(n = 9))
 }
 
@@ -75,10 +75,10 @@ Le Notebook concrétise la rencontre entre
 ```{r publi}
 #Create data to plot
 references <- tribble( ~start_date, ~event, ~displ, ~alpha, ~image,
-                ymd(19830101), "", -0.1, 0.2,NA_character_,
-                ymd(19830101), "Latex", -0.1, 1,NA_character_,
+                ymd(19830101), NA_character_, 0, 0, NA_character_,
+                ymd(19830101), "Latex", -0.1, 0.6,NA_character_,
                 ymd(19840101), "Knuth DE, Literate Programming", 0.9, 1,NA_character_,
-                ymd(19940101), "Leslie Lamport, LaTeX: A Document Preparation System", 0.8, 0.,"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/langfr-220px-LaTeX_logo.svg.png",
+                ymd(19940101), "Leslie Lamport, LaTeX: A Document Preparation System", 0.8, 0.6,"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/langfr-220px-LaTeX_logo.svg.png",
                 ymd(20020101), "Sweave", -0.1, 1,NA_character_,
                 ymd(20040319), "John Gruber, Markdown", 0.7, 1,"https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/langfr-130px-Markdown-mark.svg.png",
                 ymd(20060814), "John MacFarlane, Pandoc", 0.6, 1,NA_character_,
@@ -86,7 +86,7 @@ references <- tribble( ~start_date, ~event, ~displ, ~alpha, ~image,
                 ymd(20180101), "Xie Y & Al. Rmarkdown", 0.1, 1,NA_character_)
 
 #plot and run the function from above
-timeline <- references %>% ggtimeline %>% shift_axis(ymd(19830101), ymd(20241101))
+timeline <- references %>% ggtimeline(start=ymd(19840101), end=ymd(20221101)) %>% shift_axis(ymd(19830101), ymd(20241101))
 timeline
 ```
 ## Les packages
@@ -106,13 +106,14 @@ packages <- tribble( ~start_date, ~event, ~displ, ~lang,
                 ymd(20210119), "Quarto", -0.5, "R") # 1,"https://quarto.org/quarto.png")
 
 #and run the function from above
-timeline <- bind_rows(references, packages) %>% ggtimeline %>% shift_axis(ymd(20130101), ymd(20241101))
+timeline <- bind_rows(references %>% filter(start_date > ym(201301)), packages) %>% ggtimeline(start = ym(201301), end = ymd(20230101)) %>%
+  shift_axis(ymd(20130101), ymd(20231101))
 timeline
 ```
 
 ## Les formats de sortie
 
-```{r}
+```{r formats}
 outputs <- tribble( ~start_date, ~event, ~displ,
                 ymd(20160201), "HTML", -1,
                 ymd(20160430), "pdf", -0.7,
@@ -125,7 +126,8 @@ outputs <- tribble( ~start_date, ~event, ~displ,
 
 #and run the function from above
 timeline <- bind_rows(references, packages %>% filter(lang == "R"), outputs) %>%
-  ggtimeline %>% shift_axis(ymd(19830101), ymd(20241101))
+  filter(start_date > ym(201301)) %>%
+  ggtimeline(start = ym(201301), end = ymd(20231101)) %>% shift_axis(ym(201301), ymd(20231101))
 timeline
 ```
 
