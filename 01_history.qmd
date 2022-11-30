@@ -130,4 +130,6 @@ timeline <- bind_rows(references, packages %>% filter(lang == "R"), outputs) %>%
   ggtimeline(start = ym(201301), end = ymd(20231101)) %>% shift_axis(ym(201301), ymd(20231101))
 timeline
 ```
-
+::: {.notes}
+Pas une idee fantastique... Le tableau semble meilleur
+:::
