@@ -1,0 +1,31 @@
+---
+title: "Migrate to quarto"
+author: "A. Mercadié, C. Regouby"
+format: revealjs
+---
+
+## Quarto migration
+
+" Yes but I have so many of the following notebooks already "
+
+```{mermaid}
+flowchart LR
+    B[.Rmd notebook] --> Q(Quarto Notebook)
+    A[fa:fa-python .ipynb notebook] --> Q(Quarto Notebook)
+    D[Observable.hq notebook] --> Q(Quarto Notebook)
+    C[LaTeX] --> Q(Quarto Notebook)
+    
+```
+
+## Rmd migration
+
+
+## ipynb migration
+
+## Observable.hq migration
+
+## LaTeX migration
+
+WiP
+
+(more at the post-event bar)
