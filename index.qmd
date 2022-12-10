@@ -17,7 +17,7 @@ editor: visual
 
 [Hello Quarto]{.custom-title}
 
-[un Notebook pour les gouverner tous <br> share • collaborate • teach • reimagine]{.custom-subtitle}
+[share • collaborate • teach • reimagine <br>(un Notebook pour les gouverner tous)]{.custom-subtitle}
 
 [Aurélie Mercadié <br> Christophe Regouby]{.custom-author}
 
@@ -144,6 +144,8 @@ NEXT - So let's let Mine kick it off to talk about sharing with Quarto.
 If you would like to start sharing, collaborating, teaching, and reimagining with Quarto by picking up where we left off, go to this link and scroll forward to see the next few slides where we share resources for learning as well as references for the works we presented today. And if you have any questions about Quarto or R Markdown, please stop by the Open Source table in the Lounge between 12-3pm today. And don't miss the Quarto session at 3:20pm!
 :::
 
+{{< include _5_migrate-to-quarto.qmd >}}
+
 # Thank you {.title-top-dark background-image="images/horst_quarto_penguins_thankyou.png"}
 
 ::: notes
@@ -172,7 +174,6 @@ Thank you so much for joining us this morning, here in person or from wherever y
 
 ![](images/horst-quarto-penguins.png){fig-alt="Two penguins. The orange one is holding the Quarto logo. The blue one is looking at the orange one." fig-align="right" width="600"}
 
-{{< include _5_migrate-to-quarto.qmd >}}
 
 ## Annotated Notes: Share {.small}
 

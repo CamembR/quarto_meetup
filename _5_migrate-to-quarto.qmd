@@ -1,12 +1,10 @@
----
-title: "Migrate to quarto"
-author: "A. Mercadié, C. Regouby"
-format: revealjs
----
+# Migration to Quarto {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
 
-## Quarto migration
+##  {#definition-1 .centered data-menu-title="Definition 1" background-color="#0F1620" auto-animate="true"}
 
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
 " Yes but I have so many of the following notebooks already "
+:::
 
 ```{mermaid}
 flowchart LR
@@ -22,7 +20,7 @@ flowchart LR
 ::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
 Rmd migration<br>in 2.5 sec
 
-``` {{bash}}
+``` {.bash filename="Terminal"}
 mv README.Rmd README.qmd
 ```
 :::
