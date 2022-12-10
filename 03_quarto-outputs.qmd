@@ -2,10 +2,17 @@
 title: "Documents Quarto"
 subtitle: "Les types de sorties existants"
 author: "A. Mercadié et C. Regouby"
+date: today
+institute: "MIAT INRAE - PFDC & Airbus"
 format:
   revealjs: 
     slide-number: true
-    theme: moon
+    theme: solarized
+    incremental: true
+    slide-level: 3
+    logo: images/logoRuserToulouse.svg
+    smaller: true
+    reference-location: document
 ---
 
 ## Liste
@@ -19,11 +26,28 @@ format:
 
 Déjà fait tout à l'heure, mais si détails supplémentaires à donner, le faire ici.
 
+-   Mettre le lien des pages R d'aide de fonctions
+-   Cacher/Montrer le code (déjà dispo dans Rmarkdown je crois)
+-   Mettre des figures à côté (et non plus juste en dessous) du code
+-   
+-   Les trucs un peu gadget mais quand même cool: 
+    * pouvoir éditer le notebook (HTML) en mode clair ou sombre
+    
+::: notes
+Tentative pour les slides mais échec jusque-là..
+:::
+    
+
 ## Présentations
 
 -   Reveal.js
 -   Beamer
--   Même possible d'exporter à ppt (sans avoir la suite office?)
+-   Même possible d'exporter en .ppt $\Rightarrow$ au revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!
+
+## Présentations: les petits plus
+
+-   Le truc vu dans la keynote pour entourer des choses sur la slide ou ouvrir un tableau, sans rien d'autre que la présentation HTML (à tester avant)
+-   L'extension pointeur
 
 ## Blogs, sites webs
 
