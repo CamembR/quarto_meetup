@@ -1,0 +1,88 @@
+---
+title: "Les bases de Quarto"
+subtitle: "Qu'est-ce que c'est? Comment ça fonctionne?"
+author: "A. Mercadié et C. Regouby"
+format:
+  revealjs:
+    slide-number: true
+    theme: solarized
+---
+
+## Quarto ?
+
+-   Beta version disponible depuis Avril 2022 + révélation de Quarto lors des journées R Studio Conf[^1] cet été
+
+-   Plusieurs définitions:
+
+    -   "open-source scientific and technical publishing system"\
+    -   "language agnostic command line interface" (pas qu'un package!)
+    -   "next generation of R Markdown"
+
+[^1]: https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/
+
+## Pourquoi Quarto ?
+
+-   Unifier et étendre l'écosystème Rmarkdown: mettre au point un language cohérent entre les différentes productions (sorties), s'affranchir (ou en tout cas généraliser à plusieurs language, pas que R) d'un language ou d'une IDE
+
+[![*Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !*](images/3-teach/many-lang-qmd-to-output.png){fig-align="center" width="541"}](https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/)
+
+-   Donner accès à ce genre d'outils à un public plus large, faciliter la vie! (interactivité par ex.)
+
+::: notes
+Dire qu'on va préciser un peu plus ces deux arguments au fur et à mesure de la présentation.
+:::
+
+## Installation
+
+::: notes
+Diviser la slide en deux
+:::
+
+-   Expliquer rapidement sous Linux
+-   Expliquer rapidement sous Windows
+-   Mettre un lien vers une ressource pour les autres systèmes d'exploitation
+
+## Utilisation
+
+::: notes
+Tout au long de la présentation, faire un comparatif avec ce qui est possible/fait dans Rmarkdown.
+A la fin, faire une slide récap des différences/similitudes.
+:::
+
+Une fois l'installation faite, comment lancer Quarto?
+
+-   Utilisable sur plusieurs IDE, dont Jupyter et RStudio
+-   Commenter sur RStudio seulement (ce qui nous intéresse ici)
+-   Warning: nécessaire d'avoir une certaine version de R et R Studio pour que tout fonctionne correctement
+-   Une fois tout ok, installation du package epynome quarto
+-   De nouveaux boutons apparaissent dans l'IDE (faire des captures écran des différentes étapes)
+-   Une parenthèse sur l'utilisation dans les autres IDE (mettre des ressources)
+
+## Créer un notebook en quarto (1)
+
+Probalement plusieurs slides là-dessus aussi, aérer au maximum!
+
+-   Capture écran de comment faire
+-   Comparaison avec le mode de fonctionnement de Rmarkdown
+-   Petits ajouts (détails/esthétique) par rapport à Rmarkdown
+-   Ressources là-dessus
+-   Commentaires et retours perso sur la chose!
+
+## Comparaison Rmarkdown Vs. Quarto
+
+Ou plutôt: Quarto, les petits plus
+
+::: notes
+A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
+:::
+
+-   La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/"élégant" en Quarto (moins de bidouillage peut être)
+-   Possible de switcher entre de l'édition en code et de l'édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!
+-   Propositions automatique dans le YAML header et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu'on veut savoir toutes les options disponibles)  
+-   Intéragir avec du notebook R ou Python **exactement de la même manière**
+
+
+
+
+
+
