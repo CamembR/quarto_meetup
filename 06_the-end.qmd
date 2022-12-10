@@ -1,0 +1,39 @@
+---
+title: "Quarto"
+subtitle: "Le mot de la fin"
+author: "A. Mercadié et C. Regouby"
+date: today
+format:
+  revealjs: 
+    slide-number: true
+    theme: solarized
+    incremental: true
+    slide-level: 3
+    center-title-slide: false
+    logo: images/logoRuserToulouse.svg
+    smaller: true
+    reference-location: document
+---
+
+
+## Et RMarkdown dans tout ça? 
+
+### Quarto Vs. RMarkdown: les petits plus
+
+::: notes
+A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
+:::
+
+-   La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/"élégant" en Quarto (moins de bidouillage peut être)
+-   Possible de switcher entre de l'édition en code et de l'édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!
+-   Propositions automatique dans le YAML header et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu'on veut savoir toutes les options disponibles)\
+-   Intéragir avec du notebook R ou Python **exactement de la même manière**
+-   Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s'édite\^)
+
+### Quarto Vs. RMarkdown: les moins
+
+-   Tout nouveau, donc peu d'aide dans la communauté disponible
+
+::: notes
+En gros, si ce que l'on veut faire n'est pas décrit dans l'aide du site Quarto, très compliqué de mettre en place l'idée. Fouinage et bidouillage ++++
+:::
