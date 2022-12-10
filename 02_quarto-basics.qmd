@@ -1,32 +1,43 @@
 ---
-title: "Les bases de Quarto"
-subtitle: "Qu'est-ce que c'est? Comment ça fonctionne?"
+title: "Quarto: les bases"
+subtitle: "Qu'est-ce que c'est ? Comment l'utiliser ?"
 author: "A. Mercadié et C. Regouby"
+date: today
+institute: "MIAT INRAE  PFDC et Airbus"
 format:
-  revealjs:
+  revealjs: 
     slide-number: true
     theme: solarized
+    incremental: true
+    slide-level: 3
+    logo: images/logoRuserToulouse.svg
+    smaller: true
+    reference-location: document
 ---
 
 ## Quarto ?
 
--   Beta version disponible depuis Avril 2022 + révélation de Quarto lors des journées R Studio Conf[^1] cet été
+-   Version $\beta$ disponible depuis Avril 2022 + révélation de Quarto lors de la Conférence RStudio[^1] cet été
 
 -   Plusieurs définitions:
 
-    -   "open-source scientific and technical publishing system"\
-    -   "language agnostic command line interface" (pas qu'un package!)
+    -   "open-source scientific and technical publishing system"
+    -   "language agnostic command line interface"
     -   "next generation of R Markdown"
 
 [^1]: https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/
 
 ## Pourquoi Quarto ?
 
--   Unifier et étendre l'écosystème Rmarkdown: mettre au point un language cohérent entre les différentes productions (sorties), s'affranchir (ou en tout cas généraliser à plusieurs language, pas que R) d'un language ou d'une IDE
+-   Homogénéiser et étendre Rmarkdown
 
-[![*Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !*](images/3-teach/many-lang-qmd-to-output.png){fig-align="center" width="541"}](https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/)
+::: notes
+mettre au point un language cohérent entre les différentes productions (sorties), s'affranchir (ou en tout cas généraliser à plusieurs language, pas que R) d'un language ou d'une IDE
+:::
 
--   Donner accès à ce genre d'outils à un public plus large, faciliter la vie! (interactivité par ex.)
+[![Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !](images/3-teach/many-lang-qmd-to-output.png){fig-align="center" width="957"}](https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/)
+
+-   Donner accès à ce genre d'outils à un public plus large
 
 ::: notes
 Dire qu'on va préciser un peu plus ces deux arguments au fur et à mesure de la présentation.
@@ -45,8 +56,7 @@ Diviser la slide en deux
 ## Utilisation
 
 ::: notes
-Tout au long de la présentation, faire un comparatif avec ce qui est possible/fait dans Rmarkdown.
-A la fin, faire une slide récap des différences/similitudes.
+Tout au long de la présentation, faire un comparatif avec ce qui est possible/fait dans Rmarkdown. A la fin, faire une slide récap des différences/similitudes.
 :::
 
 Une fois l'installation faite, comment lancer Quarto?
@@ -54,7 +64,7 @@ Une fois l'installation faite, comment lancer Quarto?
 -   Utilisable sur plusieurs IDE, dont Jupyter et RStudio
 -   Commenter sur RStudio seulement (ce qui nous intéresse ici)
 -   Warning: nécessaire d'avoir une certaine version de R et R Studio pour que tout fonctionne correctement
--   Une fois tout ok, installation du package epynome quarto
+-   Une fois tout ok, installation du package eponyme quarto
 -   De nouveaux boutons apparaissent dans l'IDE (faire des captures écran des différentes étapes)
 -   Une parenthèse sur l'utilisation dans les autres IDE (mettre des ressources)
 
@@ -78,11 +88,6 @@ A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
 
 -   La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/"élégant" en Quarto (moins de bidouillage peut être)
 -   Possible de switcher entre de l'édition en code et de l'édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!
--   Propositions automatique dans le YAML header et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu'on veut savoir toutes les options disponibles)  
+-   Propositions automatique dans le YAML header et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu'on veut savoir toutes les options disponibles)\
 -   Intéragir avec du notebook R ou Python **exactement de la même manière**
-
-
-
-
-
-
+-   Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s'édite\^)
