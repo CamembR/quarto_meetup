@@ -1,0 +1,47 @@
+---
+title: "Migrate to quarto"
+author: "A. Mercadié, C. Regouby"
+format: revealjs
+---
+
+## Quarto migration
+
+" Yes but I have so many of the following notebooks already "
+
+```{mermaid}
+flowchart LR
+    B[.Rmd notebook] --fas:fa-magic--> Q(Quarto Notebook)
+    A[fa:fa-python .ipynb notebook] --fas:fa-magic--> Q(Quarto Notebook)
+    D[Observable.hq notebook] --fas:fa-magic--> Q(Quarto Notebook)
+    C[LaTeX] --fas:fa-magic--> Q(Quarto Notebook)
+    
+```
+
+##  {#unifies-extends-1 .centered data-menu-title="Unifies and extends 1" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Rmd migration<br>in 2.5 sec
+
+``` {{bash}}
+mv README.Rmd README.qmd
+```
+:::
+
+Rmd migration<br>in 7.5 sec
+
+``` {{r}}
+# convert to Quarto doc with in-body chunk options
+knitr::convert_chunk_header("to-convert.Rmd", "converted.qmd")
+```
+
+:::
+
+## ipynb migration
+
+## Observable.hq migration
+
+## LaTeX migration
+
+WiP
+
+(more at the post-event bar)

@@ -1,0 +1,134 @@
+# Collaborate {.title-top-ice background-image="images/horst_penguins_telescope.png" aria-label="One penguin standing on another penguin's shoulders in a snowscape, looking through a telescope at a Quarto logo moon in the night sky."}
+
+::: notes
+:::
+
+##  {#collaborate-intro .center data-menu-title="Collaborate Intro"}
+
+::: columns
+::: {.column width="20%"}
+![](images/penguins_nametag_aurelie.png){fig-alt="Penguin with nametag that says \"Julie\""}
+:::
+
+::: {.column width="80%"}
+
+:::
+:::
+
+::: notes
+:::
+
+
+##  {#many-use-python .center .centered data-menu-title="Many use Python" background-color="#0F1620"}
+
+[Many Data scientists <br> use Python <br> 😬]{.larger}
+
+::: notes
+Many data scientists use python and jupyter notebooks. And my role is not to learn python from the ground-up, but I needed to be able to collaborate with and support python users.
+
+Transition: But I also brought over 6 years of experience and confidence that I've developed using RMarkdown. I think of RMarkdown like a superpower 
+:::
+
+##  {#star-wars-rey-quarto data-menu-title="Star Wars Rey Quarto" background-image="images/horst_rey_quarto.png" background-size="contain" fig-alt="Illustration of Rey from Star Wars using the Force with Quarto"}
+
+::: notes
+And Quarto let me bring this superpower to python.
+
+:::
+
+##  {#nasa-cloud-hackathon .center data-menu-title="NASA Cloud Hackathon" background-color="#0F1620"}
+
+::: borderbox
+[![](images/2-collaborate/hackathon.png){width="70%" fig-align="center" fig-alt="Screenshot of Quarto site for a NASA hackathon learning event"}](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
+:::
+
+::: notes
+This Quarto site we made for our first teaching event. 
+
+This is where we really found traction in working together as a Mentor community: we were able to make a beautiful collection of tutorials that was helpful for our own development and was a friendly place for our learners.
+
+Quarto was also something for us all to learn together. And that was really important bc it turned out I wasn't the only person feeling intimidated about all the moving parts. We were able to identify other skills to learn together.
+
+So from this investment in our workflow and learning  -
+:::
+
+
+## Quarto enables collaborating <br>across coding languages {.takeaway .center highlight-style="github"}
+
+\
+
+::: {.code-file .sourceCode .cell-code}
+{{< fa file >}} _quarto.yml
+:::
+
+``` {.yaml code-line-numbers="2,4,8,11"}
+contents:
+  - section: in-development/index.qmd
+    contents:
+      - in-development/earthdata-access-demo.ipynb
+      - in-development/nsidc/icesat2-cmr-onprem-vs-cloud.ipynb
+      - in-development/lpdaac/lpdaac_ecostress_lste_kerchunk.ipynb
+      - in-development/matlab-aws.qmd
+      - in-development/earthdata-python-r-handoff.rmd  
+  - section: contributing/onboarding.qmd
+    contents: 
+      - contributing/quarto-website-tutorial.md
+```
+
+::: notes
+Quarto enables collaborating across coding languages. This is a simplified view of the yaml it's collection of different file types. It's mostly ipynbs Jupyter notebooks.
+
+And, as we work with more research teams we've found that there is indeed a substantial R community using NASA Earthdata Cloud data. And we're positioned to support R users too
+:::
+
+## Quarto enables contributing <br>from our current tools {.takeaway .center}
+
+::: centered
+::: columns
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-rstudio-ide.png){fig-alt="Screenshot of RStudio IDE" width="80%"}
+:::
+:::
+
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-jupyterhub.png){fig-alt="Screenshot of Jupyter Lab" width="80%"}
+:::
+:::
+:::
+
+::: columns
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-github-ide.png){fig-alt="Screenshot of GitHub IDE" width="80%"}
+:::
+:::
+
+::: {.column width="45%"}
+::: borderbox
+![](images/2-collaborate/tools-vscode-ide.png){fig-alt="Screenshot of VS Code IDE" width="80%"}
+:::
+:::
+:::
+:::
+
+::: notes
+we're all able to contribute from whatever tool we're already comfortable with. In our group some use RStudio, some use JupyterLab some VS Code, some directly edit documents on GitHub.
+
+And this was important because of all the new things we were learning together, we didn't also need people to shift their software tools.
+
+transtion: Let me show you how to use Quarto with Jupyter with ipynb notebooks
+:::
+
+##  {#demo-collaborate .center data-menu-title="Demo: Collaborate" background-video="videos/demo-2-collaborate.mp4" background-size="contain" background-color="#FFFFFF"}
+
+::: notes
+-   Orient to JupyterLab. This is a JupyterHub managed by our collaborators at 2i2c
+-   Open Mine's example site, quarto preview
+- add .ipynb 
+-   Add `.ipynb` to `_quarto.yml`
+-   View website - new page is added to website
+-  Add fig captions
+- margin plots: a style preferred by many now in jupyter notebook
+:::

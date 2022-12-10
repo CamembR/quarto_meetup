@@ -1,0 +1,131 @@
+
+
+```{r setup}
+library(ggplot2)
+library(dplyr)
+library(ggalt)
+library(cowplot)
+library(tibble)
+library(lubridate)
+
+# from https://stackoverflow.com/questions/7492274/draw-a-chronological-timeline-with-ggplot2
+#Function to shift x-axis to 0 adapted from link shown above
+shift_axis <- function(p, xmin, xmax, y=0){
+      g <- ggplotGrob(p)
+      dummy <- data.frame(y = y)
+      ax <- g[["grobs"]][g$layout$name == "axis-b"][[1]]
+      p + annotation_custom(grid::grobTree(ax, vp = grid::viewport(y = 1, height = sum(ax$height))), 
+                            ymax = y, ymin = y) +
+        annotate("segment", y = 0, yend = 0, x = xmin, xend = xmax, 
+                 arrow = arrow(length = unit(0.1, "inches"))) +
+        theme(axis.text.x = element_blank(), 
+              axis.ticks.x = element_blank())
+}
+#Conditionally set whether text will be above or below the point
+vjust <- function(data) {
+  ifelse(data$displ > 0, -1, 1.5)
+}
+ggtimeline <- function(data, start, end) {
+  data %>% 
+  ggplot(aes(x = start_date, y = displ, alpha = alpha)) +
+  geom_lollipop(point.size = 1) +
+  geom_text(aes(x = start_date, y = displ, label = event), data = data,
+            hjust = 0, vjust = vjust(data), size = 4, check_overlap = TRUE) +
+  theme(axis.title = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_blank(),
+        axis.text.x = element_text(size = 8),
+        panel.background = element_rect(fill = "white"),
+        legend.position = "none") +
+  expand_limits(x = c(start, end), y = 1.2) +
+  scale_x_date(breaks = scales::pretty_breaks(n = 9))
+}
+
+```
+
+# Une histoire du Notebook  {.title-middle-dark background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape."}
+
+
+## Une definition  {#definition .center data-menu-title="Definition"}
+
+Le Notebook concrétise la rencontre entre  
+
+. . .  
+
+- l'exécution du code  
+
+. . .  
+
+- la narration  
+
+. . .  
+
+    - l'intention  
+    - l'approche  
+    - les résultats  
+
+## Les publications
+
+
+```{r publi}
+#Create data to plot
+references <- tribble( ~start_date, ~event, ~displ, ~alpha, ~image,
+                ymd(19830101), NA_character_, 0, 0, NA_character_,
+                ymd(19830101), "Latex", -0.1, 0.6,NA_character_,
+                ymd(19840101), "Knuth DE, Literate Programming", 0.9, 1,NA_character_,
+                ymd(19940101), "Leslie Lamport, LaTeX: A Document Preparation System", 0.8, 0.6,"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/langfr-220px-LaTeX_logo.svg.png",
+                ymd(20020101), "Sweave", -0.1, 1,NA_character_,
+                ymd(20040319), "John Gruber, Markdown", 0.7, 1,"https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/langfr-130px-Markdown-mark.svg.png",
+                ymd(20060814), "John MacFarlane, Pandoc", 0.6, 1,NA_character_,
+                ymd(20141105), "Helen Shen,  Interactive notebooks: Sharing the code (Nature)", 0.3, 1,NA_character_,
+                ymd(20180101), "Xie Y & Al. Rmarkdown", 0.1, 1,NA_character_)
+
+#plot and run the function from above
+timeline <- references %>% ggtimeline(start=ymd(19840101), end=ymd(20221101)) %>% shift_axis(ymd(19830101), ymd(20241101))
+timeline
+```
+## Les packages
+
+```{r pkg}
+
+packages <- tribble( ~start_date, ~event, ~displ, ~lang,
+                ymd(20140224), "Rmarkdown", -0.5, "R", #1,"https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png",
+                ymd(20140525), "Knitr", -0.2, "R",
+                ymd(20141101), "Jupyter", -0.1, "Python",# 1,"https://jupyter.org/assets/homepage/main-logo.svg",
+                ymd(20150912), "Apache Zeppelin", -0.3, "Java",#1,"https://zeppelin.apache.org/docs/0.10.1/assets/themes/zeppelin/img/zeppelin_logo.png",
+                ymd(20160713), "bookdown", -0.2, "R",
+                ymd(20160926), "pkgdown", -0.1, "R",
+                ymd(20161129), "xaringan", -0.6, "R",
+                ymd(20170822), "blogdown", -0.5, "R",
+                ymd(20181001), "JupyterLab", -0.4, "Python", #1,"https://jupyter.org/assets/homepage/hublogo.svg",
+                ymd(20210119), "Quarto", -0.3, "R") # 1,"https://quarto.org/quarto.png")
+
+#and run the function from above
+timeline <- bind_rows(references %>% filter(start_date > ym(201301)), packages) %>% ggtimeline(start = ym(201301), end = ymd(20230101)) %>%
+  shift_axis(ymd(20130101), ymd(20231101))
+timeline
+```
+
+## Les formats de sortie
+
+```{r formats}
+outputs <- tribble( ~start_date, ~event, ~displ,
+                ymd(20160201), "HTML", -1,
+                ymd(20160430), "pdf", -0.7,
+                ymd(20160524), "docx", -0.5,
+                ymd(20160601), "site", -0.3,
+                ymd(20161101), "blog", -0.1,
+                ymd(20170906), "book", -1,
+                ymd(20170921), "github pqge", -0.7,
+                ymd(20180221), "github wiki", -0.5)
+
+#and run the function from above
+timeline <- bind_rows(references, packages %>% filter(lang == "R"), outputs) %>%
+  filter(start_date > ym(201301)) %>%
+  ggtimeline(start = ym(201301), end = ymd(20231101)) %>% shift_axis(ym(201301), ymd(20231101))
+timeline
+```
+::: {.notes}
+Pas une idee fantastique... Le tableau semble meilleur
+:::
