@@ -1,0 +1,34 @@
+---
+title: "Documents Quarto"
+subtitle: "Les types de sorties existants"
+author: "A. Mercadié et C. Regouby"
+format:
+  revealjs: 
+    slide-number: true
+    theme: moon
+---
+
+## Liste
+
+-   Faire une petite liste de ce qui est dispo en Quarto avec Rstudio IDE
+-   Comparaison avec les possibilités en Rmarkdown/Knitr so far
+-   Pour les sorties les plus connues, donner les petits plus (ou les moins si il y a)
+-   Documenter ça avec plein de ressources
+
+## Notebook
+
+Déjà fait tout à l'heure, mais si détails supplémentaires à donner, le faire ici.
+
+## Présentations
+
+-   Reveal.js
+-   Beamer
+-   Même possible d'exporter à ppt (sans avoir la suite office?)
+
+## Blogs, sites webs
+
+Beaucoup moins mon domaine, donc quelques ressources et notions de bases.
+
+## Articles, books
+
+Pas mon domaine d'expertise non plus mais se renseigner rapidement.
