@@ -58,6 +58,21 @@ Dire qu'on va préciser un peu plus ces deux arguments au fur et à mesure de la
 
 ![Workflow Quarto](images/rstudio-qmd-how-it-works.png)
 
+#### Quels languages ?
+
+- R;
+- Python;
+- Julia; 
+- et Observable.
+
+#### Quels IDE ?
+
+- RStudio;
+- JupyterLab;
+- VS Code;
+- other text editors (?).
+
+
 ## Installer
 
 Suivre les [instructions](https://quarto.org/docs/get-started/) de [Quarto.org](https://quarto.org/).
