@@ -3,7 +3,6 @@ title: "Documents Quarto"
 subtitle: "Les types de sorties existants"
 author: "A. Mercadié et C. Regouby"
 date: today
-institute: "MIAT INRAE - PFDC & Airbus"
 format:
   revealjs: 
     slide-number: true
@@ -15,16 +14,24 @@ format:
     reference-location: document
 ---
 
-## Liste
+## Que peut-on faire en Quarto ? 
 
--   Faire une petite liste de ce qui est dispo en Quarto avec Rstudio IDE
--   Comparaison avec les possibilités en Rmarkdown/Knitr so far
--   Pour les sorties les plus connues, donner les petits plus (ou les moins si il y a)
--   Documenter ça avec plein de ressources
+- des rapports;
+- des présentations;
+- des sites web;
+- des livres et articles.
 
-## Notebook
+Quarto rend possible de passer de l'un à l'autre sans (presque) aucune modification dans le code! 
 
-Déjà fait tout à l'heure, mais si détails supplémentaires à donner, le faire ici.
+Comparaison avec les possibilités en Rmarkdown/Knitr so far
+
+## Rapports
+
+- HTML
+- PDF
+- Word
+
+Quoi de plus que dans Rmarkdown (HTML) ?
 
 -   Mettre le lien des pages R d'aide de fonctions
 -   Cacher/Montrer le code (déjà dispo dans Rmarkdown je crois)
@@ -44,7 +51,7 @@ Tentative pour les slides mais échec jusque-là..
 -   Beamer
 -   Même possible d'exporter en .ppt $\Rightarrow$ au revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!
 
-## Présentations: les petits plus
+Quoi de plus que dans RMarkdown ? 
 
 -   Le truc vu dans la keynote pour entourer des choses sur la slide ou ouvrir un tableau, sans rien d'autre que la présentation HTML (à tester avant)
 -   L'extension pointeur
