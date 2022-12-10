@@ -10,6 +10,7 @@ format:
     theme: solarized
     incremental: true
     slide-level: 3
+    center-title-slide: false
     logo: images/logoRuserToulouse.svg
     smaller: true
     reference-location: document
@@ -17,25 +18,31 @@ format:
 
 ## Quarto ?
 
--   Version $\beta$ disponible depuis Avril 2022 + révélation de Quarto lors de la Conférence RStudio[^1] cet été
+-   Version $\beta$ disponible depuis Avril 2022 + révélation de Quarto lors de la [Conférence RStudio](https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/) cet été
+
+    ![](images/quartologo.png)
 
 -   Plusieurs définitions:
 
-    -   "open-source scientific and technical publishing system"
-    -   "language agnostic command line interface"
-    -   "next generation of R Markdown"
+    -   
 
-[^1]: https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/
+        > "Open-source scientific and technical **publishing system**"
+
+    -   
+
+        > "**Next** generation of `R Markdown`"
+
+    -   
+
+        > "Language agnostic *Command Line Interface*"
 
 ## Pourquoi Quarto ?
 
--   Homogénéiser et étendre Rmarkdown
+-   Homogénéiser et étendre Rmarkdown [![Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !](images/3-teach/many-lang-qmd-to-output.png){fig-align="center" width="957"}](https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/)
 
 ::: notes
 mettre au point un language cohérent entre les différentes productions (sorties), s'affranchir (ou en tout cas généraliser à plusieurs language, pas que R) d'un language ou d'une IDE
 :::
-
-[![Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !](images/3-teach/many-lang-qmd-to-output.png){fig-align="center" width="957"}](https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/)
 
 -   Donner accès à ce genre d'outils à un public plus large
 
@@ -43,17 +50,29 @@ mettre au point un language cohérent entre les différentes productions (sortie
 Dire qu'on va préciser un peu plus ces deux arguments au fur et à mesure de la présentation.
 :::
 
-## Installation
+## Comment ça fonctionne ?
 
-::: notes
-Diviser la slide en deux
+\
+\
+\
+
+![Workflow Quarto](images/rstudio-qmd-how-it-works.png)
+
+## Installer
+
+Suivre les [instructions](https://quarto.org/docs/get-started/) de [Quarto.org](https://quarto.org/).
+
+::: callout-caution
+## Remarque
+
+Nécessaire d'avoir une certaine version de l'IDE RStudio (v2022.07).
 :::
 
--   Expliquer rapidement sous Linux
--   Expliquer rapidement sous Windows
--   Mettre un lien vers une ressource pour les autres systèmes d'exploitation
+1)  Installer Quarto CLI
+2)  Installer le package éponyme `quarto`
+3)  Remarque: Quarto peut s'utiliser en dehors de tout IDE, directement en ligne de commande
 
-## Utilisation
+## Créer un notebook
 
 ::: notes
 Tout au long de la présentation, faire un comparatif avec ce qui est possible/fait dans Rmarkdown. A la fin, faire une slide récap des différences/similitudes.
@@ -61,33 +80,19 @@ Tout au long de la présentation, faire un comparatif avec ce qui est possible/f
 
 Une fois l'installation faite, comment lancer Quarto?
 
--   Utilisable sur plusieurs IDE, dont Jupyter et RStudio
--   Commenter sur RStudio seulement (ce qui nous intéresse ici)
--   Warning: nécessaire d'avoir une certaine version de R et R Studio pour que tout fonctionne correctement
--   Une fois tout ok, installation du package eponyme quarto
--   De nouveaux boutons apparaissent dans l'IDE (faire des captures écran des différentes étapes)
--   Une parenthèse sur l'utilisation dans les autres IDE (mettre des ressources)
-
-## Créer un notebook en quarto (1)
-
-Probalement plusieurs slides là-dessus aussi, aérer au maximum!
-
--   Capture écran de comment faire
--   Comparaison avec le mode de fonctionnement de Rmarkdown
--   Petits ajouts (détails/esthétique) par rapport à Rmarkdown
--   Ressources là-dessus
--   Commentaires et retours perso sur la chose!
-
-## Comparaison Rmarkdown Vs. Quarto
-
-Ou plutôt: Quarto, les petits plus
+::: panel-tabset
+### RStudio
 
 ::: notes
-A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
+Mettre les captures écran
 :::
 
--   La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/"élégant" en Quarto (moins de bidouillage peut être)
--   Possible de switcher entre de l'édition en code et de l'édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!
--   Propositions automatique dans le YAML header et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu'on veut savoir toutes les options disponibles)\
--   Intéragir avec du notebook R ou Python **exactement de la même manière**
--   Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s'édite\^)
+-   Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension, `.qmd`
+-   Un bouton `Render` au lieu de `Knitr` pour générer le document
+-   Deux modes: **Source** ou **Visual**, possible d'aller de l'un à l'autre à volonté
+-   Une autre manière de spécifier les "chunk options" (pipe natif $|\#$)
+
+### Jupyter
+
+Mettre les captures écran
+:::
