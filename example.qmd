@@ -1,0 +1,136 @@
+---
+title: "Mon document"
+format: 
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    toc: true
+    code-link: true
+    code-fold: true
+    code-tools: true
+    comments:
+      hypothesis:
+        theme: clean
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+# Libraries
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+library(viridis)
+
+# The dataset is provided in the gapminder library
+library(gapminder)
+data <- gapminder %>% filter(year=="2007") %>% dplyr::select(-year)
+```
+
+```{r}
+#| echo: true
+#| fig-cap: "A bubble plot!"
+
+# Most basic bubble plot
+data %>%
+  arrange(desc(pop)) %>%
+  mutate(country = factor(country, country)) %>%
+  ggplot(aes(x=gdpPercap, y=lifeExp, size=pop, fill=continent)) +
+    geom_point(alpha=0.5, shape=21, color="black") +
+    scale_size(range = c(.1, 24), name="Population (M)") +
+    scale_fill_viridis(discrete=TRUE, guide=FALSE, option="A") +
+    theme_ipsum() +
+    theme(legend.position="bottom") +
+    ylab("Life Expectancy") +
+    xlab("Gdp per Capita") +
+    theme(legend.position = "none")
+```
+
+
+# Including pictures
+
+In the body...
+
+:::{.column-body-outset}
+![](images/horst_penguins_telescope.png)
+:::
+
+... or in the page
+
+:::{.column-page}
+![](images/horst_quarto_penguins_thankyou.png)
+:::
+
+... or throughout the screen
+
+```{r}
+#| column: screen
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=1.443, lat=43.604, popup="Place du Capitole!")
+```
+
+\
+\
+
+You can also place a plot on the document margin.
+
+```{r}
+#| echo: true
+#| column: margin
+#| fig-cap: "A lollipop plot!"
+#| code-fold: show
+
+# Create data
+data <- data.frame(
+  x=LETTERS[1:26],
+  y=abs(rnorm(26))
+)
+
+# Horizontal version
+ggplot(data, aes(x=x, y=y)) +
+  geom_segment( aes(x=x, xend=x, y=0, yend=y), color="skyblue") +
+  geom_point( color="blue", size=4, alpha=0.6) +
+  theme_light() +
+  coord_flip() +
+  theme(
+    panel.grid.major.y = element_blank(),
+    panel.border = element_blank(),
+    axis.ticks.y = element_blank()
+  )
+```
+
+# Copier-coller d'une image, d'un texte formaté
+
+
+
+References
+
+- https://r-graph-gallery.com/index.html
+- https://quarto.org/
