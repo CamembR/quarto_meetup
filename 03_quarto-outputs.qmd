@@ -12,12 +12,13 @@ format:
     logo: images/logoRuserToulouse.svg
     smaller: false
     reference-location: document
+    footnotes-hover: true
     chalkboard: true
-    code-link: true
+    code-link: false
     pointer:
       pointerSize: 18
       color: '#D527A6'
-qrevealjs-plugins:
+revealjs-plugins:
   - pointer
 ---
 
@@ -60,61 +61,39 @@ Comparaison avec les possibilités en Rmarkdown/Knitr so far
 
 Quoi de plus que dans Rmarkdown (HTML) ?
 
-## Rapport HTML : `code-link`
-
-Mettre le lien des pages R d'aide de fonctions.
-
-N'a pas l'air de fonctionner (ni en revealjs, ni en html).
-
 ## Rapport HTML : formats
 
-Screenshots
-
 -   `margin` : Mettre des figures à côté (et non plus juste en dessous) du code
--   `columns` : arranger plus ou moins la place prise par l'objet en fonction des chunks (tables)
 
-. . .
+    ![](images/margin.png){width="1196"}
 
-```{r}
-#| echo: true
-#| fig-column: margin
-
-# Most basic bubble plot
-data %>%
-  arrange(desc(pop)) %>%
-  mutate(country = factor(country, country)) %>%
-  ggplot(aes(x=gdpPercap, y=lifeExp, size=pop, fill=continent)) +
-    geom_point(alpha=0.5, shape=21, color="black") +
-    scale_size(range = c(.1, 24), name="Population (M)") +
-    scale_fill_viridis(discrete=TRUE, guide=FALSE, option="A") +
-    theme_ipsum() +
-    theme(legend.position="bottom") +
-    ylab("Life Expectancy") +
-    xlab("Gdp per Capita") +
-    theme(legend.position = "none")
-```
+-   `columns` : arranger plus ou moins la place prise par l'objet en fonction du bloc
 
 ## Rapport HTML: le copier-coller
 
 Possible de copier-coller une image (s'enregistre automatiquement dans un dossier `images`), du texte formaté (Quarto va conserver ce format)
 
-Vidéo ?
-
 ## Rapport HTML : autres
 
-Les trucs un peu gadget mais quand même cool:
+Les trucs un peu gadget (mais quand même cool!) :
 
--   Pouvoir afficher le rapport en mode clair ou sombre[^1]. Petite screenshot.
+-   Pouvoir afficher le rapport en mode clair ou sombre[^1].
 -   Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes
--   Les citations et notes de bas de page $\rightarrow$ s'affichent quand on passe la souris dessus
+-   Afficher les citations et notes de bas de page en passant la souris dessus
+-   `code-link` ou intégrer l'URL des pages d'aide des fonctions R[^2].
 
-[^1]: pas posible pour les slides..
+[^1]: pas posible pour les slides...
+[^2]: problème pour la faire fonctionner en revealjs et html...
 
 # Présentations
 
 -   Reveal.js
 -   Beamer
--   Même possible d'exporter en .ppt $\Rightarrow$ au revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!
+-   Même possible d'exporter en `.ppt`
+
+::: {.fragment .fade-in-then-out}
+*Au-revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les            présentations!*
+:::
 
 . . .
 
@@ -126,7 +105,7 @@ Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus fac
 
 ```{r}
 #| echo: true
-#| code-line-numbers: "2,3,4|5,6|"
+#| code-line-numbers: "2,3,4|5,6|8|10,13"
 #| output: false
 
 # Most basic bubble plot
@@ -171,10 +150,8 @@ Raccourci = Touche `q` pour switcher entre le curseur et le pointeur.
 -   Nouvelle tab qui apparaît ("Build") pour voir en avant-première le rendu du site (avant publication)
 -   Une seule ligne dans le terminal pour publier le site: `quarto publish`
 -   [Quarto.pub](https://quartopub.com/) est une solution pour publier des sites web, proposée par Quarto (Posit)
--   Possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`) $\Rightarrow$ collaboration rendue plus simple
+-   Possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`)
 
-# Articles, books
-
-Pas mon domaine d'expertise non plus mais se renseigner rapidement.
+# Articles, books^[*Probablement d'autres aspects sympas, mais pas d'expérience sur ces formats.*]
 
 -   On peut spécifier un format connu d'article scientifique (via CLI), i.e. ASS
