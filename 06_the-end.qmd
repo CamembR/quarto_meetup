@@ -42,3 +42,9 @@ A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
 ::: notes
 En gros, si ce que l'on veut faire n'est pas décrit dans l'aide du site Quarto, très compliqué de mettre en place l'idée. Fouinage et bidouillage ++++
 :::
+
+##
+
+::: {.r-fit-text}
+Merci !
+:::
