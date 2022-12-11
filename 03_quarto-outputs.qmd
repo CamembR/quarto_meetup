@@ -64,7 +64,7 @@ Quoi de plus que dans Rmarkdown (HTML) ?
 
 Mettre le lien des pages R d'aide de fonctions.
 
-N'a pas l'air de fonctionner avec revealjs. Screenshots
+N'a pas l'air de fonctionner (ni en revealjs, ni en html).
 
 ## Rapport HTML : formats
 
@@ -158,9 +158,7 @@ Pour en savoir plus: [chalkboard](https://quarto.org/docs/presentations/revealjs
 \
 \
 
-```{}
-$ quarto install extension quarto-ext/pointer
-```
+    $ quarto install extension quarto-ext/pointer
 
 \
 \
@@ -169,14 +167,14 @@ Raccourci = Touche `q` pour switcher entre le curseur et le pointeur.
 
 # Blogs, sites webs
 
--   Pendant la conférence Rstudio, démo pour monter un site web en moins de 10 minutes
+-   Démo pour monter un site web en moins de 10 minutes: [rstudio::conf(2022) keynote by Mine Çetinkaya-Rundel & Julia Stewart Lowndes](https://www.youtube.com/watch?v=p7Hxu4coDl8)
 -   Nouvelle tab qui apparaît ("Build") pour voir en avant-première le rendu du site (avant publication)
 -   Une seule ligne dans le terminal pour publier le site: `quarto publish`
--   quarto.pub est une solution pour publier des sites web, proposée par Quarto (Posit)
--   possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`) $\Rightarrow$ collaboration rendue plus simple
+-   [Quarto.pub](https://quartopub.com/) est une solution pour publier des sites web, proposée par Quarto (Posit)
+-   Possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`) $\Rightarrow$ collaboration rendue plus simple
 
 # Articles, books
 
 Pas mon domaine d'expertise non plus mais se renseigner rapidement.
 
--   On peut spécifier un format connu d'article scientifique (en ligne de commande), i.e. ASS
+-   On peut spécifier un format connu d'article scientifique (via CLI), i.e. ASS
