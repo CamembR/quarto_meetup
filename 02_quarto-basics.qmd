@@ -117,25 +117,95 @@ Nécessaire d'avoir une certaine version de l'IDE RStudio (v2022.07).
 
 ## Créer un notebook
 
-::: notes
-Tout au long de la présentation, faire un comparatif avec ce qui est possible/fait dans Rmarkdown. A la fin, faire une slide récap des différences/similitudes.
+Une fois l'installation faite, comment lancer Quarto?
+
+::: panel-tabset
+### RStudio
+
+Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension, `.qmd`
+
+::: columns
+::: {.column width="62%"}
+![](images/step1nb_quarto.png){fig-align="center"}
 :::
+
+::: {.column width="38%"}
+![](images/step2nb_quarto.png)
+:::
+:::
+
+### Jupyter
+
+Les nouveautés dans le notebook Jupyter: les options globales dans le premier bloc (= YAML header dans `.qmd`), les options dans les blocs de code (= chunks options `.qmd`)
+
+![](images/step2nb_quartoPY.png){fig-align="center" width="839"}
+:::
+
+## Créer un notebook
 
 Une fois l'installation faite, comment lancer Quarto?
 
 ::: panel-tabset
 ### RStudio
 
-::: notes
-Mettre les captures écran
-:::
+Un bouton `Render` au lieu de `Knitr` pour générer le document
 
--   Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension, `.qmd`
--   Un bouton `Render` au lieu de `Knitr` pour générer le document
--   Deux modes: **Source** ou **Visual**, possible d'aller de l'un à l'autre à volonté
--   Une autre manière de spécifier les "chunk options" (pipe natif $|\#$)
+![](images/step3nb_quarto.png){fig-align="center" width="715"}
 
 ### Jupyter
 
-Mettre les captures écran
+::: columns
+::: {.column width="60%"}
+![](images/step1nb_quartoPY.png){fig-align="center"}
+:::
+
+::: {.column width="38%"}
+Pour **prévisualiser** le document :
+
+```{}
+quarto preview hello.ipynb
+```
+
+\
+\
+
+et pour **générer** le document:
+
+```{}
+quarto render hello.ipynb --to pdf
+quarto render hello.ipynb --to html
+```
+:::
+:::
+:::
+
+
+## Créer un notebook
+
+Une fois l'installation faite, comment lancer Quarto?
+
+::: panel-tabset
+### RStudio
+
+::: panel-tabset
+Une autre manière de spécifier les "chunk options" (pipe natif $\#|$)
+
+![](images/step3nb_quarto.png){fig-align="center" width="715"}
+:::
+
+### Jupyter
+:::
+
+## Créer un notebook
+
+Une fois l'installation faite, comment lancer Quarto?
+
+::: panel-tabset
+### RStudio
+
+Deux modes: **Source** ou **Visual**, possible d'aller de l'un à l'autre à volonté
+
+![](images/step4nb_quarto.png){fig-align="center" width="718"}
+
+### Jupyter
 :::
