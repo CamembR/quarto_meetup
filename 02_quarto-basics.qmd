@@ -52,30 +52,52 @@ Dire qu'on va préciser un peu plus ces deux arguments au fur et à mesure de la
 
 ## Comment ça fonctionne ?
 
+![Workflow Quarto](images/rstudio-qmd-how-it-works.png){fig-align="center"}
+
 \
-\
-\
 
-![Workflow Quarto](images/rstudio-qmd-how-it-works.png)
+. . .
 
-#### Quels languages ?
+::: columns
+::: {.column width="50%"}
+**Quels languages ?**
 
-- R;
-- Python;
-- Julia; 
-- et Observable.
+-   R;
 
-#### Quels IDE ?
+-   Python;
 
-- RStudio;
-- JupyterLab;
-- VS Code;
-- other text editors (?).
+-   Julia;
 
+-   et Observable.
+:::
+
+::: {.column width="50%"}
+**Quels IDE ?**
+
+-   RStudio;
+-   JupyterLab;
+-   VS Code;
+-   autres éditeurs de texte (?).
+:::
+:::
+
+. . .
+
+::: {.callout-note appearance="simple"}
+[Avantage:]{.underline} Quelque soit le language ou l'IDE utilisé(e), la syntaxe pour formater les documents reste la même.
+:::
 
 ## Installer
 
+\
+
+. . .
+
 Suivre les [instructions](https://quarto.org/docs/get-started/) de [Quarto.org](https://quarto.org/).
+
+\
+
+. . .
 
 ::: callout-caution
 ## Remarque
@@ -85,7 +107,13 @@ Nécessaire d'avoir une certaine version de l'IDE RStudio (v2022.07).
 
 1)  Installer Quarto CLI
 2)  Installer le package éponyme `quarto`
-3)  Remarque: Quarto peut s'utiliser en dehors de tout IDE, directement en ligne de commande
+
+. . .
+
+\
+\
+
+> Quarto peut s'utiliser en dehors de tout IDE, directement en ligne de commande
 
 ## Créer un notebook
 
