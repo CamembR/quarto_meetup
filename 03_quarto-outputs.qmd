@@ -10,56 +10,173 @@ format:
     incremental: true
     slide-level: 3
     logo: images/logoRuserToulouse.svg
-    smaller: true
+    smaller: false
     reference-location: document
+    chalkboard: true
+    code-link: true
+    pointer:
+      pointerSize: 18
+      color: '#D527A6'
+qrevealjs-plugins:
+  - pointer
 ---
 
-## Que peut-on faire en Quarto ? 
+```{r}
+#| echo: false
 
-- des rapports;
-- des présentations;
-- des sites web;
-- des livres et articles.
+# Libraries
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+library(viridis)
 
-Quarto rend possible de passer de l'un à l'autre sans (presque) aucune modification dans le code! 
+# The dataset is provided in the gapminder library
+library(gapminder)
+data <- gapminder %>% filter(year=="2007") %>% dplyr::select(-year)
+```
 
+# Que peut-on faire en Quarto ?
+
+-   des rapports;
+-   des présentations;
+-   des sites web;
+-   des livres et articles.
+
+. . .
+
+Quarto rend possible de passer de l'un à l'autre sans (presque) aucune modification dans le code!
+
+::: notes
 Comparaison avec les possibilités en Rmarkdown/Knitr so far
+:::
 
-## Rapports
+# Rapports
 
-- HTML
-- PDF
-- Word
+-   HTML
+-   PDF
+-   Word
+
+. . .
 
 Quoi de plus que dans Rmarkdown (HTML) ?
 
--   Mettre le lien des pages R d'aide de fonctions
--   Cacher/Montrer le code (déjà dispo dans Rmarkdown je crois)
--   Mettre des figures à côté (et non plus juste en dessous) du code
--   
--   Les trucs un peu gadget mais quand même cool: 
-    * pouvoir éditer le notebook (HTML) en mode clair ou sombre
-    
-::: notes
-Tentative pour les slides mais échec jusque-là..
-:::
-    
+## Rapport HTML : `code-link`
 
-## Présentations
+Mettre le lien des pages R d'aide de fonctions.
+
+N'a pas l'air de fonctionner avec revealjs. Screenshots
+
+## Rapport HTML : formats
+
+Screenshots
+
+-   `margin` : Mettre des figures à côté (et non plus juste en dessous) du code
+-   `columns` : arranger plus ou moins la place prise par l'objet en fonction des chunks (tables)
+
+. . .
+
+```{r}
+#| echo: true
+#| fig-column: margin
+
+# Most basic bubble plot
+data %>%
+  arrange(desc(pop)) %>%
+  mutate(country = factor(country, country)) %>%
+  ggplot(aes(x=gdpPercap, y=lifeExp, size=pop, fill=continent)) +
+    geom_point(alpha=0.5, shape=21, color="black") +
+    scale_size(range = c(.1, 24), name="Population (M)") +
+    scale_fill_viridis(discrete=TRUE, guide=FALSE, option="A") +
+    theme_ipsum() +
+    theme(legend.position="bottom") +
+    ylab("Life Expectancy") +
+    xlab("Gdp per Capita") +
+    theme(legend.position = "none")
+```
+
+## Rapport HTML: le copier-coller
+
+Possible de copier-coller une image (s'enregistre automatiquement dans un dossier `images`), du texte formaté (Quarto va conserver ce format)
+
+Vidéo ?
+
+## Rapport HTML : autres
+
+Les trucs un peu gadget mais quand même cool:
+
+-   Pouvoir afficher le rapport en mode clair ou sombre[^1]. Petite screenshot.
+-   Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes
+-   Les citations et notes de bas de page $\rightarrow$ s'affichent quand on passe la souris dessus
+
+[^1]: pas posible pour les slides..
+
+# Présentations
 
 -   Reveal.js
 -   Beamer
 -   Même possible d'exporter en .ppt $\Rightarrow$ au revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!
 
-Quoi de plus que dans RMarkdown ? 
+. . .
 
--   Le truc vu dans la keynote pour entourer des choses sur la slide ou ouvrir un tableau, sans rien d'autre que la présentation HTML (à tester avant)
--   L'extension pointeur
+Quoi de plus que dans RMarkdown ?
 
-## Blogs, sites webs
+## Présentation HTML : surligner le code
 
-Beaucoup moins mon domaine, donc quelques ressources et notions de bases.
+Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement
 
-## Articles, books
+```{r}
+#| echo: true
+#| code-line-numbers: "2,3,4|5,6|"
+#| output: false
+
+# Most basic bubble plot
+data %>%
+  arrange(desc(pop)) %>%
+  mutate(country = factor(country, country)) %>%
+  ggplot(aes(x=gdpPercap, y=lifeExp, size=pop, fill=continent)) +
+    geom_point(alpha=0.5, shape=21, color="black") +
+    scale_size(range = c(.1, 24), name="Population (M)") +
+    scale_fill_viridis(discrete=TRUE, guide=FALSE, option="A") +
+    theme_ipsum() +
+    theme(legend.position="bottom") +
+    ylab("Life Expectancy") +
+    xlab("Gdp per Capita") +
+    theme(legend.position = "none")
+```
+
+## Présentation HTML : `chalkboard`
+
+-   Un outil pour entourer, dessiner, écrire sur le slide
+-   Un tableau noir + craie avec possibilité d'intégrer les notes aux slides
+
+. . .
+
+Pour en savoir plus: [chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
+
+## Présentation HTML : extension pointeur
+
+\
+\
+
+```{}
+$ quarto install extension quarto-ext/pointer
+```
+
+\
+\
+
+Raccourci = Touche `q` pour switcher entre le curseur et le pointeur.
+
+# Blogs, sites webs
+
+-   Pendant la conférence Rstudio, démo pour monter un site web en moins de 10 minutes
+-   Nouvelle tab qui apparaît ("Build") pour voir en avant-première le rendu du site (avant publication)
+-   Une seule ligne dans le terminal pour publier le site: `quarto publish`
+-   quarto.pub est une solution pour publier des sites web, proposée par Quarto (Posit)
+-   possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`) $\Rightarrow$ collaboration rendue plus simple
+
+# Articles, books
 
 Pas mon domaine d'expertise non plus mais se renseigner rapidement.
+
+-   On peut spécifier un format connu d'article scientifique (en ligne de commande), i.e. ASS
