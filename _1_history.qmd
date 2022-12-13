@@ -1,3 +1,72 @@
+# <br><br>Une <br>his-<br>toire <br>du <br>Notebook {.title-middle-dark background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape."}
+
+##  {#definition-1 .centered data-menu-title="Definition 1" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Une définition
+:::
+
+##  {#definition-2 .centered data-menu-title="Definition 2" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 3em; color: #75AADB;"}
+Une définition
+:::
+
+<br>
+
+::: large
+Le Notebook, c'est la rencontre entre
+:::
+
+<br>
+
+::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
+-   **l'exécution** du code\
+:::
+
+::: {.fragment .fade-up .large fragment-index="2" style="text-align: left;"}
+-   la narration\
+    -   l'intention\
+    -   l'approche\
+    -   les résultats\
+:::
+
+##  {#exemple-0 .centered data-menu-title="exemple" auto-animate="true"}
+
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Quelques exemples
+:::
+
+##  {#exemple-1 .centered data-menu-title="exemple 1" auto-animate="true"}
+
+::: {style="margin-top: 10px; font-size: 2em; color: #75AADB;"}
+Quelques exemples
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="2"}
+![](images/paste-6445C69D.png)
+:::
+
+##  {#exemple-2 .centered data-menu-title="exemple 2" auto-animate="true"}
+
+::: {style="margin-top: 10px; font-size: 2em; color: #75AADB;"}
+Quelques exemples
+:::
+
+::: ![](images/paste-11FB771E.png) :::
+
+##  {#exemple-3 .centered data-menu-title="exemple 3" auto-animate="true"}
+
+::: {style="margin-top: 10px; font-size: 2em; color: #75AADB;"}
+Quelques exemples
+:::
+
+::: S
+![](images/paste-C5C70A5D.png)
+:::
+
+## Les publications
+
 ```{r setup}
 library(ggplot2)
 library(dplyr)
@@ -42,62 +111,6 @@ ggtimeline <- function(data, start, end) {
 
 ```
 
-# <br><br>Une <br>his-<br>toire <br>du <br>Notebook {.title-middle-dark background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape."}
-
-##  {#definition-1 .centered data-menu-title="Definition 1" background-color="#0F1620" auto-animate="true"}
-
-::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
-Une définition
-:::
-
-##  {#definition-2 .centered data-menu-title="Definition 2" background-color="#0F1620" auto-animate="true"}
-
-::: {style="margin-top: 50px; font-size: 3em; color: #75AADB;"}
-Une définition
-:::
-
-<br>
-
-::: large
-Le Notebook concrétise la rencontre entre
-:::
-
-<br>
-
-::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
--   **l'exécution** du code\
-:::
-
-<br>
-
-::: {.fragment .fade-up .large fragment-index="2" style="text-align: left;"}
--   la narration\
-:::
-
-. . .
-
-    - l'intention  
-
-. . .
-
-    - l'approche  
-
-. . .
-
-    - les résultats  
-
-## Quelques exemples {#exemples .center data-menu-title="Exemples"}
-
-![](images/paste-6445C69D.png). . .
-
-![](images/paste-11FB771E.png)
-
-. . .
-
-![](images/paste-C5C70A5D.png)
-
-## Les publications
-
 ```{r publi}
 #Create data to plot
 references <- tribble( ~start_date, ~event, ~displ, ~alpha, ~image,
@@ -140,7 +153,5 @@ timeline
 
 ## Les packages
 
-|                                                                                                                                                |     |                                                                                                   |
-|------------------------------------|-------------|-----------------------|
-| ![](images/1-share/rmd_ecosystem.png){fig-alt="Hex logos for various packages from the R Markdown ecosystem." fig-align="center" width="100%"} | ⇒   | ![](images/horst_quarto_ball_straight.png){fig-alt="Quarto logo." fig-align="center" width="46%"} |
-
+![](images/1-share/rmd_ecosystem.png){fig-alt="Hex logos for various packages from the R Markdown ecosystem." fig-align="center" width="100%"}
+tout un écosystème...

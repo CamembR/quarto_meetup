@@ -99,6 +99,8 @@
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -406,10 +408,10 @@
 <p><span class="custom-title">Hello Quarto</span></p>
 <p><span class="custom-subtitle">share • collaborate • teach • reimagine <br>(un Notebook pour les gouverner tous)</span></p>
 <p><span class="custom-author">Aurélie Mercadié <br> Christophe Regouby</span></p>
-<p><span class="custom-url"><a href="https://mine.quarto.pub/hello-quarto/">mine.quarto.pub/hello-quarto</a></span></p>
+<p><span class="custom-url"><a href="https://camembr.quarto.pub/hello-quarto/">camembr.quarto.pub/hello-quarto</a></span></p>
 <p><span class="custom-artwork">artwork by allison horst</span></p>
 <aside class="notes">
-<p>Thank you so much, we’re excited to be here! Mine and I have been using Quarto for the last year; she has been teaching and contributing to the development of Quarto and we’re thrilled to welcome you to Quarto.</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -421,9 +423,29 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div class="cell">
-
+</section>
+<section id="intro" class="slide level2 center" data-menu-title="Intro">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/penguins_nametag_aurelie.png" alt="Penguin with nametag that says &quot;Aurélie&quot;"></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="images/penguins_nametag_christophe.png" alt="Penguin with nametag that says &quot;Christophe&quot;"></p>
 </div>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section>
 <section id="une-his--toire-du-notebook" class="title-slide slide level1 title-middle-dark center" data-background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape.">
@@ -443,42 +465,66 @@
 </div>
 <p><br></p>
 <div class="large">
-<p>Le Notebook concrétise la rencontre entre</p>
+<p>Le Notebook, c’est la rencontre entre</p>
 </div>
 <p><br></p>
 <div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
 <ul>
-<li><strong>l’exécution</strong> du code<br>
+<li class="fragment"><strong>l’exécution</strong> du code<br>
 </li>
 </ul>
 </div>
-<p><br></p>
 <div class="fragment fade-up large" data-fragment-index="2" style="text-align: left;">
 <ul>
-<li>la narration<br>
+<li class="fragment">la narration<br>
+
+<ul>
+<li class="fragment">l’intention<br>
 </li>
+<li class="fragment">l’approche<br>
+</li>
+<li class="fragment">les résultats<br>
+</li>
+</ul></li>
 </ul>
 </div>
-<div class="fragment">
-<pre><code>- l'intention  </code></pre>
-</div>
-<div class="fragment">
-<pre><code>- l'approche  </code></pre>
-</div>
-<div class="fragment">
-<pre><code>- les résultats  </code></pre>
+</section>
+<section id="exemple-0" class="slide level2 centered" data-menu-title="exemple" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 150px; font-size: 3em; color: #75AADB;">
+<p>Quelques exemples</p>
 </div>
 </section>
-<section id="exemples" class="slide level2 center" data-menu-title="Exemples">
-<h2>Quelques exemples</h2>
-<p><img data-src="images/paste-6445C69D.png">. . .</p>
-<p><img data-src="images/paste-11FB771E.png"></p>
-<div class="fragment">
+<section id="exemple-1" class="slide level2 centered" data-menu-title="exemple 1" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 10px; font-size: 2em; color: #75AADB;">
+<p>Quelques exemples</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2">
+<p><img data-src="images/paste-6445C69D.png"></p>
+</div>
+</section>
+<section id="exemple-2" class="slide level2 centered" data-menu-title="exemple 2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 10px; font-size: 2em; color: #75AADB;">
+<p>Quelques exemples</p>
+</div>
+<p>::: <img data-src="images/paste-11FB771E.png"> :::</p>
+</section>
+<section id="exemple-3" class="slide level2 centered" data-menu-title="exemple 3" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 10px; font-size: 2em; color: #75AADB;">
+<p>Quelques exemples</p>
+</div>
+<div class="S">
 <p><img data-src="images/paste-C5C70A5D.png"></p>
 </div>
 </section>
 <section id="les-publications" class="slide level2">
 <h2>Les publications</h2>
+<div class="cell">
+
+</div>
 
 <img data-src="index_files/figure-revealjs/publi-1.png" width="960" class="r-stretch"></section>
 <section id="les-packages" class="slide level2">
@@ -487,27 +533,13 @@
 <img data-src="index_files/figure-revealjs/pkg-1.png" width="960" class="r-stretch"></section>
 <section id="les-packages-1" class="slide level2">
 <h2>Les packages</h2>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 18%">
-<col style="width: 31%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><img data-src="images/1-share/rmd_ecosystem.png" style="width:100.0%" data-fig-align="center" alt="Hex logos for various packages from the R Markdown ecosystem."></td>
-<td>⇒</td>
-<td><img data-src="images/horst_quarto_ball_straight.png" style="width:46.0%" data-fig-align="center" alt="Quarto logo."></td>
-</tr>
-</tbody>
-</table>
+<p><img data-src="images/1-share/rmd_ecosystem.png" style="width:100.0%" data-fig-align="center" alt="Hex logos for various packages from the R Markdown ecosystem."> tout un écosystème…</p>
 </section></section>
 <section>
 <section id="hello-quarto" class="title-slide slide level1 title-top-light center" data-background-image="images/horst-quarto-meteor-transparent.png" aria-label="A meteor where the head of the meteor is the Quarto logo.">
 <h1>Hello, Quarto?</h1>
 <aside class="notes">
-<p>But also, we know you have questions. We did too. What is Quarto? Why is Quarto? And how does it relate to R Markdown and the workflows you already have?</p>
-<p>–&gt; Well</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -523,7 +555,7 @@
 <section id="unifies-extends-1" class="slide level2 centered" data-menu-title="Unifies and extends 1" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 150px; font-size: 3em; color: #75AADB;">
-<p>Quarto <strong>unifies</strong> and <strong>extends</strong><br>the R Markdown ecosystem</p>
+<p>Quarto <strong>unifie</strong> et <strong>étend</strong> <br>l’écosystème R&nbsp;Markdown</p>
 </div>
 <aside class="notes">
 <p>Quarto unifies &amp; extends the R Markdown ecosystem.</p>
@@ -542,15 +574,15 @@
 <section id="unifies-extends-2" class="slide level2 centered" data-menu-title="Unifies and extends 2" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 2.2em; color: #75AADB">
-<p>Quarto <strong>unifies</strong> and <strong>extends</strong> <br>the R Markdown ecosystem</p>
+<p>Quarto <strong>unifie</strong> et <strong>étend</strong> <br>l’écosystème R&nbsp;Markdown</p>
 </div>
 <p><br></p>
 <div class="large">
-<p><strong>unifies</strong> for people who love R Markdown</p>
+<p><strong>unifie</strong> les fans de R Markdown</p>
 </div>
 <p><br></p>
 <div class="fragment fade-up large" data-fragment-index="2">
-<p><strong>extends</strong> for people who don’t know R Markdown</p>
+<p><strong>étend</strong> l’écosysteme à ceux qui ne connaissent pas R&nbsp;Markdown</p>
 </div>
 <aside class="notes">
 <p>It unifies it for people who love R Markdown by reducing little points of friction, so that websites, books, and slides all have a common approach.</p>
@@ -570,7 +602,7 @@
 <section id="publishing-system-1" class="slide level2 centered" data-menu-title="Publishing system 1" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 3em; color: #75AADB;">
-<p>Quarto is a new, open-source,<br> scientific and technical<br> publishing system</p>
+<p>Quarto se présente comme le nouveau système open-source<br>de publication d’articles scientifiques and techniques</p>
 </div>
 <aside class="notes">
 <p>Quarto is a new open-source scientific and technical publishing system.</p>
@@ -589,10 +621,10 @@
 <section id="publishing-system-2" class="slide level2 centered" data-menu-title="Publishing system 2" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 50px; font-size: 2em; color: #75AADB">
-<p>Quarto is a new, open-source,<br> scientific and technical<br> publishing system</p>
+<p>Quarto se présente comme le nouveau système open-source<br>de publication d’articles scientifiques and techniques</p>
 </div>
 <div class="midi">
-<p><strong>the goal is to make the process of creating</strong><br> and collaborating dramatically better</p>
+<p><strong>dans le but de rendre le process de création </strong><br> et de collaboration radicalement plus simple</p>
 </div>
 <div class="fragment fade-up">
 <div class="quarto-figure quarto-figure-center">
@@ -655,8 +687,7 @@
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/outline-3.png" alt="Quarto logo with all fouur quadrants labelled as Share, Collaborate, Teach, and Reimagine." class="r-stretch"><aside class="notes">
-<p><strong>Julie:</strong> We’re excited to get started!</p>
-<p>NEXT - So let’s let Mine kick it off to talk about sharing with Quarto.</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -674,31 +705,6 @@
 <h1>Share</h1>
 <aside class="notes">
 
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="share-intro" class="slide level2 center" data-menu-title="Share Intro">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-
-</div><div class="column" style="width:30%;">
-<p><img data-src="images/penguins_nametag_christophe.png" alt="Penguin with nametag that says &quot;Mine&quot;"></p>
-</div>
-</div>
-<aside class="notes">
-<p>But I hope you’ll continue to listen with one ear and take in the beautiful illustrations by Allison Horst. And if you just want to enjoy the talk, feel free to go to this link: mine.quarto.pub/hello-quarto</p>
-<p>sit back,</p>
-<p>and I’ll advance the slides for you.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -812,29 +818,29 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="demo-share" class="slide level2 centered" data-menu-title="Demo: Share" data-background-video="videos/demo-1-share.mp4" data-background-size="contain" data-background-color="#FFFFFF">
+<section id="demo-share" class="slide level2 centered" data-menu-title="Demo: Share" data-background-video="videos/demo-multi_output.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 <aside class="notes">
 <ul>
-<li>Open hello.Rmd with source editor -&gt; knit</li>
-<li>Change to visual editor -&gt; knit</li>
-<li>Close file -&gt; change file type to .qmd -&gt; open + render</li>
-<li>Change <code>output: html_document</code> to <code>format: html</code> -&gt; render</li>
-<li>Click on Render on save</li>
-<li>Change to <code>format: pdf</code> -&gt; render -&gt; then change back</li>
-<li>Add chunk option <code>echo: false</code> to the first chunk</li>
-<li>Add <code>execute</code> &gt; <code>echo: false</code> to the yaml</li>
-<li>Add alt text to figure in second code chunk -&gt; save to render</li>
-<li>Change to <code>format: revealjs</code> -&gt; save to render</li>
-<li>Add H2 to break slides</li>
-<li>Change to <code>format: html</code></li>
-<li>Add <code>index.qmd</code> with File &gt; New Quarto Document</li>
-<li>Add <code>_quarto.yml</code> for website</li>
-<li>Relaunch project</li>
-<li>Show new Build tab</li>
-<li>Render site, show <code>_site</code> folder</li>
-<li>Add freeze to _quarto.yml</li>
-<li>From terminal: <code>quarto publish</code></li>
+<li><p>Open hello.Rmd with source editor -&gt; knit</p></li>
+<li><p>Change to visual editor -&gt; knit</p></li>
+<li><p>Close file -&gt; change file type to .qmd -&gt; open + render</p></li>
+<li><p>Change <code>output: html_document</code> to <code>format: html</code> -&gt; render</p></li>
+<li><p>Click on Render on save</p></li>
+<li><p>Change to <code>format: pdf</code> -&gt; render -&gt; then change back</p></li>
+<li><p>Add chunk option <code>echo: false</code> to the first chunk</p></li>
+<li><p>Add <code>execute</code> &gt; <code>echo: false</code> to the yaml</p></li>
+<li><p>Add alt text to figure in second code chunk -&gt; save to render , fig.alt=“Scatterplot of bill length vs.&nbsp;flipper length for three species of penguins.”</p></li>
+<li><p>Change to <code>format: revealjs</code> -&gt; save to render</p></li>
+<li><p>Add H2 to break slides</p></li>
+<li><p>Change to <code>format: html</code></p></li>
+<li><p>Add <code>index.qmd</code> with File &gt; New Quarto Document</p></li>
+<li><p>Add <code>_quarto.yml</code> for website</p></li>
+<li><p>Relaunch project</p></li>
+<li><p>Show new Build tab</p></li>
+<li><p>Render site, show <code>_site</code> folder</p></li>
+<li><p>Add freeze to _quarto.yml</p></li>
+<li><p>From terminal: <code>quarto publish</code></p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -883,8 +889,8 @@
 <div class="code-file sourceCode cell-code">
 <p><i class="fa-solid fa-file" aria-label="file"></i> lesson-1.qmd</p>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="fragment">
@@ -892,8 +898,8 @@
 <div class="code-file sourceCode cell-code">
 <p><i class="fa-solid fa-file" aria-label="file"></i> lesson-1.qmd</p>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="fragment">
@@ -901,13 +907,13 @@
 <div class="code-file sourceCode cell-code">
 <p><i class="fa-solid fa-file" aria-label="file"></i> _quarto.yml</p>
 </div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> lesson-1.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> lesson-1.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -976,29 +982,6 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="collaborate-intro" class="slide level2 center" data-menu-title="Collaborate Intro">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p><img data-src="images/penguins_nametag_aurelie.png" alt="Penguin with nametag that says &quot;Julie&quot;"></p>
-</div><div class="column" style="width:80%;">
-
-</div>
-</div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="many-use-python" class="slide level2 center centered" data-menu-title="Many use Python" data-background-color="#0F1620">
 <h2></h2>
 <p><span class="larger">Many Data scientists <br> use Python <br> 😬</span></p>
@@ -1033,32 +1016,6 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="nasa-cloud-hackathon" class="slide level2 center" data-menu-title="NASA Cloud Hackathon" data-background-color="#0F1620">
-<h2></h2>
-<div class="borderbox">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/"><img data-src="images/2-collaborate/hackathon.png" style="width:70.0%" alt="Screenshot of Quarto site for a NASA hackathon learning event"></a></p>
-</figure>
-</div>
-</div>
-<aside class="notes">
-<p>This Quarto site we made for our first teaching event.</p>
-<p>This is where we really found traction in working together as a Mentor community: we were able to make a beautiful collection of tutorials that was helpful for our own development and was a friendly place for our learners.</p>
-<p>Quarto was also something for us all to learn together. And that was really important bc it turned out I wasn’t the only person feeling intimidated about all the moving parts. We were able to identify other skills to learn together.</p>
-<p>So from this investment in our workflow and learning -</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="quarto-enables-collaborating-across-coding-languages" class="slide level2 takeaway center" data-highlight-style="github">
 <h2>Quarto enables collaborating <br>across coding languages</h2>
 <p><br>
@@ -1066,17 +1023,17 @@
 <div class="code-file sourceCode cell-code">
 <p><i class="fa-solid fa-file" aria-label="file"></i> _quarto.yml</p>
 </div>
-<div class="sourceCode" id="cb7" data-code-line-numbers="2,4,8,11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> in-development/index.qmd</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/earthdata-access-demo.ipynb</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/nsidc/icesat2-cmr-onprem-vs-cloud.ipynb</span></span>
-<span id="cb7-6"><a href="#cb7-6"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/lpdaac/lpdaac_ecostress_lste_kerchunk.ipynb</span></span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/matlab-aws.qmd</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/earthdata-python-r-handoff.rmd  </span></span>
-<span id="cb7-9"><a href="#cb7-9"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> contributing/onboarding.qmd</span></span>
-<span id="cb7-10"><a href="#cb7-10"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> contributing/quarto-website-tutorial.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4" data-code-line-numbers="2,4,8,11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> in-development/index.qmd</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/earthdata-access-demo.ipynb</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/nsidc/icesat2-cmr-onprem-vs-cloud.ipynb</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/lpdaac/lpdaac_ecostress_lste_kerchunk.ipynb</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/matlab-aws.qmd</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="at">      </span><span class="kw">-</span><span class="at"> in-development/earthdata-python-r-handoff.rmd  </span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> contributing/onboarding.qmd</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> contributing/quarto-website-tutorial.md</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <p>Quarto enables collaborating across coding languages. This is a simplified view of the yaml it’s collection of different file types. It’s mostly ipynbs Jupyter notebooks.</p>
 <p>And, as we work with more research teams we’ve found that there is indeed a substantial R community using NASA Earthdata Cloud data. And we’re positioned to support R users too</p>
@@ -1134,7 +1091,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="demo-collaborate" class="slide level2 center" data-menu-title="Demo: Collaborate" data-background-video="videos/demo-2-collaborate.mp4" data-background-size="contain" data-background-color="#FFFFFF">
+<section id="demo-collaborate" class="slide level2 center" data-menu-title="Demo: Collaborate" data-background-video="videos/make_website.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 <aside class="notes">
 <ul>
@@ -1162,10 +1119,7 @@
 <section id="teach" class="title-slide slide level1 title-middle-ice center" data-background-image="images/horst_quarto_penguins_teach.png" aria-label="Two penguins in a room made of ice, looking out a window. One penguin is holding an icicle as a pointer, pointing at a Quarto logo moon in the sky, while the other penguin looks on.">
 <h1>Teach</h1>
 <aside class="notes">
-<p>It’s amazing when students hit that Knit button, see their code and their prose come together – you can often hear a “wow, that’s so cool” in the classroom the first time that happens. I’ve also loved that this is a tool that they can pick up easily on the first day of an intro course, and it grows with them as their statistical and computational expertise grows. However, as students’ expertise in these areas grow, the computation gets more resource intensive (and even sometimes involving multiple languages) and they end up needing different output formats to support their needs, like PDFs in specific journal styles or a thesis with multiple chapters. A pleasant surprise in teaching with Quarto has been how much less steep the learning curve is for making this transition from single, simple document to a multi-document projects. Let me tell you the story of one of my thesis students.</p>
-<p>Last semester I had an art history student, Holland Stam, working on a pretty quantitative research project. Her thesis explored the representation of artists from different genders and ethinicities in foundational art history books and how this representation has changed, if at all, through editions. If you’ve ever taken an art history course you might be familiar with them: Garner’s Art Through The Ages and Janson’s History of Art. She meticulously collected data from numerous editions of each of the textbooks and measured, page by page, how much space each featured artwork was given and joined that with demographic information on the artists. When I met Holland in my regression course she had only one semester of data science as a background, where she learned R Markdown, and then she started using Quarto as part of coursework in my class. In both classes her experience with computational documents was limited to a single document per assignment, writing a bit of code to analyze data then writing some text to interpret findings. In a sense, this is exactly what her thesis entailed as well, but of course there was more. Multiple chapters, millions of citations in a very specific style that art historians use, captioned figures and tables, and not having to rerun the whole thesis code with each minor edit. With a bit of Googling and a bit of my help, she pretty quickly figured out how to bring chapters of her thesis written in Quarto together with a yaml file, and voiola! She had a thesis written in Quarto. Sure, this took a bit of trial and error and at times frustration, but the fact that she could caption her figures while creating them with code and insert citations without manual text styling, she was sold! It is always so heartwarming to see your students push what you’re teaching them and use them to solve their problems, it’s especially heartening when this happens with a new thing you’re teaching for the first time while the thing is still in active development!</p>
-<p>And, by the way, if you’re interested in the data, Holland and another student of my, Sara Lemus, packaged it up as “arthistory”. Sara is a stats major who had a lot more experience with R and was working with me for updating some data packages I maintain to learn about package development. She got interested in Holland’s thesis during our lab meetings and it was clear the two of them, with their newly acquired skills and enthusiasm, should team up and make the data available to more researchers, and packaged it up and even got it on CRAN!</p>
-<p>But, back to Quarto… like for Holland, Quarto has provided simple but effective solutions for so many of my problems as an instructor too. Instead of telling you about them, let me show you!</p>
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1257,9 +1211,8 @@
           display:block!important;
       }</style></aside>
 </section></section>
-<section>
 <section id="coda" class="title-slide slide level1 custom-url-top-white center" data-menu-title="Coda" data-background-image="images/horst-quarto-meteor.png" aria-label="A meteor where the head of the meteor is the Quarto logo, with dark background.">
-<h1><a href="https://mine.quarto.pub/hello-quarto">mine.quarto.pub/hello-quarto</a></h1>
+<h1><a href="https://camembr.quarto.pub/hello-quarto/">camembr.quarto.pub/hello-quarto</a></h1>
 <aside class="notes">
 <p>If you would like to start sharing, collaborating, teaching, and reimagining with Quarto by picking up where we left off, go to this link and scroll forward to see the next few slides where we share resources for learning as well as references for the works we presented today. And if you have any questions about Quarto or R Markdown, please stop by the Open Source table in the Lounge between 12-3pm today. And don’t miss the Quarto session at 3:20pm!</p>
 <style type="text/css">
@@ -1274,23 +1227,26 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="technical-slides" class="slide level2">
-<h2>Technical slides</h2>
+
+<section>
+<section id="la-technique" class="title-slide slide level1 title-top-ice center" data-background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into.">
+<h1>La Technique</h1>
+
 </section>
 <section id="quarto" class="slide level2">
 <h2>Quarto ?</h2>
 <ul>
-<li><p>Version <span class="math inline">\(\beta\)</span> disponible depuis Avril 2022 + révélation de Quarto lors de la <a href="https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/">Conférence RStudio</a> cet été</p>
+<li class="fragment"><p>Version <span class="math inline">\(\beta\)</span> disponible depuis Avril 2022 + révélation de Quarto lors de la <a href="https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/">Conférence RStudio</a> cet été</p>
 <p><img data-src="images/quartologo.png"></p></li>
-<li><p>Plusieurs définitions:</p>
+<li class="fragment"><p>Plusieurs définitions:</p>
 <ul>
-<li><blockquote>
+<li class="fragment"><blockquote>
 <p>“Open-source scientific and technical <strong>publishing system</strong>”</p>
 </blockquote></li>
-<li><blockquote>
+<li class="fragment"><blockquote>
 <p>“<strong>Next</strong> generation of <code>R Markdown</code>”</p>
 </blockquote></li>
-<li><blockquote>
+<li class="fragment"><blockquote>
 <p>“Language agnostic <em>Command Line Interface</em>”</p>
 </blockquote></li>
 </ul></li>
@@ -1299,7 +1255,7 @@
 <section id="pourquoi-quarto" class="slide level2">
 <h2>Pourquoi Quarto ?</h2>
 <ul>
-<li>Homogénéiser et étendre Rmarkdown <a href="https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/"><img data-src="images/3-teach/many-lang-qmd-to-output.png" data-fig-align="center" width="957" alt="Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !"></a></li>
+<li class="fragment">Homogénéiser et étendre Rmarkdown <a href="https://posit.co/keynotes/hello-quarto-share-collaborate-teach-reimagine/"><img data-src="images/3-teach/many-lang-qmd-to-output.png" data-fig-align="center" width="957" alt="Plusieurs languages en entrée, plusieus languages en sortie et un seul intermédiaire !"></a></li>
 </ul>
 <aside class="notes">
 <p>mettre au point un language cohérent entre les différentes productions (sorties), s’affranchir (ou en tout cas généraliser à plusieurs language, pas que R) d’un language ou d’une IDE</p>
@@ -1315,7 +1271,7 @@
           display:block!important;
       }</style></aside>
 <ul>
-<li>Donner accès à ce genre d’outils à un public plus large</li>
+<li class="fragment">Donner accès à ce genre d’outils à un public plus large</li>
 </ul>
 <aside class="notes">
 <p>Dire qu’on va préciser un peu plus ces deux arguments au fur et à mesure de la présentation.</p>
@@ -1341,18 +1297,18 @@
 <div class="column" style="width:50%;">
 <p><strong>Quels languages ?</strong></p>
 <ul>
-<li><p>R;</p></li>
-<li><p>Python;</p></li>
-<li><p>Julia;</p></li>
-<li><p>et Observable.</p></li>
+<li class="fragment"><p>R;</p></li>
+<li class="fragment"><p>Python;</p></li>
+<li class="fragment"><p>Julia;</p></li>
+<li class="fragment"><p>et Observable.</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Quels IDE ?</strong></p>
 <ul>
-<li>RStudio;</li>
-<li>JupyterLab;</li>
-<li>VS Code;</li>
-<li>autres éditeurs de texte (?).</li>
+<li class="fragment">RStudio;</li>
+<li class="fragment">JupyterLab;</li>
+<li class="fragment">VS Code;</li>
+<li class="fragment">autres éditeurs de texte (?).</li>
 </ul>
 </div>
 </div>
@@ -1394,8 +1350,8 @@
 </div>
 </div>
 <ol type="1">
-<li>Installer Quarto CLI</li>
-<li>Installer le package éponyme <code>quarto</code></li>
+<li class="fragment">Installer Quarto CLI</li>
+<li class="fragment">Installer le package éponyme <code>quarto</code></li>
 </ol>
 </div>
 <div class="fragment">
@@ -1523,10 +1479,10 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="que-peut-on-faire-en-quarto" class="title-slide slide level1 center">
 <h1>Que peut-on faire en Quarto ?</h1>
 <ul>
-<li>des rapports;</li>
-<li>des présentations;</li>
-<li>des sites web;</li>
-<li>des livres et articles.</li>
+<li class="fragment">des rapports;</li>
+<li class="fragment">des présentations;</li>
+<li class="fragment">des sites web;</li>
+<li class="fragment">des livres et articles.</li>
 </ul>
 <div class="fragment">
 <p>Quarto rend possible de passer de l’un à l’autre sans (presque) aucune modification dans le code!</p>
@@ -1550,9 +1506,9 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="rapports" class="title-slide slide level1 center">
 <h1>Rapports</h1>
 <ul>
-<li>HTML</li>
-<li>PDF</li>
-<li>Word</li>
+<li class="fragment">HTML</li>
+<li class="fragment">PDF</li>
+<li class="fragment">Word</li>
 </ul>
 <div class="fragment">
 <p>Quoi de plus que dans Rmarkdown (HTML) ?</p>
@@ -1561,9 +1517,9 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="rapport-html-formats" class="slide level2">
 <h2>Rapport HTML : formats</h2>
 <ul>
-<li><p><code>margin</code> : Mettre des figures à côté (et non plus juste en dessous) du code</p>
+<li class="fragment"><p><code>margin</code> : Mettre des figures à côté (et non plus juste en dessous) du code</p>
 <p><img data-src="images/margin.png" width="1196"></p></li>
-<li><p><code>columns</code> : arranger plus ou moins la place prise par l’objet en fonction du bloc</p></li>
+<li class="fragment"><p><code>columns</code> : arranger plus ou moins la place prise par l’objet en fonction du bloc</p></li>
 </ul>
 </section>
 <section id="rapport-html-le-copier-coller" class="slide level2">
@@ -1584,19 +1540,19 @@ quarto render hello.ipynb --to html</code></pre>
 <h2>Rapport HTML : autres</h2>
 <p>Les trucs un peu gadget (mais quand même cool!) :</p>
 <ul>
-<li>Pouvoir afficher le rapport en mode clair ou sombre<sup>1</sup>.</li>
-<li>Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes</li>
-<li>Afficher les citations et notes de bas de page en passant la souris dessus</li>
-<li><code>code-link</code> ou intégrer l’URL des pages d’aide des fonctions R<sup>2</sup>.</li>
+<li class="fragment">Pouvoir afficher le rapport en mode clair ou sombre<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a>.</li>
+<li class="fragment">Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes</li>
+<li class="fragment">Afficher les citations et notes de bas de page en passant la souris dessus</li>
+<li class="fragment"><code>code-link</code> ou intégrer l’URL des pages d’aide des fonctions R<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a>.</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>pas posible pour les slides…</p></li><li id="fn2"><p>problème pour la faire fonctionner en revealjs et html…</p></li></ol></aside></section></section>
+<aside></aside></section></section>
 <section>
 <section id="présentations" class="title-slide slide level1 center">
 <h1>Présentations</h1>
 <ul>
-<li>Reveal.js</li>
-<li>Beamer</li>
-<li>Même possible d’exporter en <code>.ppt</code></li>
+<li class="fragment">Reveal.js</li>
+<li class="fragment">Beamer</li>
+<li class="fragment">Même possible d’exporter en <code>.ppt</code></li>
 </ul>
 <div class="fragment fade-in-then-out">
 <p><em>Au-revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!</em></p>
@@ -1609,26 +1565,26 @@ quarto render hello.ipynb --to html</code></pre>
 <h2>Présentation HTML : surligner le code</h2>
 <p>Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="2,3,4|5,6|8|10,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Most basic bubble plot</span></span>
-<span id="cb10-2"><a href="#cb10-2"></a>data <span class="sc">%&gt;%</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pop)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>  <span class="fu">mutate</span>(<span class="at">country =</span> <span class="fu">factor</span>(country, country)) <span class="sc">%&gt;%</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap, <span class="at">y=</span>lifeExp, <span class="at">size=</span>pop, <span class="at">fill=</span>continent)) <span class="sc">+</span></span>
-<span id="cb10-6"><a href="#cb10-6"></a>    <span class="fu">geom_point</span>(<span class="at">alpha=</span><span class="fl">0.5</span>, <span class="at">shape=</span><span class="dv">21</span>, <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb10-7"><a href="#cb10-7"></a>    <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(.<span class="dv">1</span>, <span class="dv">24</span>), <span class="at">name=</span><span class="st">"Population (M)"</span>) <span class="sc">+</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a>    <span class="fu">scale_fill_viridis</span>(<span class="at">discrete=</span><span class="cn">TRUE</span>, <span class="at">guide=</span><span class="cn">FALSE</span>, <span class="at">option=</span><span class="st">"A"</span>) <span class="sc">+</span></span>
-<span id="cb10-9"><a href="#cb10-9"></a>    <span class="fu">theme_ipsum</span>() <span class="sc">+</span></span>
-<span id="cb10-10"><a href="#cb10-10"></a>    <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">"bottom"</span>) <span class="sc">+</span></span>
-<span id="cb10-11"><a href="#cb10-11"></a>    <span class="fu">ylab</span>(<span class="st">"Life Expectancy"</span>) <span class="sc">+</span></span>
-<span id="cb10-12"><a href="#cb10-12"></a>    <span class="fu">xlab</span>(<span class="st">"Gdp per Capita"</span>) <span class="sc">+</span></span>
-<span id="cb10-13"><a href="#cb10-13"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="2,3,4|5,6|8|10,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Most basic bubble plot</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>data <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(pop)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a>  <span class="fu">mutate</span>(<span class="at">country =</span> <span class="fu">factor</span>(country, country)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>gdpPercap, <span class="at">y=</span>lifeExp, <span class="at">size=</span>pop, <span class="at">fill=</span>continent)) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a>    <span class="fu">geom_point</span>(<span class="at">alpha=</span><span class="fl">0.5</span>, <span class="at">shape=</span><span class="dv">21</span>, <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a>    <span class="fu">scale_size</span>(<span class="at">range =</span> <span class="fu">c</span>(.<span class="dv">1</span>, <span class="dv">24</span>), <span class="at">name=</span><span class="st">"Population (M)"</span>) <span class="sc">+</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a>    <span class="fu">scale_fill_viridis</span>(<span class="at">discrete=</span><span class="cn">TRUE</span>, <span class="at">guide=</span><span class="cn">FALSE</span>, <span class="at">option=</span><span class="st">"A"</span>) <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>    <span class="fu">theme_ipsum</span>() <span class="sc">+</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>    <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">"bottom"</span>) <span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a>    <span class="fu">ylab</span>(<span class="st">"Life Expectancy"</span>) <span class="sc">+</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a>    <span class="fu">xlab</span>(<span class="st">"Gdp per Capita"</span>) <span class="sc">+</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="présentation-html-chalkboard" class="slide level2">
 <h2>Présentation HTML : <code>chalkboard</code></h2>
 <ul>
-<li>Un outil pour entourer, dessiner, écrire sur le slide</li>
-<li>Un tableau noir + craie avec possibilité d’intégrer les notes aux slides</li>
+<li class="fragment">Un outil pour entourer, dessiner, écrire sur le slide</li>
+<li class="fragment">Un tableau noir + craie avec possibilité d’intégrer les notes aux slides</li>
 </ul>
 <div class="fragment">
 <p>Pour en savoir plus: <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard">chalkboard</a></p>
@@ -1649,37 +1605,37 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="blogs-sites-webs" class="title-slide slide level1 center">
 <h1>Blogs, sites webs</h1>
 <ul>
-<li>Démo pour monter un site web en moins de 10 minutes: <a href="https://www.youtube.com/watch?v=p7Hxu4coDl8">rstudio::conf(2022) keynote by Mine Çetinkaya-Rundel &amp; Julia Stewart Lowndes</a></li>
+<li class="fragment">Démo pour monter un site web en moins de 10 minutes: <a href="https://www.youtube.com/watch?v=p7Hxu4coDl8">rstudio::conf(2022) keynote by Mine Çetinkaya-Rundel &amp; Julia Stewart Lowndes</a></li>
 </ul>
 <div class="fragment">
 <p>Pas possible ?! Ok, essayons de monter un site web…</p>
 </div>
 <div class="fragment">
 <ol type="1">
-<li>Créer un compte <a href="https://quartopub.com/">Quarto.pub</a><sup>1</sup> et se connecter via le navigateur par défaut.</li>
-<li>Faire le site et le publier.</li>
+<li class="fragment">Créer un compte <a href="https://quartopub.com/">Quarto.pub</a><a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> et se connecter via le navigateur par défaut.</li>
+<li class="fragment">Faire le site et le publier.</li>
 </ol>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>solution pour publier des sites web, proposée par Quarto (Posit)</p></li></ol></aside></section>
+<aside></aside></section>
 <section id="demo-website" class="slide level2 centered" data-menu-title="Demo: Make a Website in Less than 5 minutes" data-background-video="videos/make_website.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 </section></section>
 <section id="blogs-sites-webs-1" class="title-slide slide level1 center">
 <h1>Blogs, sites webs</h1>
 <ul>
-<li>Nouvelle tab qui apparaît (“Build”) pour voir en avant-première le rendu du site (avant publication)</li>
-<li>Une seule ligne dans le terminal pour publier le site: <code>quarto publish</code></li>
-<li>Possible de monter un site web à la fois avec des outputs R et Python (<code>.qmd</code> et <code>.ipynb</code>)</li>
+<li class="fragment">Nouvelle tab qui apparaît (“Build”) pour voir en avant-première le rendu du site (avant publication)</li>
+<li class="fragment">Une seule ligne dans le terminal pour publier le site: <code>quarto publish</code></li>
+<li class="fragment">Possible de monter un site web à la fois avec des outputs R et Python (<code>.qmd</code> et <code>.ipynb</code>)</li>
 </ul>
 </section>
 
 <section>
 <section id="articles-books" class="title-slide slide level1 center">
-<h1>Articles, books<sup>1</sup></h1>
+<h1>Articles, books<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></h1>
 <ul>
-<li>On peut spécifier un format connu d’article scientifique (via CLI), i.e.&nbsp;ASS</li>
+<li class="fragment">On peut spécifier un format connu d’article scientifique (via CLI), i.e.&nbsp;ASS</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn4"><p><em>Probablement d’autres aspects sympas, mais pas d’expérience sur ces formats.</em></p></li></ol></aside></section>
+<aside></aside></section>
 <section id="quarto-1" class="slide level2">
 <h2>Quarto</h2>
 <p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
@@ -1688,8 +1644,8 @@ quarto render hello.ipynb --to html</code></pre>
 <h2>Bullets</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li class="fragment">Content authored with markdown</li>
+<li class="fragment">Output from executable code</li>
 </ul>
 </section>
 <section id="code" class="slide level2">
@@ -1700,19 +1656,25 @@ quarto render hello.ipynb --to html</code></pre>
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
+</section></section>
+<section>
+<section id="migration-to-quarto" class="title-slide slide level1 title-top-ice center" data-background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into.">
+<h1><br><br>Migration<br>to Quarto</h1>
+
 </section>
-<section id="quarto-migration" class="slide level2">
-<h2>Quarto migration</h2>
-<p>” Yes but I have so many of the following notebooks already ”</p>
+<section id="migration-1" class="slide level2 centered" data-menu-title="Migration 1" data-background-color="#0F1620" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<p>::: {style=“margin-top: 50px; font-size: 1.5em; color: #75AADB;”} ” Yes but I have so many of the following notebooks already ”</p>
+<div class="fragment">
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
 <div>
 <p>
 </p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-    B[.Rmd notebook] --&gt; Q(Quarto Notebook)
-    A[fa:fa-python .ipynb notebook] --&gt; Q(Quarto Notebook)
-    D[Observable.hq notebook] --&gt; Q(Quarto Notebook)
-    C[LaTeX] --&gt; Q(Quarto Notebook)
+    B[.Rmd notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
+    A[fa:fa-python .ipynb notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
+    D[Observable.hq notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
+    C[LaTeX] --fas:fa-magic--&gt; Q(Quarto Notebook)
     
 </pre>
 <div id="mermaid-tooltip-1" class="mermaidTooltip">
@@ -1722,15 +1684,78 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 </div>
 </div>
+</div>
 </section>
-<section id="rmd-migration" class="slide level2">
-<h2>Rmd migration</h2>
+<section id="migration-2" class="slide level2 centered" data-menu-title="Migration 2" data-background-color="#0F1620" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
+<p>Rmd migration<br>in 2.5 sec</p>
+</div>
+<div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> README.Rmd README.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="migration-3" class="slide level2 centered" data-menu-title="Migration 3" data-background-color="#0F1620" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
+<p>Rmd migration<br>in 7.5 sec</p>
+</div>
+<div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Console</strong></pre>
+</div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to Quarto doc with in-body chunk options</span></span>
+<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">convert_chunk_header</span>(<span class="st">"to-convert.Rmd"</span>, <span class="st">"converted.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="migration-4" class="slide level2 centered" data-menu-title="Migration 4" data-background-color="#0F1620" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 0px; font-size: 1em; color: #75AADB;">
+<p>New documents :</p>
+<p><img data-src="images/paste-24A74642.png" width="624">:::</p>
+</div>
 </section>
 <section id="ipynb-migration" class="slide level2">
 <h2>ipynb migration</h2>
+<ul>
+<li class="fragment">step 1 :</li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>VSCode Command Palette</strong></pre>
+</div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Jupyter:</span> Import Jupyter Notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li class="fragment">step 2 :</li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>VSCode Command Palette</strong></pre>
+</div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto:</span> New document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="observable.hq-migration" class="slide level2">
 <h2>Observable.hq migration</h2>
+<ul>
+<li class="fragment"><p>install ohq2quarto from github: <a href="https://github.com/hrbrmstr/ohq2quarto">Save an Observable HQ Notebook to a Quarto project</a></p>
+<p><img data-src="images/paste-11F909B4.png" width="763"></p></li>
+<li class="fragment"><p>step 1 : use the import command</p></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">cargo</span> run <span class="at">--</span> <span class="at">--ohq-ref</span> @hrbrmstr/just-one-more-thing <span class="at">--output-dir</span> ./examples <span class="at">--verbose</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="latex-migration" class="slide level2">
 <h2>LaTeX migration</h2>
@@ -1741,9 +1766,9 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="et-rmarkdown-dans-tout-ça" class="title-slide slide level1 center">
 <h1>Et RMarkdown dans tout ça?</h1>
 <ul>
-<li>Conversion <code>.Rmd</code> <span class="math inline">\(\rightarrow\)</span> <code>.qmd</code> simple et lecture de <code>.Rmd</code> via Quarto CLI possible</li>
-<li>Restera à moyen terme supporté par Posit…</li>
-<li>…mais les efforts de développement/nouveautés seront <strong>concentrés sur Quarto</strong></li>
+<li class="fragment">Conversion <code>.Rmd</code> <span class="math inline">\(\rightarrow\)</span> <code>.qmd</code> simple et lecture de <code>.Rmd</code> via Quarto CLI possible</li>
+<li class="fragment">Restera à moyen terme supporté par Posit…</li>
+<li class="fragment">…mais les efforts de développement/nouveautés seront concentrées sur Quarto</li>
 </ul>
 </section>
 <section id="quarto-vs.-rmarkdown-les-plus" class="slide level2">
@@ -1762,19 +1787,19 @@ quarto render hello.ipynb --to html</code></pre>
           display:block!important;
       }</style></aside>
 <ul>
-<li>La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/“élégant” en Quarto (moins de bidouillage peut être)</li>
-<li>Possible de switcher entre de l’édition en code et de l’édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!</li>
-<li>Propositions automatique dans le YAML header (<code>CTRL + espace</code>) et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu’on veut savoir toutes les options disponibles)<br>
+<li class="fragment">La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/“élégant” en Quarto (moins de bidouillage peut être)</li>
+<li class="fragment">Possible de switcher entre de l’édition en code et de l’édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!</li>
+<li class="fragment">Propositions automatique dans le YAML header (<code>CTRL + espace</code>) et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu’on veut savoir toutes les options disponibles)<br>
 </li>
-<li>Intéragir avec du notebook R ou Python <strong>exactement de la même manière</strong></li>
-<li>Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s’édite)</li>
-<li>Gérer les outputs de différentes sortes dans un même document (comme un site web)</li>
+<li class="fragment">Intéragir avec du notebook R ou Python <strong>exactement de la même manière</strong></li>
+<li class="fragment">Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s’édite)</li>
+<li class="fragment">Gérer les outputs de différentes sortes dans un même document (comme un site web)</li>
 </ul>
 </section>
 <section id="quarto-vs.-rmarkdown-les-moins" class="slide level2">
 <h2>Quarto Vs. RMarkdown: les moins</h2>
 <ul>
-<li>Tout nouveau, donc peu d’aide dans la communauté disponible</li>
+<li class="fragment">Tout nouveau, donc peu d’aide dans la communauté disponible</li>
 </ul>
 <aside class="notes">
 <p>En gros, si ce que l’on veut faire n’est pas décrit dans l’aide du site Quarto, très compliqué de mettre en place l’idée. Fouinage et bidouillage ++++</p>
@@ -1797,113 +1822,8 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 </section></section>
 <section>
-<section id="migration-to-quarto" class="title-slide slide level1 title-top-ice center" data-background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into.">
-<h1><br><br>Migration<br>to Quarto</h1>
-
-</section>
-<section id="migration-1" class="slide level2 centered" data-menu-title="Migration 1" data-background-color="#0F1620" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<p>::: {style=“margin-top: 50px; font-size: 1.5em; color: #75AADB;”} ” Yes but I have so many of the following notebooks already ”</p>
-<div class="fragment">
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
-    B[.Rmd notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
-    A[fa:fa-python .ipynb notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
-    D[Observable.hq notebook] --fas:fa-magic--&gt; Q(Quarto Notebook)
-    C[LaTeX] --fas:fa-magic--&gt; Q(Quarto Notebook)
-    
-</pre>
-<div id="mermaid-tooltip-2" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="migration-2" class="slide level2 centered" data-menu-title="Migration 2" data-background-color="#0F1620" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
-<p>Rmd migration<br>in 2.5 sec</p>
-</div>
-<div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Terminal</strong></pre>
-</div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> README.Rmd README.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="migration-3" class="slide level2 centered" data-menu-title="Migration 3" data-background-color="#0F1620" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
-<p>Rmd migration<br>in 7.5 sec</p>
-</div>
-<div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to Quarto doc with in-body chunk options</span></span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">convert_chunk_header</span>(<span class="st">"to-convert.Rmd"</span>, <span class="st">"converted.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="migration-4" class="slide level2 centered" data-menu-title="Migration 4" data-background-color="#0F1620" data-auto-animate="true">
-<h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 0px; font-size: 1em; color: #75AADB;">
-<p>New documents :</p>
-<p><img data-src="images/paste-24A74642.png" width="624">:::</p>
-</div>
-</section>
-<section id="ipynb-migration-1" class="slide level2">
-<h2>ipynb migration</h2>
-<ul>
-<li>step 1 :</li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>VSCode Command Palette</strong></pre>
-</div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Jupyter:</span> Import Jupyter Notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>step 2 :</li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>VSCode Command Palette</strong></pre>
-</div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto:</span> New document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="observable.hq-migration-1" class="slide level2">
-<h2>Observable.hq migration</h2>
-<ul>
-<li><p>install ohq2quarto from github: <a href="https://github.com/hrbrmstr/ohq2quarto">Save an Observable HQ Notebook to a Quarto project</a></p>
-<p><img data-src="images/paste-11F909B4.png" width="763"></p></li>
-<li><p>step 1 : use the import command</p></li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Terminal</strong></pre>
-</div>
-<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">cargo</span> run <span class="at">--</span> <span class="at">--ohq-ref</span> @hrbrmstr/just-one-more-thing <span class="at">--output-dir</span> ./examples <span class="at">--verbose</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="latex-migration-1" class="slide level2">
-<h2>LaTeX migration</h2>
-<p>WiP</p>
-<p>(more at the post-event bar)</p>
-</section></section>
-<section>
-<section id="thank-you" class="title-slide slide level1 title-top-dark center" data-background-image="images/horst_quarto_penguins_thankyou.png">
-<h1>Thank you</h1>
+<section id="merci" class="title-slide slide level1 title-top-dark center" data-background-image="images/horst_quarto_penguins_thankyou.png">
+<h1>Merci !</h1>
 <aside class="notes">
 <p>Thank you so much for joining us this morning, here in person or from wherever you are tuning in to the live stream. We’ve talked about our experiences using Quarto and all the problems it has helped us solve and reimagine, but while Quarto is stable and ready for use, it’s also a baby that you too can be a part of its growth. So start using Quarto, and get involved by asking questions, reporting issues, providing feedback, and even building extensions for it. We can’t wait to see what you create!</p>
 <style type="text/css">
@@ -1921,26 +1841,26 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="say-hello-to-quarto" class="slide level2">
 <h2>Say hello to Quarto!</h2>
 <ul>
-<li><p>Pick up where we left off: <a href="https://github.com/mine-cetinkaya-rundel/hello-quarto-demo">github.com/mine-cetinkaya-rundel/hello-quarto-demo</a></p></li>
-<li><p>rstudio::conf(2022) – Quarto deep dive:</p>
+<li class="fragment"><p>Pick up where we left off: <a href="https://github.com/mine-cetinkaya-rundel/hello-quarto-demo">github.com/mine-cetinkaya-rundel/hello-quarto-demo</a></p></li>
+<li class="fragment"><p>rstudio::conf(2022) – Quarto deep dive:</p>
 <ul>
-<li>Tracy Teal - These are a few of my favorite things (about Quarto presentations)</li>
-<li>Hamel Husain - Literate Programming With Jupyter Notebooks and Quarto</li>
-<li>Devin Pastoor - Websites &amp; Books &amp; Blogs, oh my! Creating Rich Content with Quarto</li>
+<li class="fragment">Tracy Teal - These are a few of my favorite things (about Quarto presentations)</li>
+<li class="fragment">Hamel Husain - Literate Programming With Jupyter Notebooks and Quarto</li>
+<li class="fragment">Devin Pastoor - Websites &amp; Books &amp; Blogs, oh my! Creating Rich Content with Quarto</li>
 </ul></li>
-<li><p>Video: <a href="https://youtu.be/6p4vOKS6Xls">Reproducible authoring with Quarto</a></p></li>
-<li><p>Video: <a href="https://youtu.be/azVAl343CIU">Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire</a></p></li>
-<li><p>Quarto documentation: <a href="https://quarto.org/">quarto.org</a></p></li>
-<li><p>Quarto gallery: <a href="https://quarto.org/docs/gallery/">quarto.org/docs/gallery</a></p></li>
-<li><p>Quarto tip a day: <a href="https://rstd.io/quartotip">rstd.io/quartotip</a></p></li>
+<li class="fragment"><p>Video: <a href="https://youtu.be/6p4vOKS6Xls">Reproducible authoring with Quarto</a></p></li>
+<li class="fragment"><p>Video: <a href="https://youtu.be/azVAl343CIU">Openscapes: Hello Quarto with NASA Openscapes, RLadies Santa Barbara, and JJ Allaire</a></p></li>
+<li class="fragment"><p>Quarto documentation: <a href="https://quarto.org/">quarto.org</a></p></li>
+<li class="fragment"><p>Quarto gallery: <a href="https://quarto.org/docs/gallery/">quarto.org/docs/gallery</a></p></li>
+<li class="fragment"><p>Quarto tip a day: <a href="https://rstd.io/quartotip">rstd.io/quartotip</a></p></li>
 </ul>
 
 <img data-src="images/horst-quarto-penguins.png" alt="Two penguins. The orange one is holding the Quarto logo. The blue one is looking at the orange one." width="600" class="r-stretch quarto-figure-right"></section>
 <section id="annotated-notes-share" class="slide level2 small">
 <h2>Annotated Notes: Share</h2>
 <ul>
-<li><p>Hex logos: <a href="https://github.com/rstudio/hex-stickers" class="uri">https://github.com/rstudio/hex-stickers</a></p></li>
-<li><p>How it works: <a href="https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works" class="uri">https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works</a></p></li>
+<li class="fragment"><p>Hex logos: <a href="https://github.com/rstudio/hex-stickers" class="uri">https://github.com/rstudio/hex-stickers</a></p></li>
+<li class="fragment"><p>How it works: <a href="https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works" class="uri">https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works</a></p></li>
 </ul>
 </section>
 <section id="annotated-notes-collaborate" class="slide level2 small">
@@ -1951,27 +1871,36 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="annotated-notes-teach" class="slide level2">
 <h2>Annotated Notes: Teach</h2>
 <ul>
-<li><p>Photo credit for Holland Stam: <a href="https://undergraduateresearch.duke.edu/news/data-scraping-art-history-survey-texts" class="uri">https://undergraduateresearch.duke.edu/news/data-scraping-art-history-survey-texts</a></p></li>
-<li><p>📦 arthistory: <a href="https://saralemus7.github.io/arthistory" class="uri">https://saralemus7.github.io/arthistory</a></p></li>
+<li class="fragment"><p>Photo credit for Holland Stam: <a href="https://undergraduateresearch.duke.edu/news/data-scraping-art-history-survey-texts" class="uri">https://undergraduateresearch.duke.edu/news/data-scraping-art-history-survey-texts</a></p></li>
+<li class="fragment"><p>📦 arthistory: <a href="https://saralemus7.github.io/arthistory" class="uri">https://saralemus7.github.io/arthistory</a></p></li>
 </ul>
 </section>
 <section id="annotated-notes-reimagine" class="slide level2 small">
 <h2>Annotated Notes: Reimagine</h2>
 <p><strong>FayLab Manual</strong></p>
 <ul>
-<li><a href="https://www.openscapes.org/blog/2022/07/21/quarto-migrate/">Learning by doing: migrating to Quarto from Bookdown</a></li>
+<li class="fragment"><a href="https://www.openscapes.org/blog/2022/07/21/quarto-migrate/">Learning by doing: migrating to Quarto from Bookdown</a></li>
 </ul>
 <p><strong>Quarto Mosaic</strong></p>
 <p>See also: <a href="https://www.openscapes.org/blog/2022/02/17/esip-winter-2022/">3 takeaways for planning for the year of open science</a></p>
 <ul>
-<li><a href="https://openscapes.github.io/approach-guide" class="uri">https://openscapes.github.io/approach-guide</a></li>
-<li><a href="https://nmfs-openscapes.github.io" class="uri">https://nmfs-openscapes.github.io</a></li>
+<li class="fragment"><a href="https://openscapes.github.io/approach-guide" class="uri">https://openscapes.github.io/approach-guide</a></li>
+<li class="fragment"><a href="https://nmfs-openscapes.github.io" class="uri">https://nmfs-openscapes.github.io</a></li>
 </ul>
-<div class="footer footer-default">
+
+<img src="images/logoRuserToulouse.svg" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section></section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
+<ol>
+<li id="fn1"><p>pas posible pour les slides…</p></li>
+<li id="fn2"><p>problème pour la faire fonctionner en revealjs et html…</p></li>
+<li id="fn3"><p>solution pour publier des sites web, proposée par Quarto (Posit)</p></li>
+<li id="fn4"><p><em>Probablement d’autres aspects sympas, mais pas d’expérience sur ces formats.</em></p></li>
+</ol>
+</section>
     </div>
   </div>
 
@@ -1982,6 +1911,7 @@ quarto render hello.ipynb --to html</code></pre>
   <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
   <script src="index_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
@@ -2005,8 +1935,9 @@ quarto render hello.ipynb --to html</code></pre>
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"0e88867e8799dc38","url":"https://reveal-multiplex.glitch.me/"},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'multiplex': {"secret":null,"id":"15939fa7815dff73","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -2177,7 +2108,7 @@ quarto render hello.ipynb --to html</code></pre>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           
