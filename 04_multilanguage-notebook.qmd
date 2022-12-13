@@ -1,7 +1,9 @@
 ---
 title: "multi-language notebooks"
 author: "A. Mercadié, C. Regouby"
-format: revealjs
+format: 
+  revealjs:
+    theme: solarized
 ---
 
 ## Quarto
