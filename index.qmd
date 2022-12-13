@@ -2,7 +2,7 @@
 pagetitle: "Hello Quarto"
 format: 
   revealjs: 
-    theme: style.scss
+    theme: solarized
     multiplex: true
     transition: fade
     height: 900
@@ -30,7 +30,6 @@ Thank you so much, we're excited to be here! Mine and I have been using Quarto f
 :::
 
 {{< include _1_history.qmd >}}
-
 
 # Hello, Quarto? {.title-top-light background-image="images/horst-quarto-meteor-transparent.png" aria-label="A meteor where the head of the meteor is the Quarto logo."}
 
@@ -144,6 +143,19 @@ NEXT - So let's let Mine kick it off to talk about sharing with Quarto.
 If you would like to start sharing, collaborating, teaching, and reimagining with Quarto by picking up where we left off, go to this link and scroll forward to see the next few slides where we share resources for learning as well as references for the works we presented today. And if you have any questions about Quarto or R Markdown, please stop by the Open Source table in the Lounge between 12-3pm today. And don't miss the Quarto session at 3:20pm!
 :::
 
+## Technical slides
+
+{{< include 02_quarto-basics.qmd >}}
+
+{{< include 03_quarto-outputs.qmd >}}
+
+{{< include 04_multilanguage-notebook.qmd >}}
+
+{{< include 05_migrate-to-quarto.qmd >}}
+
+{{< include 06_the-end.qmd >}}
+
+
 {{< include _5_migrate-to-quarto.qmd >}}
 
 # Thank you {.title-top-dark background-image="images/horst_quarto_penguins_thankyou.png"}
@@ -173,7 +185,6 @@ Thank you so much for joining us this morning, here in person or from wherever y
 -   Quarto tip a day: [rstd.io/quartotip](https://rstd.io/quartotip)
 
 ![](images/horst-quarto-penguins.png){fig-alt="Two penguins. The orange one is holding the Quarto logo. The blue one is looking at the orange one." fig-align="right" width="600"}
-
 
 ## Annotated Notes: Share {.small}
 
