@@ -31,7 +31,6 @@ Thank you so much, we're excited to be here! Mine and I have been using Quarto f
 
 {{< include _1_history.qmd >}}
 
-
 # Hello, Quarto? {.title-top-light background-image="images/horst-quarto-meteor-transparent.png" aria-label="A meteor where the head of the meteor is the Quarto logo."}
 
 ::: notes
@@ -174,18 +173,13 @@ Thank you so much for joining us this morning, here in person or from wherever y
 
 ![](images/horst-quarto-penguins.png){fig-alt="Two penguins. The orange one is holding the Quarto logo. The blue one is looking at the orange one." fig-align="right" width="600"}
 
-
 ## Annotated Notes: Share {.small}
-
-Mine Çetinkaya-Rundel PhD <https://mine-cr.com>
 
 -   Hex logos: <https://github.com/rstudio/hex-stickers>
 
 -   How it works: <https://quarto.org/docs/get-started/hello/rstudio.html#how-it-works>
 
 ## Annotated Notes: Collaborate {.small}
-
-Julia Stewart Lowndes PhD <https://jules32.github.io>
 
 **Demo: JupyterLab** JupyterHub managed by 2i2c <https://2i2c.org>
 

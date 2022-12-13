@@ -47,13 +47,13 @@ ggtimeline <- function(data, start, end) {
 ##  {#definition-1 .centered data-menu-title="Definition 1" background-color="#0F1620" auto-animate="true"}
 
 ::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
-Une definition
+Une définition
 :::
 
 ##  {#definition-2 .centered data-menu-title="Definition 2" background-color="#0F1620" auto-animate="true"}
 
 ::: {style="margin-top: 50px; font-size: 3em; color: #75AADB;"}
-Une definition
+Une définition
 :::
 
 <br>
@@ -88,15 +88,13 @@ Le Notebook concrétise la rencontre entre
 
 ## Quelques exemples {#exemples .center data-menu-title="Exemples"}
 
-TODO : le pire jupyter notebook
+![](images/paste-6445C69D.png). . .
+
+![](images/paste-11FB771E.png)
 
 . . .
 
-TODO le meilleur jupyter notebook
-
-. . .
-
-TODO un article scientifique avec quarto
+![](images/paste-C5C70A5D.png)
 
 ## Les publications
 
@@ -142,9 +140,9 @@ timeline
 
 ## Les packages
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+---+---------------------------------------------------------------------------------------------------+
-| ![](images/1-share/rmd_ecosystem.png){fig-alt="Hex logos for various packages from the R Markdown ecosystem." fig-align="center" width="100%"} | ⇒ | ![](images/horst_quarto_ball_straight.png){fig-alt="Quarto logo." fig-align="center" width="46%"} |
-+------------------------------------------------------------------------------------------------------------------------------------------------+---+---------------------------------------------------------------------------------------------------+
+|                                                                                                                                                |     |                                                                                                   |
+|------------------------------------|-------------|-----------------------|
+| ![](images/1-share/rmd_ecosystem.png){fig-alt="Hex logos for various packages from the R Markdown ecosystem." fig-align="center" width="100%"} | ⇒   | ![](images/horst_quarto_ball_straight.png){fig-alt="Quarto logo." fig-align="center" width="46%"} |
 
 ## Les formats de sortie
 
