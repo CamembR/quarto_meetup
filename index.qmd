@@ -10,6 +10,16 @@ format:
     fontcolor: "#262d36"
     highlight-style: a11y
     code-line-numbers: false
+    incremental: true
+    logo: images/logoRuserToulouse.svg
+    reference-location: document
+    footnotes-hover: true
+    chalkboard: true
+    code-link: false
+    pointer:
+      pointerSize: 18
+      color: '#D527A6'
+    
 editor: visual
 ---
 
