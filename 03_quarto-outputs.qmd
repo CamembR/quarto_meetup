@@ -71,7 +71,15 @@ Quoi de plus que dans Rmarkdown (HTML) ?
 
 ## Rapport HTML: le copier-coller
 
-Possible de copier-coller une image (s'enregistre automatiquement dans un dossier `images`), du texte formaté (Quarto va conserver ce format)
+Possible de copier-coller une image (s'enregistre automatiquement dans un dossier `images`)
+
+##  {#demo-copypasteimage .centered data-menu-title="Demo: Copy-Paste an Image" background-video="videos/copypaste_image.mp4" background-size="contain" background-color="#FFFFFF"}
+
+## Rapport HTML: le copier-coller
+
+Ainsi que du texte formaté (Quarto va conserver ce format).
+
+## {#demo-copypastetext .centered data-menu-title="Demo: Copy-Paste a Formatted Text" background-video="videos/copypaste_text.mp4" background-size="contain" background-color="#FFFFFF"}
 
 ## Rapport HTML : autres
 
@@ -147,9 +155,22 @@ Raccourci = Touche `q` pour switcher entre le curseur et le pointeur.
 # Blogs, sites webs
 
 -   Démo pour monter un site web en moins de 10 minutes: [rstudio::conf(2022) keynote by Mine Çetinkaya-Rundel & Julia Stewart Lowndes](https://www.youtube.com/watch?v=p7Hxu4coDl8)
+
+. . .
+
+Pas possible ?! Ok, essayons de monter un site web...
+
+. . .
+
+1)    Créer un compte [Quarto.pub](https://quartopub.com/)^[solution pour publier des sites web, proposée par Quarto (Posit)] et se connecter via le navigateur par défaut.
+2)    Faire le site et le publier.
+
+## {#demo-website .centered data-menu-title="Demo: Make a Website in Less than 5 minutes" background-video="videos/make_website.mp4" background-size="contain" background-color="#FFFFFF"}
+
+# Blogs, sites webs
+
 -   Nouvelle tab qui apparaît ("Build") pour voir en avant-première le rendu du site (avant publication)
 -   Une seule ligne dans le terminal pour publier le site: `quarto publish`
--   [Quarto.pub](https://quartopub.com/) est une solution pour publier des sites web, proposée par Quarto (Posit)
 -   Possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`)
 
 # Articles, books^[*Probablement d'autres aspects sympas, mais pas d'expérience sur ces formats.*]

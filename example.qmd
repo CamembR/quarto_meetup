@@ -70,18 +70,17 @@ data %>%
     theme(legend.position = "none")
 ```
 
-
 # Including pictures
 
 In the body...
 
-:::{.column-body-outset}
+::: column-body-outset
 ![](images/horst_penguins_telescope.png)
 :::
 
 ... or in the page
 
-:::{.column-page}
+::: column-page
 ![](images/horst_quarto_penguins_thankyou.png)
 :::
 
@@ -126,11 +125,30 @@ ggplot(data, aes(x=x, y=y)) +
   )
 ```
 
-# Copier-coller d'une image, d'un texte formaté
+# Copy-paste
 
+## An image
 
+![](images/paste-36163CC0.png)
+
+What a nice temple!
+
+## A text
+
+**Lorem ipsum dolor sit amet**, consectetur adipiscing elit. *Proin
+a rhoncus justo*, a molestie dui. In sit amet sapien ex.
+Suspendisse dictum nulla ut convallis dignissim. Aliquam congue
+sapien sed eros condimentum scelerisque. **Mauris nunc nisi,
+porttitor ut auctor id**, elementum tristique nulla. *Mauris
+commodo*, massa commodo gravida malesuada, nisl tellus
+ornare augue, vitae maximus dui mi ut justo. Vivamus
+fermentum felis sed viverra tristique. Mauris cursus maximus dui, [sed
+euismod risus eleifend]{.underline} at. Etiam eget
+dictum tortor.
+
+Colors and other specific formats are sadly not kept when copy-pasting formatted text into the visual editor of Quarto.
 
 References
 
-- https://r-graph-gallery.com/index.html
-- https://quarto.org/
+-   https://r-graph-gallery.com/index.html
+-   https://quarto.org/

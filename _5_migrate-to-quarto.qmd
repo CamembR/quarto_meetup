@@ -1,10 +1,16 @@
-# Migration to Quarto {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
+---
+pagetitle: "Migration"
+format: 
+  revealjs
+---
 
-##  {#definition-1 .centered data-menu-title="Definition 1" background-color="#0F1620" auto-animate="true"}
+# <br><br>Migration<br>to Quarto {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
 
-::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
-" Yes but I have so many of the following notebooks already "
-:::
+##  {#migration-1 .centered data-menu-title="Migration 1" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 1.5em; color: #75AADB;"} " Yes but I have so many of the following notebooks already "
+
+. . .
 
 ```{mermaid}
 flowchart LR
@@ -15,28 +21,65 @@ flowchart LR
     
 ```
 
-##  {#unifies-extends-1 .centered data-menu-title="Unifies and extends 1" background-color="#0F1620" auto-animate="true"}
+##  {#migration-2 .centered data-menu-title="Migration 2" background-color="#0F1620" auto-animate="true"}
 
-::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+::: {style="margin-top: 50px; font-size: 1em; color: #75AADB;"}
 Rmd migration<br>in 2.5 sec
+:::
 
+::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
 ``` {.bash filename="Terminal"}
 mv README.Rmd README.qmd
 ```
 :::
 
-Rmd migration<br>in 7.5 sec
+##  {#migration-3 .centered data-menu-title="Migration 3" background-color="#0F1620" auto-animate="true"}
 
-``` {{r}}
+::: {style="margin-top: 50px; font-size: 1em; color: #75AADB;"}
+Rmd migration<br>in 7.5 sec
+:::
+
+::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
+``` {.r filename="Console"}
 # convert to Quarto doc with in-body chunk options
 knitr::convert_chunk_header("to-convert.Rmd", "converted.qmd")
 ```
+:::
 
+##  {#migration-4 .centered data-menu-title="Migration 4" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 0px; font-size: 1em; color: #75AADB;"}
+New documents :
+
+![](images/paste-24A74642.png){width="624"}:::
 :::
 
 ## ipynb migration
 
+-   step 1 :
+
+``` {.bash filename="VSCode Command Palette"}
+Jupyter: Import Jupyter Notebook
+```
+
+-   step 2 :
+
+``` {.bash filename="VSCode Command Palette"}
+Quarto: New document
+```
+
 ## Observable.hq migration
+
+-   install ohq2quarto from github: [Save an Observable HQ Notebook to a Quarto project](https://github.com/hrbrmstr/ohq2quarto)
+
+    ![](images/paste-11F909B4.png){width="763"}
+
+-   step 1 : use the import command
+
+``` {.bash filename="Terminal"}
+cargo run -- --ohq-ref @hrbrmstr/just-one-more-thing --output-dir ./examples --verbose
+```
+
 
 ## LaTeX migration
 
