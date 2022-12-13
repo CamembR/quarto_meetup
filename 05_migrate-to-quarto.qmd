@@ -1,7 +1,17 @@
 ---
-title: "Migrate to quarto"
-author: "A. Mercadié, C. Regouby"
-format: revealjs
+title: "Migrer en Quarto"
+author: "A. Mercadié et C. Regouby"
+date: today
+format:
+  revealjs: 
+    slide-number: true
+    theme: solarized
+    incremental: true
+    slide-level: 3
+    center-title-slide: false
+    logo: images/logoRuserToulouse.svg
+    smaller: true
+    reference-location: document
 ---
 
 ## Quarto migration

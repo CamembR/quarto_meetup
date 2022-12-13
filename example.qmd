@@ -133,6 +133,21 @@ ggplot(data, aes(x=x, y=y)) +
 
 What a nice temple!
 
+## A text
+
+**Lorem ipsum dolor sit amet**, consectetur adipiscing elit. *Proin
+a rhoncus justo*, a molestie dui. In sit amet sapien ex.
+Suspendisse dictum nulla ut convallis dignissim. Aliquam congue
+sapien sed eros condimentum scelerisque. **Mauris nunc nisi,
+porttitor ut auctor id**, elementum tristique nulla. *Mauris
+commodo*, massa commodo gravida malesuada, nisl tellus
+ornare augue, vitae maximus dui mi ut justo. Vivamus
+fermentum felis sed viverra tristique. Mauris cursus maximus dui, [sed
+euismod risus eleifend]{.underline} at. Etiam eget
+dictum tortor.
+
+Colors and other specific formats are sadly not kept when copy-pasting formatted text into the visual editor of Quarto.
+
 References
 
 -   https://r-graph-gallery.com/index.html
