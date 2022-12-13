@@ -3,6 +3,7 @@ title: "Une Histoire du Notebook"
 author: "Christophe Regouby"
 format:
   revealjs:
+    theme: solarized
     incremental: true   
 ---
 
