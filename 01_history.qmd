@@ -3,8 +3,14 @@ title: "Une Histoire du Notebook"
 author: "Christophe Regouby"
 format:
   revealjs:
+    slide-number: true
     theme: solarized
-    incremental: true   
+    incremental: true
+    slide-level: 3
+    center-title-slide: false
+    logo: images/logoRuserToulouse.svg
+    smaller: true
+    reference-location: document   
 ---
 
 
