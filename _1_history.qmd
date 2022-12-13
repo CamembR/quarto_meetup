@@ -144,26 +144,3 @@ timeline
 |------------------------------------|-------------|-----------------------|
 | ![](images/1-share/rmd_ecosystem.png){fig-alt="Hex logos for various packages from the R Markdown ecosystem." fig-align="center" width="100%"} | ⇒   | ![](images/horst_quarto_ball_straight.png){fig-alt="Quarto logo." fig-align="center" width="46%"} |
 
-## Les formats de sortie
-
-```{r formats}
-outputs <- tribble( ~start_date, ~event, ~displ,
-                ymd(20160201), "HTML", -1,
-                ymd(20160430), "pdf", -0.7,
-                ymd(20160524), "docx", -0.5,
-                ymd(20160601), "site", -0.3,
-                ymd(20161101), "blog", -0.1,
-                ymd(20170906), "book", -1,
-                ymd(20170921), "github pqge", -0.7,
-                ymd(20180221), "github wiki", -0.5)
-
-#and run the function from above
-timeline <- bind_rows(references, packages %>% filter(lang == "R"), outputs) %>%
-  filter(start_date > ym(201301)) %>%
-  ggtimeline(start = ym(201301), end = ymd(20231101)) %>% shift_axis(ym(201301), ymd(20231101))
-timeline
-```
-
-::: notes
-Pas une idee fantastique... Le tableau semble meilleur
-:::
