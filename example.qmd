@@ -70,18 +70,17 @@ data %>%
     theme(legend.position = "none")
 ```
 
-
 # Including pictures
 
 In the body...
 
-:::{.column-body-outset}
+::: column-body-outset
 ![](images/horst_penguins_telescope.png)
 :::
 
 ... or in the page
 
-:::{.column-page}
+::: column-page
 ![](images/horst_quarto_penguins_thankyou.png)
 :::
 
@@ -126,11 +125,15 @@ ggplot(data, aes(x=x, y=y)) +
   )
 ```
 
-# Copier-coller d'une image, d'un texte formaté
+# Copy-paste
 
+## An image
 
+![](images/paste-36163CC0.png)
+
+What a nice temple!
 
 References
 
-- https://r-graph-gallery.com/index.html
-- https://quarto.org/
+-   https://r-graph-gallery.com/index.html
+-   https://quarto.org/

@@ -73,6 +73,8 @@ Quoi de plus que dans Rmarkdown (HTML) ?
 
 Possible de copier-coller une image (s'enregistre automatiquement dans un dossier `images`), du texte formaté (Quarto va conserver ce format)
 
+##  {#demo-copypasteimage .centered data-menu-title="Demo: Copy-Paste an Image" background-video="videos/copypaste_image.mp4" background-size="contain" background-color="#FFFFFF"}
+
 ## Rapport HTML : autres
 
 Les trucs un peu gadget (mais quand même cool!) :
