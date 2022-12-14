@@ -55,19 +55,11 @@ Comparaison avec les possibilités en Rmarkdown/Knitr so far
 
 -   HTML
 -   PDF
--   Word
+-   Word/Open Office
 
 . . .
 
 Quoi de plus que dans Rmarkdown (HTML) ?
-
-## Rapport HTML : formats
-
--   `margin` : Mettre des figures à côté (et non plus juste en dessous) du code
-
-    ![](images/margin.png){width="1196"}
-
--   `columns` : arranger plus ou moins la place prise par l'objet en fonction du bloc
 
 ## Rapport HTML: le copier-coller
 
@@ -81,12 +73,23 @@ Ainsi que du texte formaté (Quarto va conserver ce format).
 
 ## {#demo-copypastetext .centered data-menu-title="Demo: Copy-Paste a Formatted Text" background-video="videos/copypaste_text.mp4" background-size="contain" background-color="#FFFFFF"}
 
+## Rapport HTML : formats
+
+-   `margin` : Mettre des figures à côté (et non plus juste en dessous) du code
+
+    ![](images/margin.png){width="1196"}
+
+-   `columns` : arranger plus ou moins la place prise par l'objet en fonction du bloc
+
 ## Rapport HTML : autres
+
+-   Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes
+
+. . .
 
 Les trucs un peu gadget (mais quand même cool!) :
 
 -   Pouvoir afficher le rapport en mode clair ou sombre[^1].
--   Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes
 -   Afficher les citations et notes de bas de page en passant la souris dessus
 -   `code-link` ou intégrer l'URL des pages d'aide des fonctions R[^2].
 
@@ -100,7 +103,7 @@ Les trucs un peu gadget (mais quand même cool!) :
 -   Même possible d'exporter en `.ppt`
 
 ::: {.fragment .fade-in-then-out}
-*Au-revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les            présentations!*
+*Au-revoir les captures écran pour intégrer les graphiques et tableaux depuis R dans les présentations!*
 :::
 
 . . .
@@ -109,7 +112,7 @@ Quoi de plus que dans RMarkdown ?
 
 ## Présentation HTML : surligner le code
 
-Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement
+Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement.
 
 ```{r}
 #| echo: true
@@ -140,17 +143,22 @@ data %>%
 
 Pour en savoir plus: [chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
 
-## Présentation HTML : extension pointeur
+## Présentation HTML : autres
+
+Convertir le curseur de la souris en pointeur (extension).
 
 \
-\
-
     $ quarto install extension quarto-ext/pointer
 
 \
-\
 
 Raccourci = Touche `q` pour switcher entre le curseur et le pointeur.
+
+. . .
+
+\
+
+Avoir des notes, programmer un défilement automatique des slides, créer des animations...
 
 # Blogs, sites webs
 
@@ -162,7 +170,7 @@ Pas possible ?! Ok, essayons de monter un site web...
 
 . . .
 
-1)    Créer un compte [Quarto.pub](https://quartopub.com/)^[solution pour publier des sites web, proposée par Quarto (Posit)] et se connecter via le navigateur par défaut.
+1)    Créer un compte [Quarto.pub](https://quartopub.com/)^[solution pour publier des sites web, proposée par Quarto (Posit)] et se connecter via le navigateur par défaut.^[possible d'utiliser d'autres solutions comme GitHub par exemple]
 2)    Faire le site et le publier.
 
 ## {#demo-website .centered data-menu-title="Demo: Make a Website in Less than 5 minutes" background-video="videos/make_website.mp4" background-size="contain" background-color="#FFFFFF"}
@@ -172,7 +180,3 @@ Pas possible ?! Ok, essayons de monter un site web...
 -   Nouvelle tab qui apparaît ("Build") pour voir en avant-première le rendu du site (avant publication)
 -   Une seule ligne dans le terminal pour publier le site: `quarto publish`
 -   Possible de monter un site web à la fois avec des outputs R et Python (`.qmd` et `.ipynb`)
-
-# Articles, books^[*Probablement d'autres aspects sympas, mais pas d'expérience sur ces formats.*]
-
--   On peut spécifier un format connu d'article scientifique (via CLI), i.e. ASS
