@@ -101,7 +101,7 @@ And it's designed to be expandable to more engines and languages, even those tha
 So, let's dive in and see what all the Quarto fuss is about!
 :::
 
-##  {#demo-share .centered data-menu-title="Demo: Share" background-video="videos/demo-multi_output.mp4" background-size="contain" background-color="#FFFFFF"}
+##  {#demo-share .centered data-menu-title="Demo: Share" background-video="videos/demo-multi_output.webm" background-size="contain" background-color="#FFFFFF"}
 
 ::: notes
 -   Open hello.Rmd with source editor -\> knit

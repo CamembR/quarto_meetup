@@ -1428,19 +1428,11 @@ quarto render hello.ipynb --to html</code></pre>
 <ul>
 <li class="fragment">HTML</li>
 <li class="fragment">PDF</li>
-<li class="fragment">Word</li>
+<li class="fragment">Word/Open Office</li>
 </ul>
 <div class="fragment">
 <p>Quoi de plus que dans Rmarkdown (HTML) ?</p>
 </div>
-</section>
-<section id="rapport-html-formats" class="slide level2">
-<h2>Rapport HTML : formats</h2>
-<ul>
-<li class="fragment"><p><code>margin</code> : Mettre des figures à côté (et non plus juste en dessous) du code</p>
-<p><img data-src="images/margin.png" width="1196"></p></li>
-<li class="fragment"><p><code>columns</code> : arranger plus ou moins la place prise par l’objet en fonction du bloc</p></li>
-</ul>
 </section>
 <section id="rapport-html-le-copier-coller" class="slide level2">
 <h2>Rapport HTML: le copier-coller</h2>
@@ -1456,15 +1448,27 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="demo-copypastetext" class="slide level2 centered" data-menu-title="Demo: Copy-Paste a Formatted Text" data-background-video="videos/copypaste_text.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 </section>
+<section id="rapport-html-formats" class="slide level2">
+<h2>Rapport HTML : formats</h2>
+<ul>
+<li class="fragment"><p><code>margin</code> : Mettre des figures à côté (et non plus juste en dessous) du code</p>
+<p><img data-src="images/margin.png" width="1196"></p></li>
+<li class="fragment"><p><code>columns</code> : arranger plus ou moins la place prise par l’objet en fonction du bloc</p></li>
+</ul>
+</section>
 <section id="rapport-html-autres" class="slide level2">
 <h2>Rapport HTML : autres</h2>
+<ul>
+<li class="fragment">Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes</li>
+</ul>
+<div class="fragment">
 <p>Les trucs un peu gadget (mais quand même cool!) :</p>
 <ul>
 <li class="fragment">Pouvoir afficher le rapport en mode clair ou sombre<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a>.</li>
-<li class="fragment">Le code: copier-coller, cacher/montrer, séparer automatiquement en plusieurs lignes</li>
 <li class="fragment">Afficher les citations et notes de bas de page en passant la souris dessus</li>
 <li class="fragment"><code>code-link</code> ou intégrer l’URL des pages d’aide des fonctions R<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a>.</li>
 </ul>
+</div>
 <aside></aside></section></section>
 <section>
 <section id="présentations" class="title-slide slide level1 center">
@@ -1483,7 +1487,7 @@ quarto render hello.ipynb --to html</code></pre>
 </section>
 <section id="présentation-html-surligner-le-code" class="slide level2">
 <h2>Présentation HTML : surligner le code</h2>
-<p>Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement</p>
+<p>Faire apparaître au fur et à mesure le code pour pouvoir le commenter plus facilement.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7" data-code-line-numbers="2,3,4|5,6|8|10,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Most basic bubble plot</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>data <span class="sc">%&gt;%</span></span>
@@ -1510,16 +1514,19 @@ quarto render hello.ipynb --to html</code></pre>
 <p>Pour en savoir plus: <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard">chalkboard</a></p>
 </div>
 </section>
-<section id="présentation-html-extension-pointeur" class="slide level2">
-<h2>Présentation HTML : extension pointeur</h2>
+<section id="présentation-html-autres" class="slide level2">
+<h2>Présentation HTML : autres</h2>
+<p>Convertir le curseur de la souris en pointeur (extension).</p>
 <p><br>
-<br>
-</p>
-<pre><code>$ quarto install extension quarto-ext/pointer</code></pre>
+$ quarto install extension quarto-ext/pointer</p>
 <p><br>
-<br>
 </p>
 <p>Raccourci = Touche <code>q</code> pour switcher entre le curseur et le pointeur.</p>
+<div class="fragment">
+<p><br>
+</p>
+<p>Avoir des notes, programmer un défilement automatique des slides, créer des animations…</p>
+</div>
 </section></section>
 <section>
 <section id="blogs-sites-webs" class="title-slide slide level1 center">
@@ -1532,7 +1539,7 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 <div class="fragment">
 <ol type="1">
-<li class="fragment">Créer un compte <a href="https://quartopub.com/">Quarto.pub</a><a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> et se connecter via le navigateur par défaut.</li>
+<li class="fragment">Créer un compte <a href="https://quartopub.com/">Quarto.pub</a><a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> et se connecter via le navigateur par défaut.<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></li>
 <li class="fragment">Faire le site et le publier.</li>
 </ol>
 </div>
@@ -1540,6 +1547,7 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="demo-website" class="slide level2 centered" data-menu-title="Demo: Make a Website in Less than 5 minutes" data-background-video="videos/make_website.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 </section></section>
+<section>
 <section id="blogs-sites-webs-1" class="title-slide slide level1 center">
 <h1>Blogs, sites webs</h1>
 <ul>
@@ -1548,14 +1556,6 @@ quarto render hello.ipynb --to html</code></pre>
 <li class="fragment">Possible de monter un site web à la fois avec des outputs R et Python (<code>.qmd</code> et <code>.ipynb</code>)</li>
 </ul>
 </section>
-
-<section>
-<section id="articles-books" class="title-slide slide level1 center">
-<h1>Articles, books<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></h1>
-<ul>
-<li class="fragment">On peut spécifier un format connu d’article scientifique (via CLI), i.e.&nbsp;ASS</li>
-</ul>
-<aside></aside></section>
 <section id="polyglot-1" class="slide level2 centered" data-menu-title="Polyglot 1" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 150px; font-size: 3em; color: #75AADB;">
@@ -1582,76 +1582,76 @@ quarto render hello.ipynb --to html</code></pre>
 <div class="fragment">
 <p>python</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>pingouin <span class="op">=</span> pandas.read_csv(<span class="st">"penguins.csv"</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ojs_define( pypingouin = pingouin)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>pingouin <span class="op">=</span> pandas.read_csv(<span class="st">"penguins.csv"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ojs_define( pypingouin = pingouin)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <p>R</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="1,3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">library</span>(reticulate)</span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb10-3"><a href="#cb10-3"></a>pingouin <span class="ot">&lt;-</span> py<span class="sc">$</span>pingouin <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">bill_length_mm =</span> <span class="fl">0.98</span> <span class="sc">*</span> bill_length_mm)</span>
-<span id="cb10-4"><a href="#cb10-4"></a><span class="fu">ojs_define</span>( <span class="at">rpingouin =</span> pingouin)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="1,3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(reticulate)</span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb9-3"><a href="#cb9-3"></a>pingouin <span class="ot">&lt;-</span> py<span class="sc">$</span>pingouin <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">bill_length_mm =</span> <span class="fl">0.98</span> <span class="sc">*</span> bill_length_mm)</span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="fu">ojs_define</span>( <span class="at">rpingouin =</span> pingouin)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <p>Observable.js</p>
 <div class="quarto-ojs-syntax-error">
-<div class="sourceCode" id="cb11" data-startfrom="-1" data-syntax-error-position="1334" data-source-offset="9"><pre class="sourceCode numberSource numberLines java code-with-copy"><code class="sourceCode java" style="counter-reset: source-line -2;"><span id="cb11--1"><a href="#cb11--1"></a>```<span class="op">{</span>ojs<span class="op">}</span></span>
-<span id="cb11-0"><a href="#cb11-0"></a><span class="co">//| echo: true</span></span>
-<span id="cb11-1"><a href="#cb11-1"></a><span class="fu">render</span><span class="op">(</span>mySVG<span class="op">)</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>xProperty <span class="op">=</span> <span class="er">'</span>flipper_length_mm<span class="er">'</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a>yProperty <span class="op">=</span> <span class="er">'</span>bill_length_mm<span class="er">'</span></span>
-<span id="cb11-4"><a href="#cb11-4"></a></span>
-<span id="cb11-5"><a href="#cb11-5"></a>function <span class="fu">render</span><span class="op">(</span>div<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="co">// draw on the SVG with D3</span></span>
-<span id="cb11-7"><a href="#cb11-7"></a>  <span class="dt">const</span> selection <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span><span class="op">(</span>div<span class="op">).</span><span class="fu">select</span><span class="op">(</span><span class="er">'</span>svg<span class="er">'</span><span class="op">);</span></span>
-<span id="cb11-8"><a href="#cb11-8"></a>  </span>
-<span id="cb11-9"><a href="#cb11-9"></a>  <span class="dt">const</span> xExtent <span class="op">=</span> d3<span class="op">.</span><span class="fu">extent</span><span class="op">(</span>rpingouin<span class="op">,</span> d <span class="op">=&gt;</span> d<span class="op">[</span>xProperty<span class="op">]);</span></span>
-<span id="cb11-10"><a href="#cb11-10"></a>  <span class="dt">const</span> x <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span><span class="op">().</span><span class="fu">domain</span><span class="op">(</span>xExtent<span class="op">).</span><span class="fu">range</span><span class="op">([</span><span class="dv">30</span><span class="op">,</span>width<span class="op">-</span><span class="dv">30</span><span class="op">]);</span></span>
-<span id="cb11-11"><a href="#cb11-11"></a>  <span class="dt">const</span> xAxis <span class="op">=</span> d3<span class="op">.</span><span class="fu">axisBottom</span><span class="op">(</span>x<span class="op">);</span></span>
-<span id="cb11-12"><a href="#cb11-12"></a>  selection<span class="op">.</span><span class="fu">select</span><span class="op">(</span><span class="st">"#xAxis"</span><span class="op">)</span></span>
-<span id="cb11-13"><a href="#cb11-13"></a>    <span class="op">.</span><span class="fu">call</span><span class="op">(</span>xAxis<span class="op">);</span></span>
-<span id="cb11-14"><a href="#cb11-14"></a>  </span>
-<span id="cb11-15"><a href="#cb11-15"></a>  <span class="dt">const</span> yExtent <span class="op">=</span> d3<span class="op">.</span><span class="fu">extent</span><span class="op">(</span>rpingouin<span class="op">,</span> d <span class="op">=&gt;</span> d<span class="op">[</span>yProperty<span class="op">]);</span></span>
-<span id="cb11-16"><a href="#cb11-16"></a>  <span class="dt">const</span> y <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span><span class="op">().</span><span class="fu">domain</span><span class="op">(</span>yExtent<span class="op">).</span><span class="fu">range</span><span class="op">([</span><span class="dv">30</span><span class="op">,</span>height<span class="op">-</span><span class="dv">30</span><span class="op">]);</span></span>
-<span id="cb11-17"><a href="#cb11-17"></a>  <span class="dt">const</span> yAxis <span class="op">=</span> d3<span class="op">.</span><span class="fu">axisLeft</span><span class="op">(</span>y<span class="op">);</span></span>
-<span id="cb11-18"><a href="#cb11-18"></a>  selection<span class="op">.</span><span class="fu">select</span><span class="op">(</span><span class="st">"#yAxis"</span><span class="op">)</span></span>
-<span id="cb11-19"><a href="#cb11-19"></a>    <span class="op">.</span><span class="fu">call</span><span class="op">(</span>yAxis<span class="op">);</span></span>
-<span id="cb11-20"><a href="#cb11-20"></a>  </span>
-<span id="cb11-21"><a href="#cb11-21"></a>  <span class="dt">const</span> colorScale <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleOrdinal</span><span class="op">(</span>d3<span class="op">.</span><span class="fu">schemeCategory10</span><span class="op">);</span></span>
-<span id="cb11-22"><a href="#cb11-22"></a></span>
-<span id="cb11-23"><a href="#cb11-23"></a>  </span>
-<span id="cb11-24"><a href="#cb11-24"></a>  selection<span class="op">.</span><span class="fu">selectAll</span><span class="op">(</span><span class="er">'</span>circle<span class="er">'</span><span class="op">)</span></span>
-<span id="cb11-25"><a href="#cb11-25"></a>    <span class="op">.</span><span class="fu">data</span><span class="op">(</span>rpingouin<span class="op">.</span><span class="fu">filter</span><span class="op">(</span>d <span class="op">=&gt;</span> d<span class="op">[</span>xProperty<span class="op">]</span> <span class="op">!==</span> <span class="st">"NA"</span><span class="op">))</span></span>
-<span id="cb11-26"><a href="#cb11-26"></a>    <span class="op">.</span><span class="fu">join</span><span class="op">(</span><span class="er">'</span>circle<span class="er">'</span><span class="op">)</span></span>
-<span id="cb11-27"><a href="#cb11-27"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="ch">'r'</span><span class="op">,</span> <span class="dv">15</span><span class="op">)</span></span>
-<span id="cb11-28"><a href="#cb11-28"></a>    <span class="op">.</span><span class="fu">style</span><span class="op">(</span><span class="er">'</span>opacity<span class="er">'</span><span class="op">,</span> <span class="fl">0.2</span><span class="op">)</span></span>
-<span id="cb11-29"><a href="#cb11-29"></a>    <span class="op">.</span><span class="fu">style</span><span class="op">(</span><span class="er">'</span>fill<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">colorScale</span><span class="op">(</span>d<span class="op">.</span><span class="fu">species</span><span class="op">))</span></span>
-<span id="cb11-30"><a href="#cb11-30"></a>    <span class="op">.</span><span class="fu">transition</span><span class="op">()</span></span>
-<span id="cb11-31"><a href="#cb11-31"></a>    <span class="op">.</span><span class="fu">duration</span><span class="op">(</span><span class="dv">3000</span><span class="op">)</span></span>
-<span id="cb11-32"><a href="#cb11-32"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="er">'</span>cx<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">x</span><span class="op">(</span>d<span class="op">[</span>xProperty<span class="op">])</span> <span class="op">)</span></span>
-<span id="cb11-33"><a href="#cb11-33"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="er">'</span>cy<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">y</span><span class="op">(</span>d<span class="op">[</span>yProperty<span class="op">])</span> <span class="op">);</span></span>
-<span id="cb11-34"><a href="#cb11-34"></a></span>
-<span id="cb11-35"><a href="#cb11-35"></a>  <span class="dt">const</span> legend <span class="op">=</span> <span class="fu">swatches</span><span class="op">({</span>color<span class="op">:</span> colorScale<span class="op">});</span></span>
-<span id="cb11-36"><a href="#cb11-36"></a>  d3<span class="op">.</span><span class="fu">select</span><span class="op">(</span>div<span class="op">).</span><span class="fu">select</span><span class="op">(</span><span class="st">"#legend"</span><span class="op">)</span></span>
-<span id="cb11-37"><a href="#cb11-37"></a>    <span class="op">.</span><span class="fu">append</span><span class="op">(()</span> <span class="op">=&gt;</span> legend<span class="op">);</span></span>
-<span id="cb11-38"><a href="#cb11-38"></a>  </span>
-<span id="cb11-39"><a href="#cb11-39"></a><span class="op">}</span></span>
-<span id="cb11-40"><a href="#cb11-40"></a></span>
-<span id="cb11-41"><a href="#cb11-41"></a>mySVG <span class="op">=</span> html`<span class="op">&lt;</span>div style<span class="op">=</span><span class="st">"width:${width}px; height:${height+50}px"</span><span class="op">&gt;</span></span>
-<span id="cb11-42"><a href="#cb11-42"></a><span class="op">&lt;</span>div id<span class="op">=</span><span class="st">"legend"</span><span class="op">&gt;&lt;/</span>div<span class="op">&gt;</span></span>
-<span id="cb11-43"><a href="#cb11-43"></a></span>
-<span id="cb11-44"><a href="#cb11-44"></a><span class="op">&lt;</span>svg width<span class="op">=</span>$<span class="op">{</span>width<span class="op">}</span> height<span class="op">=</span>$<span class="op">{</span>height<span class="op">}&gt;</span></span>
-<span id="cb11-45"><a href="#cb11-45"></a>  <span class="op">&lt;</span>circle r<span class="op">=</span><span class="dv">50</span> cx<span class="op">=</span><span class="dv">100</span> cy<span class="op">=</span><span class="dv">100</span> fill<span class="op">=</span><span class="st">"seagreen"</span><span class="op">&gt;&lt;/</span>circle<span class="op">&gt;</span></span>
-<span id="cb11-46"><a href="#cb11-46"></a>  <span class="op">&lt;</span>g id<span class="op">=</span><span class="st">"xAxis"</span> transform<span class="op">=</span><span class="st">"translate(0,${height-20})"</span><span class="op">&gt;&lt;/</span>g<span class="op">&gt;</span></span>
-<span id="cb11-47"><a href="#cb11-47"></a>  <span class="op">&lt;</span>g id<span class="op">=</span><span class="st">"yAxis"</span> transform<span class="op">=</span><span class="st">"translate(25,0)"</span><span class="op">&gt;&lt;/</span>g<span class="op">&gt;</span></span>
-<span id="cb11-48"><a href="#cb11-48"></a><span class="op">&lt;/</span>svg<span class="op">&gt;</span></span>
-<span id="cb11-49"><a href="#cb11-49"></a><span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
-<span id="cb11-50"><a href="#cb11-50"></a></span>
-<span id="cb11-51"><a href="#cb11-51"></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10" data-startfrom="-1" data-syntax-error-position="1334" data-source-offset="9"><pre class="sourceCode numberSource numberLines java code-with-copy"><code class="sourceCode java" style="counter-reset: source-line -2;"><span id="cb10--1"><a href="#cb10--1"></a>```<span class="op">{</span>ojs<span class="op">}</span></span>
+<span id="cb10-0"><a href="#cb10-0"></a><span class="co">//| echo: true</span></span>
+<span id="cb10-1"><a href="#cb10-1"></a><span class="fu">render</span><span class="op">(</span>mySVG<span class="op">)</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>xProperty <span class="op">=</span> <span class="er">'</span>flipper_length_mm<span class="er">'</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>yProperty <span class="op">=</span> <span class="er">'</span>bill_length_mm<span class="er">'</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a></span>
+<span id="cb10-5"><a href="#cb10-5"></a>function <span class="fu">render</span><span class="op">(</span>div<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb10-6"><a href="#cb10-6"></a>  <span class="co">// draw on the SVG with D3</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>  <span class="dt">const</span> selection <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span><span class="op">(</span>div<span class="op">).</span><span class="fu">select</span><span class="op">(</span><span class="er">'</span>svg<span class="er">'</span><span class="op">);</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>  </span>
+<span id="cb10-9"><a href="#cb10-9"></a>  <span class="dt">const</span> xExtent <span class="op">=</span> d3<span class="op">.</span><span class="fu">extent</span><span class="op">(</span>rpingouin<span class="op">,</span> d <span class="op">=&gt;</span> d<span class="op">[</span>xProperty<span class="op">]);</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a>  <span class="dt">const</span> x <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span><span class="op">().</span><span class="fu">domain</span><span class="op">(</span>xExtent<span class="op">).</span><span class="fu">range</span><span class="op">([</span><span class="dv">30</span><span class="op">,</span>width<span class="op">-</span><span class="dv">30</span><span class="op">]);</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>  <span class="dt">const</span> xAxis <span class="op">=</span> d3<span class="op">.</span><span class="fu">axisBottom</span><span class="op">(</span>x<span class="op">);</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>  selection<span class="op">.</span><span class="fu">select</span><span class="op">(</span><span class="st">"#xAxis"</span><span class="op">)</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a>    <span class="op">.</span><span class="fu">call</span><span class="op">(</span>xAxis<span class="op">);</span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>  </span>
+<span id="cb10-15"><a href="#cb10-15"></a>  <span class="dt">const</span> yExtent <span class="op">=</span> d3<span class="op">.</span><span class="fu">extent</span><span class="op">(</span>rpingouin<span class="op">,</span> d <span class="op">=&gt;</span> d<span class="op">[</span>yProperty<span class="op">]);</span></span>
+<span id="cb10-16"><a href="#cb10-16"></a>  <span class="dt">const</span> y <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleLinear</span><span class="op">().</span><span class="fu">domain</span><span class="op">(</span>yExtent<span class="op">).</span><span class="fu">range</span><span class="op">([</span><span class="dv">30</span><span class="op">,</span>height<span class="op">-</span><span class="dv">30</span><span class="op">]);</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>  <span class="dt">const</span> yAxis <span class="op">=</span> d3<span class="op">.</span><span class="fu">axisLeft</span><span class="op">(</span>y<span class="op">);</span></span>
+<span id="cb10-18"><a href="#cb10-18"></a>  selection<span class="op">.</span><span class="fu">select</span><span class="op">(</span><span class="st">"#yAxis"</span><span class="op">)</span></span>
+<span id="cb10-19"><a href="#cb10-19"></a>    <span class="op">.</span><span class="fu">call</span><span class="op">(</span>yAxis<span class="op">);</span></span>
+<span id="cb10-20"><a href="#cb10-20"></a>  </span>
+<span id="cb10-21"><a href="#cb10-21"></a>  <span class="dt">const</span> colorScale <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleOrdinal</span><span class="op">(</span>d3<span class="op">.</span><span class="fu">schemeCategory10</span><span class="op">);</span></span>
+<span id="cb10-22"><a href="#cb10-22"></a></span>
+<span id="cb10-23"><a href="#cb10-23"></a>  </span>
+<span id="cb10-24"><a href="#cb10-24"></a>  selection<span class="op">.</span><span class="fu">selectAll</span><span class="op">(</span><span class="er">'</span>circle<span class="er">'</span><span class="op">)</span></span>
+<span id="cb10-25"><a href="#cb10-25"></a>    <span class="op">.</span><span class="fu">data</span><span class="op">(</span>rpingouin<span class="op">.</span><span class="fu">filter</span><span class="op">(</span>d <span class="op">=&gt;</span> d<span class="op">[</span>xProperty<span class="op">]</span> <span class="op">!==</span> <span class="st">"NA"</span><span class="op">))</span></span>
+<span id="cb10-26"><a href="#cb10-26"></a>    <span class="op">.</span><span class="fu">join</span><span class="op">(</span><span class="er">'</span>circle<span class="er">'</span><span class="op">)</span></span>
+<span id="cb10-27"><a href="#cb10-27"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="ch">'r'</span><span class="op">,</span> <span class="dv">15</span><span class="op">)</span></span>
+<span id="cb10-28"><a href="#cb10-28"></a>    <span class="op">.</span><span class="fu">style</span><span class="op">(</span><span class="er">'</span>opacity<span class="er">'</span><span class="op">,</span> <span class="fl">0.2</span><span class="op">)</span></span>
+<span id="cb10-29"><a href="#cb10-29"></a>    <span class="op">.</span><span class="fu">style</span><span class="op">(</span><span class="er">'</span>fill<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">colorScale</span><span class="op">(</span>d<span class="op">.</span><span class="fu">species</span><span class="op">))</span></span>
+<span id="cb10-30"><a href="#cb10-30"></a>    <span class="op">.</span><span class="fu">transition</span><span class="op">()</span></span>
+<span id="cb10-31"><a href="#cb10-31"></a>    <span class="op">.</span><span class="fu">duration</span><span class="op">(</span><span class="dv">3000</span><span class="op">)</span></span>
+<span id="cb10-32"><a href="#cb10-32"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="er">'</span>cx<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">x</span><span class="op">(</span>d<span class="op">[</span>xProperty<span class="op">])</span> <span class="op">)</span></span>
+<span id="cb10-33"><a href="#cb10-33"></a>    <span class="op">.</span><span class="fu">attr</span><span class="op">(</span><span class="er">'</span>cy<span class="er">'</span><span class="op">,</span> d <span class="op">=&gt;</span> <span class="fu">y</span><span class="op">(</span>d<span class="op">[</span>yProperty<span class="op">])</span> <span class="op">);</span></span>
+<span id="cb10-34"><a href="#cb10-34"></a></span>
+<span id="cb10-35"><a href="#cb10-35"></a>  <span class="dt">const</span> legend <span class="op">=</span> <span class="fu">swatches</span><span class="op">({</span>color<span class="op">:</span> colorScale<span class="op">});</span></span>
+<span id="cb10-36"><a href="#cb10-36"></a>  d3<span class="op">.</span><span class="fu">select</span><span class="op">(</span>div<span class="op">).</span><span class="fu">select</span><span class="op">(</span><span class="st">"#legend"</span><span class="op">)</span></span>
+<span id="cb10-37"><a href="#cb10-37"></a>    <span class="op">.</span><span class="fu">append</span><span class="op">(()</span> <span class="op">=&gt;</span> legend<span class="op">);</span></span>
+<span id="cb10-38"><a href="#cb10-38"></a>  </span>
+<span id="cb10-39"><a href="#cb10-39"></a><span class="op">}</span></span>
+<span id="cb10-40"><a href="#cb10-40"></a></span>
+<span id="cb10-41"><a href="#cb10-41"></a>mySVG <span class="op">=</span> html`<span class="op">&lt;</span>div style<span class="op">=</span><span class="st">"width:${width}px; height:${height+50}px"</span><span class="op">&gt;</span></span>
+<span id="cb10-42"><a href="#cb10-42"></a><span class="op">&lt;</span>div id<span class="op">=</span><span class="st">"legend"</span><span class="op">&gt;&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb10-43"><a href="#cb10-43"></a></span>
+<span id="cb10-44"><a href="#cb10-44"></a><span class="op">&lt;</span>svg width<span class="op">=</span>$<span class="op">{</span>width<span class="op">}</span> height<span class="op">=</span>$<span class="op">{</span>height<span class="op">}&gt;</span></span>
+<span id="cb10-45"><a href="#cb10-45"></a>  <span class="op">&lt;</span>circle r<span class="op">=</span><span class="dv">50</span> cx<span class="op">=</span><span class="dv">100</span> cy<span class="op">=</span><span class="dv">100</span> fill<span class="op">=</span><span class="st">"seagreen"</span><span class="op">&gt;&lt;/</span>circle<span class="op">&gt;</span></span>
+<span id="cb10-46"><a href="#cb10-46"></a>  <span class="op">&lt;</span>g id<span class="op">=</span><span class="st">"xAxis"</span> transform<span class="op">=</span><span class="st">"translate(0,${height-20})"</span><span class="op">&gt;&lt;/</span>g<span class="op">&gt;</span></span>
+<span id="cb10-47"><a href="#cb10-47"></a>  <span class="op">&lt;</span>g id<span class="op">=</span><span class="st">"yAxis"</span> transform<span class="op">=</span><span class="st">"translate(25,0)"</span><span class="op">&gt;&lt;/</span>g<span class="op">&gt;</span></span>
+<span id="cb10-48"><a href="#cb10-48"></a><span class="op">&lt;/</span>svg<span class="op">&gt;</span></span>
+<span id="cb10-49"><a href="#cb10-49"></a><span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb10-50"><a href="#cb10-50"></a></span>
+<span id="cb10-51"><a href="#cb10-51"></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <div class="callout callout-important callout-captioned callout-style-default">
 <div class="callout-body">
@@ -1671,13 +1671,15 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 </section></section>
 <section>
-<section id="migration-to-quarto" class="title-slide slide level1 title-top-ice center" data-background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into.">
-<h1><br><br>Migration<br>to Quarto</h1>
+<section id="migrer-vers-quarto" class="title-slide slide level1 title-top-ice center" data-background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into.">
+<h1><br><br>Migrer<br>vers Quarto</h1>
 
 </section>
 <section id="migration-1" class="slide level2 centered" data-menu-title="Migration 1" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
-<p>::: {style=“margin-top: 50px; font-size: 1.5em; color: #75AADB;”} ” Yes but I have so many of the following notebooks already ”</p>
+<div style="margin-top: 50px; font-size: 1.5em; color: #75AADB;">
+<p>” C’est bien, mais j’ai tellement de notebook RMarkdown à gérer !”</p>
+</div>
 <div class="fragment">
 <div class="cell" data-reveal="true">
 <div class="cell-output-display">
@@ -1702,41 +1704,41 @@ quarto render hello.ipynb --to html</code></pre>
 <section id="migration-2" class="slide level2 centered" data-menu-title="Migration 2" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
-<p>Rmd migration<br>in 2.5 sec</p>
+<p>Migration R Markdown<br>en 2.5 sec</p>
 </div>
 <div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> README.Rmd README.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> README.Rmd README.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="migration-3" class="slide level2 centered" data-menu-title="Migration 3" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 50px; font-size: 1em; color: #75AADB;">
-<p>Rmd migration<br>in 7.5 sec</p>
+<p>Migration R Markdown<br>en 7.5 sec</p>
 </div>
 <div class="fragment fade-up large" data-fragment-index="1" style="text-align: left;">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Console</strong></pre>
 </div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to Quarto doc with in-body chunk options</span></span>
-<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">convert_chunk_header</span>(<span class="st">"to-convert.Rmd"</span>, <span class="st">"converted.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to Quarto doc with in-body chunk options</span></span>
+<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">convert_chunk_header</span>(<span class="st">"to-convert.Rmd"</span>, <span class="st">"converted.qmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="migration-4" class="slide level2 centered" data-menu-title="Migration 4" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 0px; font-size: 1em; color: #75AADB;">
-<p>New documents :</p>
+<p>Nouveaux documents :</p>
 <p><img data-src="images/paste-24A74642.png" width="624">:::</p>
 </div>
 </section>
-<section id="ipynb-migration" class="slide level2">
-<h2>ipynb migration</h2>
+<section id="migration-ipynb" class="slide level2">
+<h2>Migration ipynb</h2>
 <ul>
 <li class="fragment">step 1 :</li>
 </ul>
@@ -1744,7 +1746,7 @@ quarto render hello.ipynb --to html</code></pre>
 <div class="code-with-filename-file">
 <pre><strong>VSCode Command Palette</strong></pre>
 </div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Jupyter:</span> Import Jupyter Notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Jupyter:</span> Import Jupyter Notebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li class="fragment">step 2 :</li>
@@ -1753,22 +1755,54 @@ quarto render hello.ipynb --to html</code></pre>
 <div class="code-with-filename-file">
 <pre><strong>VSCode Command Palette</strong></pre>
 </div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto:</span> New document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Quarto:</span> New document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="observable.hq-migration" class="slide level2">
-<h2>Observable.hq migration</h2>
+<section id="migration-observable.hq" class="slide level2">
+<h2>Migration Observable.hq</h2>
 <ul>
-<li class="fragment"><p>install ohq2quarto from github: <a href="https://github.com/hrbrmstr/ohq2quarto">Save an Observable HQ Notebook to a Quarto project</a></p>
-<p><img data-src="images/paste-11F909B4.png" width="763"></p></li>
-<li class="fragment"><p>step 1 : use the import command</p></li>
+<li class="fragment"><p>install <a href="https://github.com/hrbrmstr/ohq2quarto">hrbrmstr/ohq2quarto</a> from github</p>
+<p><img data-src="images/paste-F14589AC.png" width="765"></p></li>
+</ul>
+<aside class="notes">
+<p>sous linux : - install la toolchain rust</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> snap install rustup</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">rustup</span> install stable</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ex">rustup</span> default stable</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="ex">cargo</span> install <span class="at">--git</span> https://github.com/hrbrmstr/ohq2quarto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="migration-observable.hq-1" class="slide level2">
+<h2>Migration Observable.hq</h2>
+<ul>
+<li class="fragment">step 1 : use the import command</li>
 </ul>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">cargo</span> run <span class="at">--</span> <span class="at">--ohq-ref</span> @hrbrmstr/just-one-more-thing <span class="at">--output-dir</span> ./examples <span class="at">--verbose</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./ohq2quarto</span> <span class="at">--ohq-ref</span> @hrbrmstr/just-one-more-thing <span class="at">--output-dir</span> ./examples <span class="at">--verbose</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li class="fragment"><p>step 2 : manually put markdown out of code cells</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/paste-4AC91B1B.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/paste-C9A19FD2.png"></p>
+</div>
+</div></li>
+</ul>
 </section>
 <section id="latex-migration" class="slide level2">
 <h2>LaTeX migration</h2>
@@ -1781,7 +1815,7 @@ quarto render hello.ipynb --to html</code></pre>
 <ul>
 <li class="fragment">Conversion <code>.Rmd</code> <span class="math inline">\(\rightarrow\)</span> <code>.qmd</code> simple et lecture de <code>.Rmd</code> via Quarto CLI possible</li>
 <li class="fragment">Restera à moyen terme supporté par Posit…</li>
-<li class="fragment">…mais les efforts de développement/nouveautés seront concentrées sur Quarto</li>
+<li class="fragment">…mais les efforts de développement/nouveautés seront <strong>concentrés sur Quarto</strong></li>
 </ul>
 </section>
 <section id="quarto-vs.-rmarkdown-les-plus" class="slide level2">
@@ -1800,13 +1834,12 @@ quarto render hello.ipynb --to html</code></pre>
           display:block!important;
       }</style></aside>
 <ul>
-<li class="fragment">La plupart des choses peuvent être également faites en Rmarkdown, mais bien plus simple/“élégant” en Quarto (moins de bidouillage peut être)</li>
-<li class="fragment">Possible de switcher entre de l’édition en code et de l’édition en clique-bouton (type Word, LibreOffice), pratique quand on oublie juste une commande!</li>
-<li class="fragment">Propositions automatique dans le YAML header (<code>CTRL + espace</code>) et pour les chunk options: pareil, pratique quand on a un trou de mémoire (ou qu’on veut savoir toutes les options disponibles)<br>
-</li>
-<li class="fragment">Intéragir avec du notebook R ou Python <strong>exactement de la même manière</strong></li>
-<li class="fragment">Facile de naviguer entre plusieurs formats (peu de choses à modifier pour que le document s’édite)</li>
-<li class="fragment">Gérer les outputs de différentes sortes dans un même document (comme un site web)</li>
+<li class="fragment">Quarto plus élégant</li>
+<li class="fragment">Alterner entre Visual et Source : pratique quand on oublie juste une commande !</li>
+<li class="fragment">Propositions automatiques dans le YAML header (<code>CTRL + espace</code>), les “chunk options”</li>
+<li class="fragment">Intéragir avec des notebooks R ou Python <strong>exactement de la même manière</strong></li>
+<li class="fragment">Naviguer facilement entre plusieurs formats</li>
+<li class="fragment">Inputs différents dans un même document (e.g.&nbsp;site web)</li>
 </ul>
 </section>
 <section id="quarto-vs.-rmarkdown-les-moins" class="slide level2">
@@ -1814,7 +1847,18 @@ quarto render hello.ipynb --to html</code></pre>
 <ul>
 <li class="fragment">Tout nouveau, donc peu d’aide dans la communauté disponible</li>
 </ul>
-<aside class="notes">
+<div class="fragment">
+<p>L’aide fournie par Quarto.org est tout de même très bien conçue!</p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="images/paste-2B7630B6.png" width="1244" class="r-stretch"></section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="images/paste-3B403E82.png" class="r-stretch"><aside class="notes">
 <p>En gros, si ce que l’on veut faire n’est pas décrit dans l’aide du site Quarto, très compliqué de mettre en place l’idée. Fouinage et bidouillage ++++</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1828,7 +1872,7 @@ quarto render hello.ipynb --to html</code></pre>
           display:block!important;
       }</style></aside>
 </section>
-<section id="section" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Merci !</p>
@@ -1911,7 +1955,7 @@ quarto render hello.ipynb --to html</code></pre>
 <li id="fn1"><p>pas posible pour les slides…</p></li>
 <li id="fn2"><p>problème pour la faire fonctionner en revealjs et html…</p></li>
 <li id="fn3"><p>solution pour publier des sites web, proposée par Quarto (Posit)</p></li>
-<li id="fn4"><p><em>Probablement d’autres aspects sympas, mais pas d’expérience sur ces formats.</em></p></li>
+<li id="fn4"><p>possible d’utiliser d’autres solutions comme GitHub par exemple</p></li>
 </ol>
 </section>
     </div>

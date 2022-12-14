@@ -8,11 +8,9 @@ format:
     slide-number: true
     theme: solarized
     incremental: true
-    slide-level: 3
     center-title-slide: false
     logo: images/logoRuserToulouse.svg
     smaller: false
-    reference-location: document
 ---
 
 # Et RMarkdown dans tout ça?
@@ -44,7 +42,7 @@ L'aide fournie par Quarto.org est tout de même très bien conçue!
 
 ## 
 
-![](images/paste-2B7630B6.png)
+![](images/paste-2B7630B6.png){width="1244"}
 
 ## 
 
