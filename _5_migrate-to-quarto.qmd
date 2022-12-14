@@ -4,11 +4,13 @@ format:
   revealjs
 ---
 
-# <br><br>Migration<br>to Quarto {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
+# <br><br>Migrer<br>vers Quarto {.title-top-ice background-image="images/horst_quarto_penguins_reimagine.png" aria-label="Two excited penguins diving off of an iceberg into the ocean. A Quarto logo moon in the sky is reflected in the water that they're diving into."}
 
 ##  {#migration-1 .centered data-menu-title="Migration 1" background-color="#0F1620" auto-animate="true"}
 
-::: {style="margin-top: 50px; font-size: 1.5em; color: #75AADB;"} " Yes but I have so many of the following notebooks already "
+::: {style="margin-top: 50px; font-size: 1.5em; color: #75AADB;"}
+" C'est bien, mais j'ai tellement de notebook RMarkdown à gérer !"
+:::
 
 . . .
 
@@ -24,7 +26,7 @@ flowchart LR
 ##  {#migration-2 .centered data-menu-title="Migration 2" background-color="#0F1620" auto-animate="true"}
 
 ::: {style="margin-top: 50px; font-size: 1em; color: #75AADB;"}
-Rmd migration<br>in 2.5 sec
+Migration R Markdown<br>en 2.5 sec
 :::
 
 ::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
@@ -36,7 +38,7 @@ mv README.Rmd README.qmd
 ##  {#migration-3 .centered data-menu-title="Migration 3" background-color="#0F1620" auto-animate="true"}
 
 ::: {style="margin-top: 50px; font-size: 1em; color: #75AADB;"}
-Rmd migration<br>in 7.5 sec
+Migration R Markdown<br>en 7.5 sec
 :::
 
 ::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
@@ -49,12 +51,12 @@ knitr::convert_chunk_header("to-convert.Rmd", "converted.qmd")
 ##  {#migration-4 .centered data-menu-title="Migration 4" background-color="#0F1620" auto-animate="true"}
 
 ::: {style="margin-top: 0px; font-size: 1em; color: #75AADB;"}
-New documents :
+Nouveaux documents :
 
 ![](images/paste-24A74642.png){width="624"}:::
 :::
 
-## ipynb migration
+## Migration ipynb
 
 -   step 1 :
 
@@ -68,18 +70,42 @@ Jupyter: Import Jupyter Notebook
 Quarto: New document
 ```
 
-## Observable.hq migration
+## Migration Observable.hq
 
--   install ohq2quarto from github: [Save an Observable HQ Notebook to a Quarto project](https://github.com/hrbrmstr/ohq2quarto)
+-   install [hrbrmstr/ohq2quarto](https://github.com/hrbrmstr/ohq2quarto) from github
 
-    ![](images/paste-11F909B4.png){width="763"}
+    ![](images/paste-F14589AC.png){width="765"}
+
+::: notes
+sous linux : - install la toolchain rust
+
+``` bash
+sudo snap install rustup
+rustup install stable
+rustup default stable
+cargo install --git https://github.com/hrbrmstr/ohq2quarto
+```
+:::
+
+## Migration Observable.hq
 
 -   step 1 : use the import command
 
 ``` {.bash filename="Terminal"}
-cargo run -- --ohq-ref @hrbrmstr/just-one-more-thing --output-dir ./examples --verbose
+./ohq2quarto --ohq-ref @hrbrmstr/just-one-more-thing --output-dir ./examples --verbose
 ```
 
+-   step 2 : manually put markdown out of code cells
+
+    ::: columns
+    ::: {.column width="50%"}
+    ![](images/paste-4AC91B1B.png)
+    :::
+
+    ::: {.column width="50%"}
+    ![](images/paste-C9A19FD2.png)
+    :::
+    :::
 
 ## LaTeX migration
 

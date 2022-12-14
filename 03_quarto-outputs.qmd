@@ -36,7 +36,18 @@ library(gapminder)
 data <- gapminder %>% filter(year=="2007") %>% dplyr::select(-year)
 ```
 
-# Que peut-on faire en Quarto ?
+##  {#outputs-1 .centered data-menu-title="Outputs 1" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Que peut-on faire en Quarto ?
+:::
+
+##  {#outputs-2 .centered data-menu-title="Outputs 2" background-color="#0F1620" auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 2.2em; color: #75AADB"}
+Que peut-on faire en Quarto ?
+:::
+
 
 -   des rapports;
 -   des présentations;

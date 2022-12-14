@@ -13,23 +13,111 @@ format:
     reference-location: document
 ---
 
-## Quarto
+##  {#polyglot-1 .centered data-menu-title="Polyglot 1" background-color="#0F1620" auto-animate="true"}
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+::: {style="margin-top: 150px; font-size: 3em; color: #75AADB;"}
+Quarto est polyglote
+:::
 
-## Bullets
+##  {#polyglot-2 .centered data-menu-title="Polyglot 2" background-color="#0F1620" auto-animate="true"}
 
-When you click the **Render** button a document will be generated that includes:
+::: {style="margin-top: 50px; font-size: 2.2em; color: #75AADB"}
+Quarto est polyglote
+:::
 
--   Content authored with markdown
--   Output from executable code
+Quarto permet d'exécuter du code 
 
-## Code
+ - python, 
+ - R
+ - Observable.hq
+ - Julia ...
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+ - dans le **même notebook**
+ - en partageant les données
 
-```{r}
-1 + 1
+
+## les cellules de code
+
+::: fragment
+python
+
+``` {python}
+#| echo: true
+import pandas
+pingouin = pandas.read_csv("penguins.csv")
+# ojs_define( pypingouin = pingouin)
 ```
+:::
+
+::: fragment
+R
+
+``` {r}
+#| echo: true
+#| code-line-numbers: "1,3-4"
+library(reticulate)
+library(dplyr)
+pingouin <- py$pingouin %>% mutate(bill_length_mm = 0.98 * bill_length_mm)
+ojs_define( rpingouin = pingouin)
+
+```
+:::
+::: fragment
+Observable.js
+
+```{ojs}
+//| echo: true
+render(mySVG)
+xProperty = 'flipper_length_mm'
+yProperty = 'bill_length_mm'
+
+function render(div) {
+  // draw on the SVG with D3
+  const selection = d3.select(div).select('svg');
+  
+  const xExtent = d3.extent(rpingouin, d => d[xProperty]);
+  const x = d3.scaleLinear().domain(xExtent).range([30,width-30]);
+  const xAxis = d3.axisBottom(x);
+  selection.select("#xAxis")
+    .call(xAxis);
+  
+  const yExtent = d3.extent(rpingouin, d => d[yProperty]);
+  const y = d3.scaleLinear().domain(yExtent).range([30,height-30]);
+  const yAxis = d3.axisLeft(y);
+  selection.select("#yAxis")
+    .call(yAxis);
+  
+  const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+  
+  selection.selectAll('circle')
+    .data(rpingouin.filter(d => d[xProperty] !== "NA"))
+    .join('circle')
+    .attr('r', 15)
+    .style('opacity', 0.2)
+    .style('fill', d => colorScale(d.species))
+    .transition()
+    .duration(3000)
+    .attr('cx', d => x(d[xProperty]) )
+    .attr('cy', d => y(d[yProperty]) );
+
+  const legend = swatches({color: colorScale});
+  d3.select(div).select("#legend")
+    .append(() => legend);
+  
+}
+
+mySVG = html`<div style="width:${width}px; height:${height+50}px">
+<div id="legend"></div>
+
+<svg width=${width} height=${height}>
+  <circle r=50 cx=100 cy=100 fill="seagreen"></circle>
+  <g id="xAxis" transform="translate(0,${height-20})"></g>
+  <g id="yAxis" transform="translate(25,0)"></g>
+</svg>
+</div>
+
+```
+:::
 
 
