@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+format: 
+---
+
+## imports
+```{python}
+import pandas as pd
+from math import pi
+d = {'col1': [1, 2], 'col2': [3, 4 * pi]}
+df = pd.DataFrame(data=d)
+```
+
+
+```{python}
+
+```
+
+
+```{ojs}
+
+```

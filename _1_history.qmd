@@ -8,7 +8,7 @@ Une définition
 
 ##  {#definition-2 .centered data-menu-title="Definition 2" background-color="#0F1620" auto-animate="true"}
 
-::: {style="margin-top: 50px; font-size: 3em; color: #75AADB;"}
+::: {style="margin-top: 10px; font-size: 3em; color: #75AADB;"}
 Une définition
 :::
 
@@ -53,7 +53,9 @@ Quelques exemples
 Quelques exemples
 :::
 
-::: ![](images/paste-11FB771E.png) :::
+::: 
+![](images/paste-11FB771E.png)
+:::
 
 ##  {#exemple-3 .centered data-menu-title="exemple 3" auto-animate="true"}
 
@@ -61,7 +63,7 @@ Quelques exemples
 Quelques exemples
 :::
 
-::: S
+:::
 ![](images/paste-C5C70A5D.png)
 :::
 

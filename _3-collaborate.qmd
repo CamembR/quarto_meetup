@@ -5,7 +5,7 @@
 
 ##  {#many-use-python .center .centered data-menu-title="Many use Python" background-color="#0F1620"}
 
-[Many Data scientists <br> use Python <br> 😬]{.larger}
+[Many Data scientists <br> use Jupyter <br> 😬]{.larger}
 
 ::: notes
 Many data scientists use python and jupyter notebooks. And my role is not to learn python from the ground-up, but I needed to be able to collaborate with and support python users.
