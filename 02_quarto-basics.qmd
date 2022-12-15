@@ -63,12 +63,18 @@ Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension,
 :::
 :::
 
+### Visual Studio Code
+
+![](images/paste-86FE818A.png){fig-align="center" width="839"}
+:::
+
+:::
+
 ### Jupyter
 
 Les nouveautés dans le notebook Jupyter: les options globales dans le premier bloc (= YAML header dans `.qmd`), les options dans les blocs de code (= chunks options `.qmd`)
 
-![](images/step2nb_quartoPY.png){fig-align="center" width="839"}
-:::
+![](images/step2nb_quartoPY.png){fig-align="center" width="839"} :::
 
 ## Créer un notebook
 
@@ -91,23 +97,18 @@ Un bouton `Render` au lieu de `Knitr` pour générer le document
 ::: {.column width="38%"}
 Pour **prévisualiser** le document :
 
-```{}
-quarto preview hello.ipynb
-```
+    quarto preview hello.ipynb
 
 \
 \
 
 et pour **générer** le document:
 
-```{}
-quarto render hello.ipynb --to pdf
-quarto render hello.ipynb --to html
-```
+    quarto render hello.ipynb --to pdf
+    quarto render hello.ipynb --to html
 :::
 :::
 :::
-
 
 ## Créer un notebook
 

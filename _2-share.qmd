@@ -101,7 +101,7 @@ And it's designed to be expandable to more engines and languages, even those tha
 So, let's dive in and see what all the Quarto fuss is about!
 :::
 
-##  {#demo-share .centered data-menu-title="Demo: Share" background-video="videos/demo-multi_output.webm" background-size="contain" background-color="#FFFFFF"}
+##  {#demo-share .centered data-menu-title="Demo: Share" background-video="videos/demo-multi_output.mp4" background-size="contain" background-color="#FFFFFF"}
 
 ::: notes
 -   Open hello.Rmd with source editor -\> knit
@@ -113,7 +113,7 @@ So, let's dive in and see what all the Quarto fuss is about!
 -   Add chunk option `echo: false` to the first chunk
 -   Add `execute` > `echo: false` to the yaml
 -   Add alt text to figure in second code chunk -\> save to render
-, fig.alt="Scatterplot of bill length vs. flipper length for three species of penguins."
+, fig.alt="Nuage de points des longeurs de becs en fonction des longeurs de nageoir pour 3 espèces de pingouins"
 
 -   Change to `format: revealjs` -\> save to render
 -   Add H2 to break slides

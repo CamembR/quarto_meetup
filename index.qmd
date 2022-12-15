@@ -11,7 +11,7 @@ format:
     highlight-style: a11y
     code-line-numbers: false
     incremental: true
-    logo: images/logoRuserToulouse.svg
+    logo: images/logoTDV.png
     reference-location: document
     footnotes-hover: true
     chalkboard: true

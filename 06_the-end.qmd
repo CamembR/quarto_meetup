@@ -1,17 +1,3 @@
----
-title: "Quarto"
-subtitle: "Le mot de la fin"
-author: "A. Mercadié et C. Regouby"
-date: today
-format:
-  revealjs: 
-    slide-number: true
-    theme: solarized
-    incremental: true
-    center-title-slide: false
-    logo: images/logoRuserToulouse.svg
-    smaller: false
----
 
 # Et RMarkdown dans tout ça?
 

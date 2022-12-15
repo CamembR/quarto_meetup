@@ -1,18 +1,4 @@
----
-title: "Une Histoire du Notebook"
-author: "Christophe Regouby"
-format:
-  revealjs:
-    slide-number: true
-    theme: solarized
-    incremental: true
-    slide-level: 3
-    center-title-slide: false
-    logo: images/logoRuserToulouse.svg
-    smaller: true
-    reference-location: document   
----
-
+# <br><br><br>Une his-<br>toire du<br>Notebook {.title-middle-dark background-image="images/horst_quarto_penguins_share.png" aria-label="Two happy penguins taking a selfie together in a snowy landscape."}
 
 ```{r setup}
 library(ggplot2)
