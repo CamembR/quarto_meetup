@@ -7,7 +7,6 @@ format:
     theme: solarized
     incremental: true
     slide-level: 3
-    center-title-slide: false
     logo: images/logoRuserToulouse.svg
     smaller: true
     reference-location: document

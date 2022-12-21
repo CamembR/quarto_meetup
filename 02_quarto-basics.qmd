@@ -9,8 +9,6 @@ format:
     slide-number: true
     theme: solarized
     incremental: true
-    slide-level: 3
-    center-title-slide: false
     logo: images/logoRuserToulouse.svg
     smaller: true
     reference-location: document
@@ -65,9 +63,14 @@ Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension,
 
 ### Visual Studio Code
 
-![](images/paste-86FE818A.png){fig-align="center" width="839"}
+::: columns
+::: {.column width="38%"}
+![](images/paste-86FE818A.png){fig-align="center"}
 :::
 
+::: {.column width="62%"}
+![](images/paste-CEC3CDF6.png)
+:::
 :::
 
 ### Jupyter
@@ -75,6 +78,7 @@ Des formats de fichiers spéciaux proposés dans `File`: une nouvelle extension,
 Les nouveautés dans le notebook Jupyter: les options globales dans le premier bloc (= YAML header dans `.qmd`), les options dans les blocs de code (= chunks options `.qmd`)
 
 ![](images/step2nb_quartoPY.png){fig-align="center" width="839"} :::
+:::
 
 ## Créer un notebook
 
@@ -86,6 +90,12 @@ Une fois l'installation faite, comment lancer Quarto?
 Un bouton `Render` au lieu de `Knitr` pour générer le document
 
 ![](images/step3nb_quarto.png){fig-align="center" width="715"}
+
+### Visual Studio Code
+
+Un bouton `Render` pour générer le document
+
+![](images/paste-CEC3CDF6.png){fig-align="center" width="715"}
 
 ### Jupyter
 
@@ -123,6 +133,11 @@ Une autre manière de spécifier les "chunk options" (pipe natif $\#|$)
 ![](images/step3nb_quarto.png){fig-align="center" width="715"}
 :::
 
+### Visual Studio Code
+
+![](images/paste-86FE818A.png){fig-align="center"}
+
+
 ### Jupyter
 :::
 
@@ -136,6 +151,8 @@ Une fois l'installation faite, comment lancer Quarto?
 Deux modes: **Source** ou **Visual**, possible d'aller de l'un à l'autre à volonté
 
 ![](images/step4nb_quarto.png){fig-align="center" width="718"}
+
+### Visual Studio Code
 
 ### Jupyter
 :::
