@@ -40,7 +40,7 @@ Quarto permet d'exécuter du code
 ::: fragment
 python
 
-``` {python}
+``` {{python}}
 #| echo: true
 import pandas
 pingouin = pandas.read_csv("penguins.csv")
@@ -51,7 +51,7 @@ pingouin = pandas.read_csv("penguins.csv")
 ::: fragment
 R
 
-``` {r}
+``` {{r}}
 #| echo: true
 #| code-line-numbers: "1,3-4"
 library(reticulate)
@@ -64,7 +64,7 @@ ojs_define( rpingouin = pingouin)
 ::: fragment
 Observable.js
 
-```{ojs}
+```{{ojs}}
 //| echo: true
 render(mySVG)
 xProperty = 'flipper_length_mm'

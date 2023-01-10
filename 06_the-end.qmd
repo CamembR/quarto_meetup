@@ -1,4 +1,3 @@
-
 # Et RMarkdown dans tout ça?
 
 -   Conversion `.Rmd` $\rightarrow$ `.qmd` simple et lecture de `.Rmd` via Quarto CLI possible
@@ -20,7 +19,7 @@ A mettre à la toute fin de la présentation (pas uniquement de cette partie?)
 
 ## Quarto Vs. RMarkdown: les moins
 
--   Tout nouveau, donc peu d'aide dans la communauté disponible
+-   Tout nouveau, donc peu d'articles disponibles dans la communauté
 
 . . .
 
@@ -37,6 +36,12 @@ L'aide fournie par Quarto.org est tout de même très bien conçue!
 ::: notes
 En gros, si ce que l'on veut faire n'est pas décrit dans l'aide du site Quarto, très compliqué de mettre en place l'idée. Fouinage et bidouillage ++++
 :::
+
+## Les ressources en ligne
+
+-   [quarto.org](https://quarto.org/docs/guide/)
+-   [La page de discussion sur le dépot de code \`quarto-dev/quarto-cli\`](https://github.com/quarto-dev/quarto-cli/discussions)
+-   [Awesome Quarto par Mickaël Canouil](https://github.com/mcanouil/awesome-quarto)
 
 ## 
 
