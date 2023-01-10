@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "The Famous Palmer Pinguin filter"
 format: html
 execute:
   echo: false
@@ -56,15 +56,10 @@ d3 = require("d3@7")
 topojson = require("topojson")
 ```
 
-```{python}
-import pandas as pd
-penguins = pd.read_csv("palmer-penguins.csv")
-ojs_define(data = penguins)
-```
 
-```{ojs}
-filtered = transpose(data).filter(function(penguin) {
-  return bill_length_min < penguin.bill_length_mm &&
-         islands.includes(penguin.island);
-})
+```{{ojs}}
+// filtered = transpose(data).filter(function(penguin) {
+//   return bill_length_min < penguin.bill_length_mm &&
+//          islands.includes(penguin.island);
+// })
 ```

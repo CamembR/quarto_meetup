@@ -1,0 +1,62 @@
+---
+title: 'La mare et le nénuphar'
+author: 'Alain Roan'
+format: html
+echo: false
+observable: 'https://observablehq.com/@alainro/mare-et-nenuphar'
+---
+
+```{ojs}
+md`# La mare et le nénuphar
+Un nénuphar se divise en 2 en 1 journée. Au bout d'un mois (30 jours), la surface des nénuphars occupe la moitié de l'eau. Combien de jours faudra t-il pour occuper tout l'étang ?`
+```
+
+```{ojs}
+Nenuphars = Math.pow(2, day - 1)
+```
+
+```{ojs}
+viewof day = Inputs.range([1, 31], { value: 1, step: 1, label: "Jour numéro" })
+```
+
+```{ojs}
+display = Plot.plot({
+  width: 800,
+  marginLeft: 100,
+  x: { domain: [1, 31], label: "x" },
+  y: {
+    domain: [0, 1],
+    label: "y",
+    tickFormat: d3.format(".0%"),
+    grid: true
+  },
+  marks: [
+    //Plot.ruleX([0]),
+    Plot.ruleY([0]),
+    Plot.line(x, { x: x, y: y }), // stroke: (d) => (d === 30 ? "red" : "black") }),
+    Plot.dot(x, {
+      x: x,
+      y: y,
+      stroke: (d) => (d === 31 ? "red" : "black"),
+      r: (d) => (d === 31 ? 40 : 5),
+      fill: (d) => (d === 31 ? "red" : "black")
+    })
+    //Plot.linearRegressionX(x, { x: x, y: y, stroke: "red", ci: 0 })
+  ]
+})
+```
+
+```{ojs}
+x = {
+  const x = [];
+  for (let i = 1; i <= day; i = i + 1) {
+    x.push(i);
+  }
+  return x;
+}
+```
+
+```{ojs}
+y = x.map((d) => Math.pow(2, d - 31))
+```
+

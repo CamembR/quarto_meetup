@@ -11,7 +11,7 @@
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <meta name="author" content="A. Mercadié et C. Regouby">
+  <meta name="author" content="A. Mercadié, C. Regouby">
   <title>Migration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -400,8 +400,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Quarto</h1>
-  <p class="subtitle">Le mot de la fin</p>
+  <h1 class="title">multi-language notebooks</h1>
+  <p class="subtitle">Les types de sorties existants</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -465,7 +465,7 @@
 </section>
 <section id="definition-2" class="slide level2 centered" data-menu-title="Definition 2" data-background-color="#0F1620" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
-<div style="margin-top: 50px; font-size: 3em; color: #75AADB;">
+<div style="margin-top: 10px; font-size: 3em; color: #75AADB;">
 <p>Une définition</p>
 </div>
 <p><br></p>
@@ -521,9 +521,7 @@
 <div style="margin-top: 10px; font-size: 2em; color: #75AADB;">
 <p>Quelques exemples</p>
 </div>
-<div class="S">
-<p><img data-src="images/paste-C5C70A5D.png"></p>
-</div>
+<p>::: <img data-src="images/paste-C5C70A5D.png"> :::</p>
 </section>
 <section id="les-publications" class="slide level2">
 <h2>Les publications</h2>
@@ -823,7 +821,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="demo-share" class="slide level2 centered" data-menu-title="Demo: Share" data-background-video="videos/demo-multi_output.webm" data-background-size="contain" data-background-color="#FFFFFF">
+<section id="demo-share" class="slide level2 centered" data-menu-title="Demo: Share" data-background-video="videos/demo-multi_output.mp4" data-background-size="contain" data-background-color="#FFFFFF">
 <h2></h2>
 <aside class="notes">
 <ul>
@@ -835,7 +833,7 @@
 <li><p>Change to <code>format: pdf</code> -&gt; render -&gt; then change back</p></li>
 <li><p>Add chunk option <code>echo: false</code> to the first chunk</p></li>
 <li><p>Add <code>execute</code> &gt; <code>echo: false</code> to the yaml</p></li>
-<li><p>Add alt text to figure in second code chunk -&gt; save to render , fig.alt=“Scatterplot of bill length vs.&nbsp;flipper length for three species of penguins.”</p></li>
+<li><p>Add alt text to figure in second code chunk -&gt; save to render , fig.alt=“Nuage de points des longeurs de becs en fonction des longeurs de nageoir pour 3 espèces de pingouins”</p></li>
 <li><p>Change to <code>format: revealjs</code> -&gt; save to render</p></li>
 <li><p>Add H2 to break slides</p></li>
 <li><p>Change to <code>format: html</code></p></li>
@@ -989,7 +987,7 @@
 </section>
 <section id="many-use-python" class="slide level2 center centered" data-menu-title="Many use Python" data-background-color="#0F1620">
 <h2></h2>
-<p><span class="larger">Many Data scientists <br> use Python <br> 😬</span></p>
+<p><span class="larger">Many Data scientists <br> use Jupyter <br> 😬</span></p>
 <aside class="notes">
 <p>Many data scientists use python and jupyter notebooks. And my role is not to learn python from the ground-up, but I needed to be able to collaborate with and support python users.</p>
 <p>Transition: But I also brought over 6 years of experience and confidence that I’ve developed using RMarkdown. I think of RMarkdown like a superpower</p>
@@ -1279,7 +1277,7 @@
 <h2>Créer un notebook</h2>
 <p>Une fois l’installation faite, comment lancer Quarto?</p>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">RStudio</a></li><li><a href="#tabset-1-2">Jupyter</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">RStudio</a></li><li><a href="#tabset-1-2">Visual Studio Code</a></li><li><a href="#tabset-1-3">Jupyter</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p>Des formats de fichiers spéciaux proposés dans <code>File</code>: une nouvelle extension, <code>.qmd</code></p>
@@ -1296,12 +1294,21 @@
 </div>
 </div>
 <div id="tabset-1-2">
-<p>Les nouveautés dans le notebook Jupyter: les options globales dans le premier bloc (= YAML header dans <code>.qmd</code>), les options dans les blocs de code (= chunks options <code>.qmd</code>)</p>
+<div class="columns">
+<div class="column" style="width:38%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/step2nb_quartoPY.png" width="839"></p>
+<p><img data-src="images/paste-86FE818A.png"></p>
 </figure>
 </div>
+</div><div class="column" style="width:62%;">
+<p><img data-src="images/paste-CEC3CDF6.png"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<p>Les nouveautés dans le notebook Jupyter: les options globales dans le premier bloc (= YAML header dans <code>.qmd</code>), les options dans les blocs de code (= chunks options <code>.qmd</code>)</p>
+<p><img data-src="images/step2nb_quartoPY.png" data-fig-align="center" width="839"> :::</p>
 </div>
 </div>
 </div>
@@ -1310,7 +1317,7 @@
 <h2>Créer un notebook</h2>
 <p>Une fois l’installation faite, comment lancer Quarto?</p>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">RStudio</a></li><li><a href="#tabset-2-2">Jupyter</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">RStudio</a></li><li><a href="#tabset-2-2">Visual Studio Code</a></li><li><a href="#tabset-2-3">Jupyter</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
 <p>Un bouton <code>Render</code> au lieu de <code>Knitr</code> pour générer le document</p>
@@ -1321,6 +1328,14 @@
 </div>
 </div>
 <div id="tabset-2-2">
+<p>Un bouton <code>Render</code> pour générer le document</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-CEC3CDF6.png" width="715"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3">
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
@@ -1347,7 +1362,7 @@ quarto render hello.ipynb --to html</code></pre>
 <h2>Créer un notebook</h2>
 <p>Une fois l’installation faite, comment lancer Quarto?</p>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">RStudio</a></li><li><a href="#tabset-4-2">Jupyter</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">RStudio</a></li><li><a href="#tabset-4-2">Visual Studio Code</a></li><li><a href="#tabset-4-3">Jupyter</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1">
 <div class="panel-tabset">
@@ -1360,6 +1375,13 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 </div>
 <div id="tabset-4-2">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-86FE818A.png"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-4-3">
 
 </div>
 </div>
@@ -1369,7 +1391,7 @@ quarto render hello.ipynb --to html</code></pre>
 <h2>Créer un notebook</h2>
 <p>Une fois l’installation faite, comment lancer Quarto?</p>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">RStudio</a></li><li><a href="#tabset-5-2">Jupyter</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">RStudio</a></li><li><a href="#tabset-5-2">Visual Studio Code</a></li><li><a href="#tabset-5-3">Jupyter</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
 <p>Deux modes: <strong>Source</strong> ou <strong>Visual</strong>, possible d’aller de l’un à l’autre à volonté</p>
@@ -1380,6 +1402,9 @@ quarto render hello.ipynb --to html</code></pre>
 </div>
 </div>
 <div id="tabset-5-2">
+
+</div>
+<div id="tabset-5-3">
 
 </div>
 </div>
@@ -1945,7 +1970,7 @@ $ quarto install extension quarto-ext/pointer</p>
 <li class="fragment"><a href="https://nmfs-openscapes.github.io" class="uri">https://nmfs-openscapes.github.io</a></li>
 </ul>
 
-<img src="images/logoRuserToulouse.svg" class="slide-logo r-stretch"><div class="footer footer-default">
+<img src="images/logoTDV.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section></section>

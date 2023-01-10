@@ -22,13 +22,15 @@ Le Notebook, c'est la rencontre entre
 
 ::: {.fragment .fade-up .large fragment-index="1" style="text-align: left;"}
 -   **l'exécution** du code\
+    - cellule à cellule\
+    - visant la reproductibilité
 :::
 
 ::: {.fragment .fade-up .large fragment-index="2" style="text-align: left;"}
 -   la narration\
     -   l'intention\
     -   l'approche\
-    -   les résultats\
+    -   les résultats
 :::
 
 ##  {#exemple-0 .centered data-menu-title="exemple" auto-animate="true"}
@@ -70,6 +72,8 @@ Quelques exemples
 ## Les publications
 
 ```{r setup}
+#| echo: false
+#| message: false
 library(ggplot2)
 library(dplyr)
 library(ggalt)
